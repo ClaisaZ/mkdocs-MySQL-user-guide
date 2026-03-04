@@ -1,6 +1,6 @@
 # Purpose of this doc
 
-This doc walks you through using [SQL Workbench](https://www.mysql.com/products/workbench/) at a basic level, you'll learn:
+This doc walks you through using [SQL Workbench](https://www.mysql.com/products/workbench/) at a basic level **on Windows**, you'll learn:
 
 - How to create a connection
 - Creating a schema (database)
