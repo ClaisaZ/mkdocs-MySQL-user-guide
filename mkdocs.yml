@@ -34,6 +34,7 @@ theme:
     - search.highlight
     - content.tabs.link
     - content.code.copy
+    - navigation.footer
 
 markdown_extensions:
   - attr_list
@@ -52,4 +53,11 @@ markdown_extensions:
 docs_dir: docs
 
 copyright: >
-  &copy; @mangoslush on Discord
+  Copyright &copy; 2025 ClaisaZ & sawyer100
+
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/ClaisaZ/mkdocs-MySQL-user-guide
+      name: GitHub
