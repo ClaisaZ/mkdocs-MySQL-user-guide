@@ -68,20 +68,51 @@ textarea {
   font-family: "Roboto", sans-serif;
 }
 
-/* hide right-side table of contents on desktop */
+/* hide toc on desktop */
 .md-sidebar--secondary {
   display: none !important;
 }
 
-/* hide TOC toggle / TOC button on smaller screens */
+/* hide the toggle for toc */
 label[for="__toc"],
 .md-nav--secondary {
   display: none !important;
 }
 
-/* let the main content use the freed space */
-@media screen and (min-width: 76.25em) {
+/* make the rest of the content use the free space form not having a toc */
+/* @media screen and (min-width: 76.25em) {
   .md-content {
     margin-right: 0 !important;
   }
+} */
+
+/* keep the bottom footer bar compact */
+.md-footer-meta {
+  padding: 0.35rem 0 !important;
+}
+
+/* copyright on left + github icon on rigth/ */
+.md-footer-meta__inner {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+}
+
+.md-copyright {
+  margin: 0 !important;
+}
+
+.md-copyright__highlight {
+  margin: 0 !important;
+}
+
+.md-social,
+.md-social__list,
+.md-social__item {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.md-social__link {
+  font-size: 1.1rem;
 }
