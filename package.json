@@ -1,0 +1,9 @@
+{
+  "name": "mkdocs-mysql-user-guide",
+  "private": true,
+  "scripts": {
+    "start": "python -m mkdocs serve",
+    "build": "python -m mkdocs build",
+    "make-cdn": "python docs/scripts/convert-images-to-jsdelivr.py"
+  }
+}
