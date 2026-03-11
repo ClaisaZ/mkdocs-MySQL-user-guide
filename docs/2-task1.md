@@ -8,7 +8,7 @@ This section explains how to create a new *schema* using the MySQL Workbench gra
 
 1. In MySQL Workbench, locate the *schema* panel on the left side of the menu interface.
 
-![Schema panel in MySQL Workbench](/docs/assets/images/Creating_Schema_part_1.png)
+![Schema panel in MySQL Workbench](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Schema_part_1.png)
 
 2. Click the **Create** Schema button.
 

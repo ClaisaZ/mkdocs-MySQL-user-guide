@@ -86,6 +86,13 @@ label[for="__toc"],
   }
 } */
 
+/* hide the sidebar title*/
+.md-sidebar--primary .md-nav--primary > .md-nav__title,
+.md-sidebar--primary .md-nav__title,
+.md-nav--primary > .md-nav__title {
+  display: none !important;
+}
+
 /* keep the bottom footer bar compact */
 .md-footer-meta {
   padding: 0.35rem 0 !important;
