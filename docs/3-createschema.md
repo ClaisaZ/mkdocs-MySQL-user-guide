@@ -24,7 +24,7 @@ This section explains how to create a new *schema* using the MySQL Workbench gra
 
     ![Schema panel in MySQL Workbench](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@gh-pages/assets/images/Creating_Schema_part_4.png)
 
-6. Click **finish**.
+6. Click **Finish**.
 
     ![Schema panel in MySQL Workbench](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@gh-pages/assets/images/Creating_Schema_part_5.png)
 

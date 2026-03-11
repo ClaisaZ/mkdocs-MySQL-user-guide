@@ -28,14 +28,14 @@ This section explains how to create a new connection using the MySQL Workbench g
 
 6. In the **Username** field, enter: root
 
-    ![Schema panel in MySQL Workbench](/docs/assets/images/Creating_Connection_6.png)
+    ![Schema panel in MySQL Workbench](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Connection_6.png)
 
 7. Click Test Connection to verify that the connection settings are correct. If prompted, enter your MySQL password.
 
-    ![Schema panel in MySQL Workbench](/docs/assets/images/Creating_Connection_7.png)
+    ![Schema panel in MySQL Workbench](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Connection_7.png)
 
 8. Click **OK** to save the connection.
 
-    ![Schema panel in MySQL Workbench](/docs/assets/images/Creating_Connection_8.png)
+    ![Schema panel in MySQL Workbench](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Connection_8.png)
 
     
