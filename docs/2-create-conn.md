@@ -12,7 +12,7 @@ This section explains how to create a new connection using the MySQL Workbench g
 
 2. On the home screen, click the + icon next to MySQL Connections.
 
-    ![Schema panel in MySQL Workbench](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Connection_2.png)
+    ![Schema panel in MySQL Workbench](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Connection_2-2.png)
 
 3. In the Connection Name field, enter a name for the connection.
 
