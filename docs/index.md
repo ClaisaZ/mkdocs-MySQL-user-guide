@@ -14,11 +14,7 @@ This documentation is designed for users who want to learn how to install and us
 
 ## Prerequisite Knowledge
 
-Before following this guide, users should have basic familiarity with the general computer tasks.
-
-- Basic computer usage
-- Installing software on Windows
-- Navigating Files and folders
+Before following this guide, users should be familiar with basic computer usage. This includes opening and navigating applications, downloading and installing software, and using a mouse and keyboard to interact with system interfaces. Users should also be comfortable navigating files and folders within the Windows operating system.
 
 ## Software Requirements
 
