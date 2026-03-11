@@ -1,6 +1,8 @@
 # Introduction
 
-Hello, In this user documentation we will guide you through setting up and using MySQL for managaing databases. The main purpose is to help new users install MySQL, create and manage databases and perform basic tasks like creating tables, inserting data and following good database structures. By following this guide, we hope that new users can gain a strong understanding of how MySQL works and how to perform essential database tasks like creating tables and inserting data.
+This documentation explains how to use *MySQL Workbench* on *Windows* to do basic database work with its GUI (graphical interface). It will walk you through creating a connection, creating a schema (database), creating tables, running queries, and viewing or editing data in Workbench.
+
+This is a beginner's guide to Workbench’s GUI, not a detailed guide to database theory or advanced MySQL.
 
 # Intended Users
 
@@ -8,6 +10,8 @@ This documentation is designed for users who want to learn how to install and us
 
 - Beginner Developers who want to learn how to install and use MySQL.
 - Students learning database management and core MySQL functionalities.
+- First time users who have never worked with a database GUI before
+
 
 # Software Requirements
 
@@ -17,18 +21,22 @@ Before starting this guide, make sure the following software is installed on you
 
 - [MySQL Workbench for Windows](https://dev.mysql.com/downloads/workbench/)
 
+## Typing Conventions
+
+This guide uses **bold** for buttons and menu options, `monospace` for SQL commands, code, and file names, and *italics* for important terms.
+
 ## Notes, Warnings, and Results
 
 You'll see colored blocks we use to highlight important info you shouldn't miss:
 
 !!! danger "Danger"
-    Steps marked **Danger** can permanently delete data or cause errors, read these carefully.
+    Steps marked **Danger** can permanently delete data or cause errors. Read these carefully before continuing.
 
 !!! warning "Warning"
-    Steps marked **Warning** cover prerequisites that can block the rest of the tutorial.
+    Steps marked **Warning** explain prerequisites or important conditions that may prevent you from completing the tutorial successfully.
 
-!!! info "Info (extra content)"
-    **Info** boxes explain what Workbench is doing or why a step matters, without changing what you need to do.
+!!! info "Info"
+    **Info** boxes provide extra explanation about what MySQL or Workbench is doing and why a step matters.
 
-!!! success "Success — what you should see"
-    **Success** shows the expected result so you can confirm you’re on the right track.
+!!! success "Success"
+    **Success** boxes show the expected result so you can confirm that you completed the step correctly.
