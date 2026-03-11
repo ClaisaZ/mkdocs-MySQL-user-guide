@@ -1,8 +1,8 @@
 # Introduction
 
-Welcome to our MySQL User Documentation. This guide will walk you through how to install, configure, and use MySQL for managing databases. The prupose of this documentation is to help new users setup MySQL and begin working with databases.
+This documentation explains how to use *MySQL Workbench* on *Windows* to do basic database work with its GUI (graphical interface). It will walk you through creating a connection, creating a schema (database), creating tables, running queries, and viewing or editing data in Workbench.
 
-By Following this guide, users will learn how to not only create databases but also design tables, insert data, and manage the structure. The instructions focus on clear processes that make it easy for beginners to start using MySQL and developing strong fundamentals.
+This is a beginner's guide to Workbench’s GUI, not a detailed guide to database theory or advanced MySQL.
 
 ## Intended Users
 
@@ -10,11 +10,40 @@ This documentation is designed for users who want to learn how to install and us
 
 - Beginner Developers who want to learn how to install and use MySQL.
 - Students learning database management and core MySQL functionalities.
+- First time users who have never worked with a database GUI before
+
+## Prerequisite Knowledge
+
+Before following this guide, users should have basic familiarity with the general computer tasks.
+
+- Basic computer usage
+- Installing software on Windows
+- Navigating Files and folders
 
 ## Software Requirements
 
-Before starting this guide, make sure the following software is installed on your Windows computer. This guide is specifically written for users running the Windows operating system.
+Before following this guide, make sure the following software is installed on your Windows computer. This guide is specifically written for users running the Windows operating system.
 
 - [MySQL Installer for Windows](https://dev.mysql.com/downloads/installer/)
 
 - [MySQL Workbench for Windows](https://dev.mysql.com/downloads/workbench/)
+
+## Typing Conventions
+
+This guide uses **bold** for buttons and menu options, `monospace` for SQL commands, code, and file names, and *italics* for important terms.
+
+## Notes, Warnings, and Results
+
+You'll see colored blocks we use to highlight important info you shouldn't miss:
+
+!!! danger "Danger"
+    Steps marked **Danger** can permanently delete data or cause errors. Read these carefully before continuing.
+
+!!! warning "Warning"
+    Steps marked **Warning** explain prerequisites or important conditions that may prevent you from completing the tutorial successfully.
+
+!!! info "Info"
+    **Info** boxes provide extra explanation about what MySQL or Workbench is doing and why a step matters.
+
+!!! success "Success"
+    **Success** boxes show the expected result so you can confirm that you completed the step correctly.
