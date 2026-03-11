@@ -1,8 +1,31 @@
 site_name: MySQL Workbench User Guide
 
+extra_css:
+  - styles/theme-overrides.css
+
+extra_javascript:
+  - styles/theme-default.js
+
 theme:
   name: material
   logo: assets/icons/logo.svg
+  palette:
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-7
+        name: Switch to light mode
+
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-4
+        name: Switch to dark mode
+
   features:
     - navigation.instant
     - navigation.tracking
@@ -11,7 +34,6 @@ theme:
     - search.highlight
     - content.tabs.link
     - content.code.copy
-    
 
 markdown_extensions:
   - attr_list
@@ -26,6 +48,8 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
 docs_dir: docs
+
 copyright: >
   &copy; @mangoslush on Discord

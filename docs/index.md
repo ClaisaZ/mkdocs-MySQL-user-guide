@@ -21,11 +21,11 @@ Before starting this guide, make sure the following software is installed on you
 
 - [MySQL Workbench for Windows](https://dev.mysql.com/downloads/workbench/)
 
-## Typing Conventions
+# Typographical Conventions
 
 This guide uses **bold** for buttons and menu options, `monospace` for SQL commands, code, and file names, and *italics* for important terms.
 
-## Notes, Warnings, and Results
+# Notes, Warnings, and Results
 
 You'll see colored blocks we use to highlight important info you shouldn't miss:
 
