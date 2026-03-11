@@ -30,4 +30,4 @@ This section explains how to create a new *schema* using the MySQL Workbench gra
 
 7. Verify that the schema appears in the SCHEMAS section.
 
-    ![Schema panel in MySQL Workbench](/docs/assets/images/Creating_Schema_part_6.png)
+    ![Schema panel in MySQL Workbench](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Schema_part_6.png)
