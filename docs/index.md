@@ -4,7 +4,7 @@ This documentation explains how to use *MySQL Workbench* on *Windows* to do basi
 
 This is a beginner's guide to Workbench’s GUI, not a detailed guide to database theory or advanced MySQL.
 
-# Intended Users
+## Intended Users
 
 This documentation is designed for users who want to learn how to install and use MySQL.
 
@@ -12,10 +12,13 @@ This documentation is designed for users who want to learn how to install and us
 - Students learning database management and core MySQL functionalities.
 - First time users who have never worked with a database GUI before
 
+## Prerequisite Knowledge
 
-# Software Requirements
+Before following this guide, users should be familiar with basic computer usage. This includes opening and navigating applications, downloading and installing software, and using a mouse and keyboard to interact with system interfaces. Users should also be comfortable navigating files and folders within the Windows operating system.
 
-Before starting this guide, make sure the following software is installed on your Windows computer. This guide is specifically written for users running the Windows operating system.
+## Software Requirements
+
+Before following this guide, make sure the following software is installed on your Windows computer. This guide is specifically written for users running the Windows operating system.
 
 - [MySQL Installer for Windows](https://dev.mysql.com/downloads/installer/)
 
