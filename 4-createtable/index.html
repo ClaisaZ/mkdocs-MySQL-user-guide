@@ -3,33 +3,35 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Beginner-friendly introduction to using MySQL Workbench on Windows for basic database tasks.">
+        <meta name="description" content="Step-by-step guide to creating a table in MySQL Workbench on Windows using the graphical interface.">
       
       
       
-        <link rel="canonical" href="https://claisaz.github.io/mkdocs-MySQL-user-guide/">
+        <link rel="canonical" href="https://claisaz.github.io/mkdocs-MySQL-user-guide/4-createtable/">
       
       
+        <link rel="prev" href="../3-createschema/">
       
-        <link rel="next" href="1-configuration/">
+      
+        <link rel="next" href="../5-insertdata/">
       
       
         
       
       
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.5">
     
     
       
-        <title>Introduction - MySQL Workbench User Guide</title>
+        <title>Create a table - MySQL Workbench User Guide</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -48,9 +50,9 @@
       
     
     
-      <link rel="stylesheet" href="styles/theme-overrides.css">
+      <link rel="stylesheet" href="../styles/theme-overrides.css">
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -58,18 +60,18 @@
     
   
 <meta property="og:type" content="website">
-<meta property="og:title" content="MySQL Workbench User Guide">
-<meta property="og:description" content="Beginner-friendly introduction to using MySQL Workbench on Windows for basic database tasks.">
-<meta property="og:image" content="https://claisaz.github.io/mkdocs-MySQL-user-guide/assets/images/social/index.png">
+<meta property="og:title" content="Create a table - MySQL Workbench User Guide">
+<meta property="og:description" content="Step-by-step guide to creating a table in MySQL Workbench on Windows using the graphical interface.">
+<meta property="og:image" content="https://claisaz.github.io/mkdocs-MySQL-user-guide/assets/images/social/4-createtable.png">
 <meta property="og:image:type" content="image/png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:url" content="https://claisaz.github.io/mkdocs-MySQL-user-guide/">
+<meta property="og:url" content="https://claisaz.github.io/mkdocs-MySQL-user-guide/4-createtable/">
 <meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:title" content="MySQL Workbench User Guide">
-<meta property="twitter:description" content="Beginner-friendly introduction to using MySQL Workbench on Windows for basic database tasks.">
-<meta property="twitter:image" content="https://claisaz.github.io/mkdocs-MySQL-user-guide/assets/images/social/index.png">
-<link href="assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+<meta property="twitter:title" content="Create a table - MySQL Workbench User Guide">
+<meta property="twitter:description" content="Step-by-step guide to creating a table in MySQL Workbench on Windows using the graphical interface.">
+<meta property="twitter:image" content="https://claisaz.github.io/mkdocs-MySQL-user-guide/assets/images/social/4-createtable.png">
+<link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
             html.glightbox-open { overflow: initial; height: 100%; }
             .gslide-title { margin-top: 0px; user-select: text; }
             .gslide-desc { color: #666; user-select: text; }
@@ -98,7 +100,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#introduction" class="md-skip">
+        <a href="#create-a-table" class="md-skip">
           Skip to content
         </a>
       
@@ -114,9 +116,9 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="MySQL Workbench User Guide" class="md-header__button md-logo" aria-label="MySQL Workbench User Guide" data-md-component="logo">
+    <a href=".." title="MySQL Workbench User Guide" class="md-header__button md-logo" aria-label="MySQL Workbench User Guide" data-md-component="logo">
       
-  <img src="assets/icons/logo.svg" alt="logo">
+  <img src="../assets/icons/logo.svg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -133,7 +135,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Introduction
+              Create a table
             
           </span>
         </div>
@@ -249,9 +251,9 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="MySQL Workbench User Guide" class="md-nav__button md-logo" aria-label="MySQL Workbench User Guide" data-md-component="logo">
+    <a href=".." title="MySQL Workbench User Guide" class="md-nav__button md-logo" aria-label="MySQL Workbench User Guide" data-md-component="logo">
       
-  <img src="assets/icons/logo.svg" alt="logo">
+  <img src="../assets/icons/logo.svg" alt="logo">
 
     </a>
     MySQL Workbench User Guide
@@ -275,37 +277,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Introduction
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
         
   
   
@@ -321,81 +296,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-      
-        <li class="md-nav__item">
-  <a href="#intended-users" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Intended Users
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#prerequisite-knowledge" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Prerequisite Knowledge
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#software-requirements" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Software Requirements
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#typographical-conventions" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Typographical Conventions
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#notes-warnings-and-results" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Notes, Warnings, and Results
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -407,7 +307,7 @@
   
   
     <li class="md-nav__item">
-      <a href="1-configuration/" class="md-nav__link">
+      <a href="../1-configuration/" class="md-nav__link">
         
   
   
@@ -434,7 +334,7 @@
   
   
     <li class="md-nav__item">
-      <a href="2-create-conn/" class="md-nav__link">
+      <a href="../2-create-conn/" class="md-nav__link">
         
   
   
@@ -461,7 +361,7 @@
   
   
     <li class="md-nav__item">
-      <a href="3-createschema/" class="md-nav__link">
+      <a href="../3-createschema/" class="md-nav__link">
         
   
   
@@ -485,10 +385,37 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="4-createtable/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Create a table
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -504,6 +431,37 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -515,7 +473,7 @@
   
   
     <li class="md-nav__item">
-      <a href="5-insertdata/" class="md-nav__link">
+      <a href="../5-insertdata/" class="md-nav__link">
         
   
   
@@ -542,7 +500,7 @@
   
   
     <li class="md-nav__item">
-      <a href="6-editdata/" class="md-nav__link">
+      <a href="../6-editdata/" class="md-nav__link">
         
   
   
@@ -569,7 +527,7 @@
   
   
     <li class="md-nav__item">
-      <a href="zglossary/" class="md-nav__link">
+      <a href="../zglossary/" class="md-nav__link">
         
   
   
@@ -616,54 +574,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
-  <a href="#intended-users" class="md-nav__link">
+  <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Intended Users
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#prerequisite-knowledge" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Prerequisite Knowledge
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#software-requirements" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Software Requirements
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#typographical-conventions" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Typographical Conventions
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#notes-warnings-and-results" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Notes, Warnings, and Results
+        
       
     </span>
   </a>
@@ -687,7 +601,7 @@
 
 
   
-    <a href="https://github.com/ClaisaZ/mkdocs-MySQL-user-guide/edit/main/docs/index.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+    <a href="https://github.com/ClaisaZ/mkdocs-MySQL-user-guide/edit/main/docs/4-createtable.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75z"></path></svg>
     </a>
@@ -696,76 +610,15 @@
     
       
     
-    <a href="https://github.com/ClaisaZ/mkdocs-MySQL-user-guide/raw/main/docs/index.md" title="View source of this page" class="md-content__button md-icon">
+    <a href="https://github.com/ClaisaZ/mkdocs-MySQL-user-guide/raw/main/docs/4-createtable.md" title="View source of this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0 8a5 5 0 0 1-5-5 5 5 0 0 1 5-5 5 5 0 0 1 5 5 5 5 0 0 1-5 5m0-12.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5"></path></svg>
     </a>
   
 
 
-<h1 id="introduction">Introduction</h1>
-<p>This documentation explains how to use <em>MySQL Workbench</em> on <em>Windows</em> to do basic database work with its GUI (graphical interface). It will walk you through creating a connection, creating a schema (database), creating tables, running queries, and viewing or editing data in Workbench.</p>
-<p>This is a beginner's guide to Workbench’s GUI, not a detailed guide to database theory or advanced MySQL.</p>
-<h2 id="intended-users">Intended Users</h2>
-<p>This documentation is designed for users who want to learn how to install and use MySQL.</p>
-<ul>
-<li>Beginner developers who want to learn how to install and use MySQL.</li>
-<li>Students learning database management and core MySQL functionalities.</li>
-<li>First-time users who have never worked with a database GUI before.</li>
-</ul>
-<h2 id="prerequisite-knowledge">Prerequisite Knowledge</h2>
-<p>Before following this guide, users should be familiar with basic computer usage. This includes opening and navigating applications, downloading and installing software, and using a mouse and keyboard to interact with system interfaces. Users should also be comfortable navigating files and folders within the Windows operating system.</p>
-<h2 id="software-requirements">Software Requirements</h2>
-<p>Before following this guide, make sure the following software is installed on your Windows computer. This guide is specifically written for users running the Windows operating system.</p>
-<ul>
-<li><a href="https://dev.mysql.com/downloads/installer/">MySQL Installer for Windows</a></li>
-<li><a href="https://dev.mysql.com/downloads/workbench/">MySQL Workbench for Windows</a></li>
-</ul>
-<h2 id="typographical-conventions">Typographical Conventions</h2>
-<table>
-<thead>
-<tr>
-<th>Convention</th>
-<th>Explanation</th>
-<th>Examples</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Commands &amp; actions</strong></td>
-<td>Bolded words for commands or actions you need to perform.</td>
-<td><strong>Click</strong>, <strong>Enter</strong>, <strong>Type</strong>, <strong>Return</strong>, <strong>Open</strong>, <strong>Select</strong></td>
-</tr>
-<tr>
-<td><code>Code, SQL, and file names</code></td>
-<td>Monospace text for SQL commands, code, and file names.</td>
-<td><code>SELECT * FROM users;</code>, <code>my.ini</code>, <code>mysql.exe</code></td>
-</tr>
-<tr>
-<td><em>Important terms</em></td>
-<td>Italics for important terms when they are first introduced.</td>
-<td><em>schema</em>, <em>table</em>, <em>query</em></td>
-</tr>
-</tbody>
-</table>
-<h2 id="notes-warnings-and-results">Notes, Warnings, and Results</h2>
-<p>You'll see branded callouts throughout the guide to highlight important information.</p>
-<div class="admonition danger">
-<p class="admonition-title">Danger</p>
-<p>Steps marked <strong>Danger</strong> can permanently delete data or cause errors. Read them carefully before continuing.</p>
-</div>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>Steps marked <strong>Warning</strong> explain prerequisites or important conditions that may prevent you from completing the tutorial successfully.</p>
-</div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p><strong>Note</strong> boxes provide extra explanation about what MySQL or Workbench is doing and why a step matters.</p>
-</div>
-<div class="admonition success">
-<p class="admonition-title">Success</p>
-<p><strong>Success</strong> shows the expected result so you can confirm you’re on the right track.</p>
-</div>
+<h1 id="create-a-table">Create a table</h1>
+<h2 id="_1"></h2>
 
 
 
@@ -823,15 +676,31 @@
       
       <nav class="md-footer__inner md-grid" aria-label="Footer">
         
+          
+          <a href="../3-createschema/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Create a schema">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Create a schema
+              </div>
+            </div>
+          </a>
+        
         
           
-          <a href="1-configuration/" class="md-footer__link md-footer__link--next" aria-label="Next: Install MySQL Workbench">
+          <a href="../5-insertdata/" class="md-footer__link md-footer__link--next" aria-label="Next: Insert data">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Install MySQL Workbench
+                Insert data
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -868,12 +737,12 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.instant", "navigation.tracking", "navigation.expand", "navigation.top", "search.highlight", "content.tabs.link", "content.code.copy", "navigation.footer", "content.action.edit", "content.action.view"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.expand", "navigation.top", "search.highlight", "content.tabs.link", "content.code.copy", "navigation.footer", "content.action.edit", "content.action.view"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
       
-        <script src="js/theme-default.js"></script>
+        <script src="../js/theme-default.js"></script>
       
     
   

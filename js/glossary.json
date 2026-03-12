@@ -12,7 +12,7 @@
   {
     "term": "Primary Key",
     "definition": "A column, or group of columns, that uniquely identifies each row in a table.",
-    "aliases": ["primary key", "primary keys"]
+    "aliases": ["primary key", "primary keys", "PK", "primary-key"]
   },
   {
     "term": "Query",
@@ -27,6 +27,11 @@
   {
     "term": "Table",
     "definition": "A structure made of rows and columns that stores data inside a database.",
-    "aliases": ["table", "tables"]
+    "aliases": ["table", "tables", "data table", "data tables"]
+  },
+  {
+    "term": "Port",
+    "definition": "A number a program uses to connect to a service on a computer. In MySQL, port 3306 is the usual number used to connect to the MySQL server.",
+    "aliases": ["port", "ports", "port number", "mysql port"]
   }
 ]
