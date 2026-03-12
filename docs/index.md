@@ -1,3 +1,8 @@
+---
+title: Introduction
+description: Beginner-friendly introduction to using MySQL Workbench on Windows for basic database tasks.
+---
+
 # Introduction
 
 This documentation explains how to use *MySQL Workbench* on *Windows* to do basic database work with its GUI (graphical interface). It will walk you through creating a connection, creating a schema (database), creating tables, running queries, and viewing or editing data in Workbench.

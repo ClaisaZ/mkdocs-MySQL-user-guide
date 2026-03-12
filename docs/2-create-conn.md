@@ -1,4 +1,9 @@
-# Creating a Connection
+---
+title: Create a connection
+description: Step-by-step guide for creating a MySQL Workbench connection on Windows for first-time users.
+---
+
+# Create a connection
 
 Before users can create schemas, tables, or run queries in MySQL Workbench, they must first establish a connection to a MySQL Server. A connection allows MySQL Workbench to communicate with the database server so that users can manage databases and execute SQL commands.
 
