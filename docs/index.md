@@ -25,7 +25,11 @@ Before following this guide, make sure the following software is installed on yo
 
 ## Typographical Conventions
 
-This guide uses **bold** for buttons and menu options, `monospace` for SQL commands, code, and file names, and *italics* for important terms.
+| Convention | Explanation | Examples |
+|---|---|---|
+| **Commands & actions** | Bolded words for commands or actions you need to perform. | **Click**, **Enter**, **Type**, **Return**, **Open**, **Select** |
+| `Code, SQL, and file names` | Monospace text for SQL commands, code, and file names. | `SELECT * FROM users;`, `my.ini`, `mysql.exe` |
+| *Important terms* | Italics for important terms when they are first introduced. | *schema*, *table*, *query* |
 
 ## Notes, Warnings, and Results
 
@@ -39,3 +43,6 @@ You'll see branded callouts throughout the guide to highlight important informat
 
 !!! note "Note"
     **Note** boxes provide extra explanation about what MySQL or Workbench is doing and why a step matters.
+
+!!! success "Success"
+    **Success** shows the expected result so you can confirm you’re on the right track.
