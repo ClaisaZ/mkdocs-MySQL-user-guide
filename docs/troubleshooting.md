@@ -42,7 +42,12 @@
         <td>Cannot delete a row.</td>
         <td>Changes not applied or wrong row selected.</td>
         <td>Select the correct row, then click Apply after deleting.</td>
-      </tr>      
+      </tr>
+      <tr>
+        <td>Error about duplicate values.</td>
+        <td>Primary Key must be unique.</td>
+        <td>Enter a unique value or avoid changing the Primary Key.</td>
+      </tr>       
     </tbody>
   </table>
 </div>

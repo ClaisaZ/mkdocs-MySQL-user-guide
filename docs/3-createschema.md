@@ -39,3 +39,6 @@ This section explains how to create a new schema using the MySQL Workbench graph
 7. Verify that the schema appears in the SCHEMAS section.
 
     ![Schema panel in MySQL Workbench](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Schema_part_6.png)
+
+!!! note "Note"
+Use clear and simple names for your schema (e.g., `school_db` or `inventory`). Avoid spaces or special characters, as they may cause issues when writing SQL queries.
