@@ -7,6 +7,7 @@ description: Learn how to insert data into a MySQL table in MySQL Workbench on W
 
 In MySQL Workbench, data is stored inside tables as rows. To add new information, users insert data into the columns of a table.
 
+!!! warning "Warning"
 Before inserting data, make sure you have already created a table.
 
 This section explains how to insert data using the MySQL Workbench graphical interface.
@@ -62,6 +63,7 @@ This section explains how to insert data using the MySQL Workbench graphical int
 
     ![Schema panel in MySQL Workbench](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Inserting_Data_10.png)
 
+<<<<<<< HEAD
 ## Tip
 
 Make sure required columns ( marked with NN for Not Null ) are filled in before clicking **Apply**, or the insert may fail.
@@ -90,3 +92,7 @@ Make sure required columns ( marked with NN for Not Null ) are filled in before 
 11. Finally, the program reports any tracks it could not find, skipped, or matched imperfectly so the user can review them.
 
 For legal and safer use, the cleanest route is usually Spotify’s built-in offline downloads for Premium or buying tracks from licensed sources.
+=======
+!!! note "Note"
+Make sure required columns ( marked with NN for Not Null ) are filled in before clicking **Apply**, or the insert may fail.
+>>>>>>> 5899744ec9d014eb354c8ddd5b5491cd7f30f6f1

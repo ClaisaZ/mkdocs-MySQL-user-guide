@@ -63,3 +63,6 @@ This section explains how to create a new table using the MySQL Workbench graphi
 10. Verify that your table has been created by navigating back to your tables section in your schema.
 
     ![Schema panel in MySQL Workbench](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Table_13.png)
+
+!!! note "Note"
+It is recommended to create a Primary Key (PK) for your table, often using an INT column with **Auto Increment (AI)**. This ensures each row has a unique identifier.
