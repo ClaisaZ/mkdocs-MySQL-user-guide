@@ -387,6 +387,30 @@ label[for="__toc"],
   word-break: break-word;
 }
 
+
+.troubleshooting-conventions-only {
+  max-width: 100%;
+  overflow: visible;
+}
+
+.troubleshooting-conventions-only table {
+  width: 100%;
+  table-layout: fixed;
+}
+
+.troubleshooting-only th,
+.troubleshooting-only td {
+  white-space: normal;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  vertical-align: top;
+}
+
+.troubleshooting-conventions-only code {
+  white-space: normal;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
 .md-sidebar--primary .md-nav--primary > .md-nav__title::after {
   content: "";
 }

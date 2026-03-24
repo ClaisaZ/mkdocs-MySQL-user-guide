@@ -64,4 +64,4 @@ This section explains how to insert data using the MySQL Workbench graphical int
 
 ## Tip
 
-Make sure required columns ( marked with NN for Not Null ) are fillled in before clicking **Apply**, or the insert may fail.
+Make sure required columns ( marked with NN for Not Null ) are filled in before clicking **Apply**, or the insert may fail.
