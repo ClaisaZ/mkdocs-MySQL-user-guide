@@ -425,7 +425,7 @@ label[for="__toc"],
 
 .md-typeset img {
   display: block;
-  /* margin: 1rem auto 1.25rem auto; */
+  margin: 1rem auto 1.25rem auto;
   max-width: min(100%, 42rem);
   width: auto;
   height: auto;

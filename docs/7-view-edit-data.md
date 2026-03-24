@@ -8,7 +8,7 @@ description: Learn how to view, update, and edit table data in MySQL Workbench o
 In MySQL Workbench, users can view and modify existing data directly within a table. This allows you to update values, correct mistakes, or remove data.
 
 !!! warning "Before you begin"
-Before editing data, make sure you have already created a table and inserted data into it.
+    Before editing data, make sure you have already created a table and inserted data into it.
 
 This section explains how to view and edit data using the MySQL Workbench graphical interface.
 
@@ -48,17 +48,13 @@ This section explains how to view and edit data using the MySQL Workbench graphi
 
     ![Schema panel in MySQL Workbench](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Table_10.png)
 
-10. Verify tha your changes have been applied by clicking **Refresh**.
+10. Verify that your changes have been applied by clicking **Refresh**.
 
     ![Schema panel in MySQL Workbench](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/view_data_6.png)
-<<<<<<< HEAD
-
-=======
->>>>>>> 05d215fb272aa08c45b1b9198f0f19ce37f7bd1c
-
-## Tip
-
-Always click **Apply** after making changes. If you close the tab or click **Revert**, your edits will not be saved.
 
 !!! note "Note"
-Be careful when editing values in a Primary Key column. Primary Keys must remain unique, so changing them may cause errors or affect how rows are identified.
+    Be careful when editing values in a Primary Key column. Primary Keys must remain unique, so changing them may cause errors or affect how rows are identified.
+
+## Conclusion
+
+You just viewed and edited table data in Workbench. This way you can update existing values and remove unwanted rows.

@@ -44,4 +44,8 @@ This section explains how to create a new connection using the MySQL Workbench g
     ![Schema panel in MySQL Workbench](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Connection_8.png)
 
 !!! note "Note"
-If the connection test fails, double-check your **password**, **hostname**, and **port number (3306)**. Most connection issues are caused by incorrect login details.
+    If the connection test fails, double-check your **password**, **hostname**, and **port number (3306)**. Most connection issues are caused by incorrect login details.
+
+## Conclusion
+
+You've created a connection in MySQL Workbench. You can use this to access your MySQL server to do things like creating a schema, creating tables, and running queries.

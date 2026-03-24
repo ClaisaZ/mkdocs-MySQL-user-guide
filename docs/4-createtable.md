@@ -65,4 +65,8 @@ This section explains how to create a new table using the MySQL Workbench graphi
     ![Schema panel in MySQL Workbench](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Table_13.png)
 
 !!! note "Note"
-It is recommended to create a Primary Key (PK) for your table, often using an INT column with **Auto Increment (AI)**. This ensures each row has a unique identifier.
+    It is recommended to create a Primary Key (PK) for your table, often using an INT column with **Auto Increment (AI)**. This ensures each row has a unique identifier.
+  
+## Conclusion
+
+You've created a table in Workbench. Now you can start to inserting data into it.

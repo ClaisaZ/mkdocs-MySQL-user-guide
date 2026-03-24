@@ -69,11 +69,6 @@
             <td>Make sure the MySQL server is running, then check the hostname, port, username, and password in your connection settings.</td>
          </tr>
          <tr>
-            <td>Test Connection fails.</td>
-            <td>The hostname, port, username, or password is incorrect.</td>
-            <td>Verify that the hostname is correct, the port is set to 3306, and the username and password are entered correctly.</td>
-         </tr>
-         <tr>
             <td>Access denied for user 'root'.</td>
             <td>The password is incorrect, or the account does not have permission to connect.</td>
             <td>Re-enter the correct password and make sure you are using the correct MySQL account.</td>
@@ -84,19 +79,9 @@
             <td>Double-click your schema in the SCHEMAS panel to set it as the default schema, then run the query again.</td>
          </tr>
          <tr>
-            <td>Table '...' doesn't exist appears when running a query.</td>
-            <td>The table name is incorrect, or the wrong schema is selected.</td>
-            <td>Check the exact table name in the SCHEMAS panel and make sure you are using the correct schema.</td>
-         </tr>
-         <tr>
             <td>The query runs, but no rows appear in the Result Grid.</td>
             <td>The table is empty, or no matching data has been inserted yet.</td>
             <td>Make sure you inserted data into the table first, then run the query again.</td>
-         </tr>
-         <tr>
-            <td>You have an error in your SQL syntax.</td>
-            <td>The query was typed incorrectly.</td>
-            <td>Check the spelling of SQL keywords, table names, commas, and semicolons, then compare your query to the example in the tutorial.</td>
          </tr>
          <tr>
             <td>Changes disappear after editing data.</td>
