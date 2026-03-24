@@ -63,36 +63,5 @@ This section explains how to insert data using the MySQL Workbench graphical int
 
     ![Schema panel in MySQL Workbench](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Inserting_Data_10.png)
 
-<<<<<<< HEAD
-## Tip
-
-Make sure required columns ( marked with NN for Not Null ) are filled in before clicking **Apply**, or the insert may fail.
-
-
-1. The tool first reads the Spotify playlist link or ID and requests the playlist’s metadata through Spotify’s app or API.
-
-2. It collects the track list, including song titles, artists, album names, and sometimes duration or ISRC codes.
-
-3. Because Spotify streams are protected, the downloader usually does not just pull plain audio files directly from Spotify.
-
-4. Instead, many tools try to match each track against the same song on another source such as YouTube, local files, or a third-party music service.
-
-5. The program searches those sources using the metadata and picks the closest match for each playlist item.
-
-6. It then downloads or records the matched audio from that source rather than from Spotify itself.
-
-7. After downloading, it converts the audio into a common format such as MP3 or M4A if needed.
-
-8. The tool writes tags like title, artist, album, and cover art into each file so the songs stay organized.
-
-9. It saves the files into a folder structure, often naming folders by playlist, artist, or album.
-
-10. Some tools also generate an M3U or similar playlist file so the downloaded songs play in the same order.
-
-11. Finally, the program reports any tracks it could not find, skipped, or matched imperfectly so the user can review them.
-
-For legal and safer use, the cleanest route is usually Spotify’s built-in offline downloads for Premium or buying tracks from licensed sources.
-=======
 !!! note "Note"
 Make sure required columns ( marked with NN for Not Null ) are filled in before clicking **Apply**, or the insert may fail.
->>>>>>> 5899744ec9d014eb354c8ddd5b5491cd7f30f6f1
