@@ -71,8 +71,8 @@ This guide assumes that the following software is already installed on your Wind
 
 You'll see branded callouts throughout the guide to highlight important information.
 
-!!! danger "Danger"
-    Steps marked **Danger** can permanently delete data or cause errors. Read them carefully before continuing.
+<!-- !!! danger "Danger"
+    Steps marked **Danger** can permanently delete data or cause errors. Read them carefully before continuing. -->
 
 !!! warning "Warning"
     Steps marked **Warning** explain prerequisites or important conditions that may prevent you from completing the tutorial successfully.
