@@ -7,7 +7,7 @@ description: Beginner-friendly introduction to using MySQL Workbench on Windows 
 
 # Introduction
 
-MySQL is a *relational* database management system used to store, organize, and manage data. It allows users to create databases, store information in tables, and run queries to retrieve or modify data.
+MySQL is a relational database management system used to store, organize, and manage data. It allows users to create databases, store information in tables, and run queries to retrieve or modify data.
 
 This documentation explains how to use *MySQL Workbench* on *Windows* to do basic database work with its GUI (graphical interface). It will walk you through creating a connection, creating a schema (database), creating tables, running queries, and viewing or editing data in Workbench.
 
@@ -15,7 +15,7 @@ This is a beginner's guide to Workbench’s GUI, not a detailed guide to databas
 
 ## Intended Users
 
-This documentation is designed for users who want to learn how to install and use MySQL.
+This documentation is designed for users who want to learn how to use MySQL Workbench for basic database tasks.
 
 - Beginner developers who want to learn how to install and use MySQL.
 - Students learning database management and core MySQL functionalities.
@@ -27,10 +27,10 @@ Before following this guide, users should be familiar with basic computer usage.
 
 ## Software Requirements
 
-Before following this guide, make sure the following software is installed on your Windows computer. This guide is specifically written for users running the Windows operating system.
+This guide assumes that the following software is already installed on your Windows computer. It is specifically written for users running the Windows operating system.
 
-- [MySQL Installer for Windows](https://dev.mysql.com/downloads/installer/)
-- [MySQL Workbench for Windows](https://dev.mysql.com/downloads/workbench/)
+- [MySQL Server](https://dev.mysql.com/downloads/installer/)
+- [MySQL Workbench](https://dev.mysql.com/downloads/workbench/)
 
 ## Typographical Conventions
 
@@ -58,9 +58,9 @@ Before following this guide, make sure the following software is installed on yo
         <td><em>Important terms</em></td>
         <td>Important terms are underlined when they are first introduced. Hovering over them shows their definition.</td>
         <td>
-          <span class="term-tip" title="A database namespace that contains tables and other database objects.">schema</span>,
-          <span class="term-tip" title="A structured set of rows and columns used to store data.">table</span>,
-          <span class="term-tip" title="A request or command sent to the database, usually written in SQL.">query</span>
+            <span class="glossary-term" tabindex="0" data-term="schema">schema</span>,
+            <span class="glossary-term" tabindex="0" data-term="table">table</span>,
+            <span class="glossary-term" tabindex="0" data-term="query">query</span>
         </td>
       </tr>
     </tbody>

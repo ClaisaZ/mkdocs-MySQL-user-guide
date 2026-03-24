@@ -5,9 +5,7 @@ site_description: Beginner-friendly step-by-step guide to using MySQL Workbench 
 
 nav:
   - Introduction: index.md
-  - Getting started:
-      - Install MySQL Workbench: 1-configuration.md
-      - Create a connection: 2-create-conn.md
+  - Create a connection: 2-create-conn.md
   - Working with a database:
       - Create a schema: 3-createschema.md
       - Create a table: 4-createtable.md

@@ -35,38 +35,23 @@
     "aliases": ["port", "ports", "port number", "mysql port"]
   },
   {
-    "term": "Datatype",
-    "definition": "Datatype refers to the type of data that a column is allowed to store. It determines what kind of values can be entered in that column, such as numbers, text, or dates.",
-    "aliases": ["datatype", "datatypes"]
+    "term": "SQL Editor",
+    "definition": "The area in MySQL Workbench where users write and run SQL queries.",
+    "aliases": ["sql editor", "SQL editor", "editor"]
   },
   {
-    "term": "INT",
-    "definition": "A numeric datatype used to store whole numbers (integers) without decimal values.",
-    "aliases": ["int", "integer", "whole number"]
+    "term": "Result Grid",
+    "definition": "The table at the bottom of MySQL Workbench that displays the results of a query.",
+    "aliases": ["result grid", "results grid", "query results"]
   },
   {
-  "term": "VARCHAR",
-  "definition": "A datatype used to store text of variable length, up to a specified number of characters.",
-  "aliases": ["varchar", "text", "string"]
+    "term": "Row",
+    "definition": "A single record in a table.",
+    "aliases": ["row", "rows", "record", "records"]
   },
   {
-  "term": "DATE",
-  "definition": "A datatype used to store calendar dates in the format YYYY-MM-DD.",
-  "aliases": ["date", "calendar date"]
-  },
-  {
-  "term": "Not Null",
-  "definition": "A column constraint that prevents a column from storing null (empty) values.",
-  "aliases": ["not null", "NN", "not-null"]
-  },
-  {
-  "term": "Auto Increment",
-  "definition": "A column setting that automatically generates a unique number for each new row, increasing by 1 each time.",
-  "aliases": ["auto increment", "AI", "auto-increment"]
-  },
-  {
-  "term": "Cell",
-  "definition": "A single box in a table where a row and column intersect, used to store one value.",
-  "aliases": ["cell", "cells", "table cell"]
+    "term": "Column",
+    "definition": "A vertical field in a table that stores one type of information.",
+    "aliases": ["column", "columns", "field", "fields"]
   }
 ]
