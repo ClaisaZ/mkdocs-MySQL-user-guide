@@ -1,5 +1,3 @@
-## Trouble Shooting
-
 <div class="troubleshooting-conventions-only">
   <table>
     <thead>
