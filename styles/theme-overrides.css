@@ -109,9 +109,14 @@ label[for="__toc"],
 }
 
 .md-sidebar--primary .md-nav--primary > .md-nav__title,
-.md-sidebar--primary .md-nav__title,
 .md-nav--primary > .md-nav__title {
   display: none !important;
+}
+
+@media screen and (max-width: 76.234375em) {
+  .md-sidebar--primary .md-nav .md-nav__title {
+    display: flex !important;
+  }
 }
 
 .md-footer-meta {
@@ -208,41 +213,8 @@ label[for="__toc"],
 }
 
 .glossary-term {
-  position: relative;
-  display: inline;
   border-bottom: 1px dotted currentColor;
   cursor: help;
-}
-
-.glossary-term::after {
-  content: attr(data-definition);
-  position: absolute;
-  left: 0;
-  bottom: calc(100% + 0.45rem);
-  transform: none;
-  width: min(26rem, 80vw);
-  padding: 0.55rem 0.7rem;
-  border: 1px solid var(--brand-tooltip-border);
-  border-radius: 0.25rem;
-  background: var(--brand-tooltip-bg);
-  color: var(--brand-tooltip-text);
-  font-size: 0.78rem;
-  line-height: 1.5;
-  box-shadow: none;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.15s ease;
-  z-index: 20;
-  text-align: left;
-}
-
-.glossary-term::before {
-  display: none;
-}
-
-.glossary-term:hover::after,
-.glossary-term:focus-visible::after {
-  opacity: 1;
 }
 
 .glossary-term:focus-visible {
@@ -351,10 +323,6 @@ label[for="__toc"],
     width: 34%;
     white-space: normal;
   }
-
-  .glossary-term::after {
-    width: min(22rem, 88vw);
-  }
 }
 
 .md-header,
@@ -370,8 +338,64 @@ label[for="__toc"],
   border-bottom: 0 !important;
 }
 
-.typo-conventions-only .term-tip {
-  text-decoration: underline;
-  text-underline-offset: 0.12em;
-  cursor: help;
+#glossary-floating-tooltip {
+  position: absolute;
+  left: 0;
+  top: 0;
+  max-width: min(26rem, calc(100vw - 1rem));
+  padding: 0.55rem 0.7rem;
+  border: 1px solid var(--brand-tooltip-border);
+  border-radius: 0.25rem;
+  background: var(--brand-tooltip-bg);
+  color: var(--brand-tooltip-text);
+  font-size: 0.78rem;
+  line-height: 1.5;
+  text-align: left;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.12s ease;
+}
+
+#glossary-floating-tooltip.is-visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.typo-conventions-only {
+  max-width: 100%;
+  overflow: visible;
+}
+
+.typo-conventions-only table {
+  width: 100%;
+  table-layout: fixed;
+}
+
+.typo-conventions-only th,
+.typo-conventions-only td {
+  white-space: normal;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  vertical-align: top;
+}
+
+.typo-conventions-only code {
+  white-space: normal;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.md-sidebar--primary .md-nav--primary > .md-nav__title::after {
+  content: "";
+}
+
+/* use this instead here im overriding */
+
+.md-sidebar--primary .md-nav--primary > .md-nav__title,
+.md-nav--primary > .md-nav__title {
+  background-color: #4394ff !important;
+  color: transparent !important;
+  font-size: 0 !important;
 }

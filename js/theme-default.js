@@ -15,6 +15,118 @@ function normPath(p) {
 //
 //
 
+function ensureGlossaryTooltip() {
+  let tooltip = document.getElementById("glossary-floating-tooltip");
+
+  if (!tooltip) {
+    tooltip = document.createElement("div");
+    tooltip.id = "glossary-floating-tooltip";
+    tooltip.setAttribute("role", "tooltip");
+    document.body.appendChild(tooltip);
+  }
+
+  if (!glossaryTooltipCleanupBound) {
+    window.addEventListener(
+      "scroll",
+      () => {
+        hideGlossaryTooltip();
+      },
+      { passive: true },
+    );
+
+    window.addEventListener("resize", () => {
+      hideGlossaryTooltip();
+    });
+
+    glossaryTooltipCleanupBound = true;
+  }
+
+  return tooltip;
+}
+
+function hideGlossaryTooltip() {
+  const tooltip = document.getElementById("glossary-floating-tooltip");
+
+  if (!tooltip) {
+    return;
+  }
+
+  tooltip.classList.remove("is-visible");
+  tooltip.textContent = "";
+}
+
+function showGlossaryTooltip(term) {
+  const definition = (term.getAttribute("data-definition") || "").trim();
+
+  if (!definition) {
+    hideGlossaryTooltip();
+    return;
+  }
+
+  const tooltip = ensureGlossaryTooltip();
+  tooltip.textContent = definition;
+  tooltip.classList.remove("is-visible");
+
+  const margin = 8;
+  const rect = term.getBoundingClientRect();
+  const scrollX = window.scrollX;
+  const scrollY = window.scrollY;
+  const tipRect = tooltip.getBoundingClientRect();
+
+  let left = rect.left + scrollX;
+  let top = rect.top + scrollY - tipRect.height - 10;
+
+  if (top < scrollY + margin) {
+    top = rect.bottom + scrollY + 10;
+  }
+
+  if (left + tipRect.width > scrollX + window.innerWidth - margin) {
+    left = scrollX + window.innerWidth - tipRect.width - margin;
+  }
+
+  if (left < scrollX + margin) {
+    left = scrollX + margin;
+  }
+
+  tooltip.style.left = `${left}px`;
+  tooltip.style.top = `${top}px`;
+  tooltip.classList.add("is-visible");
+}
+
+function bindGlossaryTooltips(root) {
+  ensureGlossaryTooltip();
+
+  root.querySelectorAll(".glossary-term").forEach((term) => {
+    if (term.dataset.tooltipBound === "true") {
+      return;
+    }
+
+    term.dataset.tooltipBound = "true";
+
+    term.addEventListener("mouseenter", () => {
+      showGlossaryTooltip(term);
+    });
+
+    term.addEventListener("mouseleave", () => {
+      hideGlossaryTooltip();
+    });
+
+    term.addEventListener("focus", () => {
+      showGlossaryTooltip(term);
+    });
+
+    term.addEventListener("blur", () => {
+      hideGlossaryTooltip();
+    });
+
+    term.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") {
+        hideGlossaryTooltip();
+      }
+    });
+  });
+}
+
 (function () {
   const storekey = "__palette";
   // let siteurl = null;
@@ -91,12 +203,10 @@ function normPath(p) {
     const mapAlias = new Map();
 
     e.forEach((entry) => {
-      let aliases;
+      let aliases = [entry.term];
 
       if (Array.isArray(entry.aliases) && entry.aliases.length) {
-        aliases = entry.aliases;
-      } else {
-        aliases = [entry.term];
+        aliases.push(...entry.aliases);
       }
 
       aliases.forEach((alias) => {
@@ -112,6 +222,31 @@ function normPath(p) {
       mapAlias,
       sortAlias,
     };
+  }
+
+  function hydrateManualGlossaryTerms(root, entries) {
+    const scope = root.querySelector(".typo-conventions-only");
+
+    if (!scope) {
+      return;
+    }
+
+    const { mapAlias } = buildGIndex(entries);
+
+    scope.querySelectorAll(".glossary-term").forEach((term) => {
+      const raw = term.getAttribute("data-term") || term.textContent || "";
+      const entry = mapAlias.get(normKey(raw));
+
+      if (!entry) {
+        term.removeAttribute("data-definition");
+        return;
+      }
+
+      term.tabIndex = 0;
+      term.setAttribute("data-term", entry.term);
+      term.setAttribute("data-definition", entry.definition || "");
+      term.setAttribute("aria-label", `${entry.term}: ${entry.definition}`);
+    });
   }
 
   function skipnode(node) {
@@ -328,17 +463,138 @@ function normPath(p) {
     updateF();
   }
 
+  let glossaryTooltipCleanupBound = false;
+
+  function ensureGlossaryTooltip() {
+    let tooltip = document.getElementById("glossary-floating-tooltip");
+
+    if (!tooltip) {
+      tooltip = document.createElement("div");
+      tooltip.id = "glossary-floating-tooltip";
+      tooltip.setAttribute("role", "tooltip");
+      document.body.appendChild(tooltip);
+    }
+
+    if (!glossaryTooltipCleanupBound) {
+      window.addEventListener(
+        "scroll",
+        () => {
+          hideGlossaryTooltip();
+        },
+        { passive: true },
+      );
+
+      window.addEventListener("resize", () => {
+        hideGlossaryTooltip();
+      });
+
+      glossaryTooltipCleanupBound = true;
+    }
+
+    return tooltip;
+  }
+
+  function hideGlossaryTooltip() {
+    const tooltip = document.getElementById("glossary-floating-tooltip");
+
+    if (!tooltip) {
+      return;
+    }
+
+    tooltip.classList.remove("is-visible");
+    tooltip.textContent = "";
+  }
+
+  function showGlossaryTooltip(term) {
+    const definition = (term.getAttribute("data-definition") || "").trim();
+
+    if (!definition) {
+      hideGlossaryTooltip();
+      return;
+    }
+
+    const tooltip = ensureGlossaryTooltip();
+    tooltip.textContent = definition;
+
+    // make it measurable before positioning
+    tooltip.classList.remove("is-visible");
+
+    const margin = 8;
+    const rect = term.getBoundingClientRect();
+    const scrollX = window.scrollX;
+    const scrollY = window.scrollY;
+
+    let left = rect.left + scrollX;
+    let top = rect.top + scrollY;
+
+    const tipRect = tooltip.getBoundingClientRect();
+
+    top = top - tipRect.height - 10;
+
+    if (top < scrollY + margin) {
+      top = rect.bottom + scrollY + 10;
+    }
+
+    if (left + tipRect.width > scrollX + window.innerWidth - margin) {
+      left = scrollX + window.innerWidth - tipRect.width - margin;
+    }
+
+    if (left < scrollX + margin) {
+      left = scrollX + margin;
+    }
+
+    tooltip.style.left = `${left}px`;
+    tooltip.style.top = `${top}px`;
+    tooltip.classList.add("is-visible");
+  }
+
+  function bindGlossaryTooltips(root) {
+    ensureGlossaryTooltip();
+
+    root.querySelectorAll(".glossary-term").forEach((term) => {
+      if (term.dataset.tooltipBound === "true") {
+        return;
+      }
+
+      term.dataset.tooltipBound = "true";
+
+      term.addEventListener("mouseenter", () => {
+        showGlossaryTooltip(term);
+      });
+
+      term.addEventListener("mouseleave", () => {
+        hideGlossaryTooltip();
+      });
+
+      term.addEventListener("focus", () => {
+        showGlossaryTooltip(term);
+      });
+
+      term.addEventListener("blur", () => {
+        hideGlossaryTooltip();
+      });
+
+      term.addEventListener("keydown", (event) => {
+        if (event.key === "Escape") {
+          hideGlossaryTooltip();
+        }
+      });
+    });
+  }
+
   async function init() {
-    // make it use the last used theme
     defaultPalette();
 
     try {
       const entries = await makeGloss();
       renderGTablessaryTable(document, entries);
+      hydrateManualGlossaryTerms(document, entries);
 
       if (!isIndex()) {
         enhanceGterm(document, entries);
       }
+
+      bindGlossaryTooltips(document);
     } catch (error) {
       const mount = document.querySelector("#glossary-table-root");
 
