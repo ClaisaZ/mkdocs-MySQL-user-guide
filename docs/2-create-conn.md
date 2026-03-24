@@ -27,7 +27,7 @@ This section explains how to create a new connection using the MySQL Workbench g
 
     ![Schema panel in MySQL Workbench](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Connection_4.png)
 
-5. Make sure the *PORT* is set to: 3306
+5. Make sure the PORT is set to: 3306
 
     ![Schema panel in MySQL Workbench](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Connection_5.png)
 

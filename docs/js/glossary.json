@@ -33,7 +33,25 @@
     "term": "Port",
     "definition": "A number a program uses to connect to a service on a computer. In MySQL, port 3306 is the usual number used to connect to the MySQL server.",
     "aliases": ["port", "ports", "port number", "mysql port"]
+  },
+  {
+    "term": "SQL Editor",
+    "definition": "The area in MySQL Workbench where users write and run SQL queries.",
+    "aliases": ["sql editor", "SQL editor", "editor"]
+  },
+  {
+    "term": "Result Grid",
+    "definition": "The table at the bottom of MySQL Workbench that displays the results of a query.",
+    "aliases": ["result grid", "results grid", "query results"]
+  },
+  {
+    "term": "Row",
+    "definition": "A single record in a table.",
+    "aliases": ["row", "rows", "record", "records"]
+  },
+  {
+    "term": "Column",
+    "definition": "A vertical field in a table that stores one type of information.",
+    "aliases": ["column", "columns", "field", "fields"]
   }
-
-
 ]
