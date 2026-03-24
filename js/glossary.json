@@ -55,33 +55,43 @@
     "aliases": ["column", "columns", "field", "fields"]
   },
   {
-  "term": "INT",
-  "definition": "A numeric datatype used to store whole numbers (integers) without decimal values.",
-  "aliases": ["int", "integer", "whole number"]
+    "term": "INT",
+    "definition": "A numeric datatype used to store whole numbers (integers) without decimal values.",
+    "aliases": ["int", "integer", "whole number"]
   },
   {
-  "term": "VARCHAR",
-  "definition": "A datatype used to store text of variable length, up to a specified number of characters, such as VARCHAR(45).",
-  "aliases": ["varchar", "string"]
+    "term": "VARCHAR",
+    "definition": "A datatype used to store text of variable length, up to a specified number of characters, such as VARCHAR(45).",
+    "aliases": ["varchar", "string"]
   },
   {
-  "term": "DATE",
-  "definition": "A datatype used to store calendar dates in the format YYYY-MM-DD.",
-  "aliases": ["date", "calendar date"]
+    "term": "DATE",
+    "definition": "A datatype used to store calendar dates in the format YYYY-MM-DD.",
+    "aliases": ["date", "calendar date"]
   },
   {
-  "term": "Not Null",
-  "definition": "A column constraint that requires a value to be entered and prevents the column from storing null (empty) values.",
-  "aliases": ["not null", "NN", "not-null"]
+    "term": "Not Null",
+    "definition": "A column constraint that requires a value to be entered and prevents the column from storing null (empty) values.",
+    "aliases": ["not null", "NN", "not-null"]
   },
   {
-  "term": "Auto Increment",
-  "definition": "A column setting that automatically generates a unique number for each new row, increasing by 1 each time, and is typically used with a Primary Key.",
-  "aliases": ["auto increment", "AI", "auto-increment"]
+    "term": "Auto Increment",
+    "definition": "A column setting that automatically generates a unique number for each new row, increasing by 1 each time, and is typically used with a Primary Key.",
+    "aliases": ["auto increment", "AI", "auto-increment"]
   },
   {
-  "term": "Cell",
-  "definition": "A single box in a table where a row and column intersect, used to store one value for a specific column in a row.",
-  "aliases": ["cell", "cells", "table cell"]
+    "term": "Cell",
+    "definition": "A single box in a table where a row and column intersect, used to store one value for a specific column in a row.",
+    "aliases": ["cell", "cells", "table cell"]
+  },
+  {
+    "term": "Hostname",
+    "definition": "The name or address of the computer or server that MySQL Workbench connects to. In this guide, `localhost` means your own computer.",
+    "aliases": ["hostname", "host", "server address"]
+  },
+  {
+    "term": "Localhost",
+    "definition": "A hostname that refers to your own computer. In this guide, it means MySQL Workbench is connecting to a MySQL server running on the same computer.",
+    "aliases": ["localhost"]
   }
 ]
