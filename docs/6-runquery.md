@@ -14,15 +14,15 @@ A query is an SQL command used to retrieve or work with data. In MySQL Workbench
 
 1. Open MySQL Workbench, and **click** to open your saved connection.
 
-    ![Saved connection on the MySQL Workbench home screen](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Run_Query_1.png){ .img-small .center-it }
+    ![Saved connection on the MySQL Workbench home screen](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Run_Query_1.png){ .img-query-step-first-three .center-it }
 
 2. When the SQL Editor opens, make sure your schema appears in the SCHEMAS panel on the left. Also expand it to confirm that your table is inside the Tables section.
 
-    ![SQL Editor with the SCHEMAS panel visible](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Run_Query_2_2.png){ .img-small .center-it }
+    ![SQL Editor with the SCHEMAS panel visible](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Run_Query_2_2.png){ .img-query-step-first-three .center-it }
 
 3. Click **File** and click **New Query Tab** to create a new query tab in the SQL Editor. You can also press **Ctrl + T** to create a tab.
 
-    ![New SQL tab button in MySQL Workbench](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Run_Query_3_2.png){ .img-small .center-it }
+    ![New SQL tab button in MySQL Workbench](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Run_Query_3_2.png){ .img-query-step-first-three .center-it }
 
     The area highlighted in red is your SQL Editor. This is where you write and run queries:
     ![SQL Editor](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/sqlEditor.png){ .img-medium .center-it }
