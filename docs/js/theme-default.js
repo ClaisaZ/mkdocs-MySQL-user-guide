@@ -59,11 +59,7 @@ function normPath(p) {
   // because i will disable tooltips on index.md
   // i think is too much information? like reading the introduction they shoudlnt be hovering and reading even more imo
   function isIndex() {
-    const currentPath = normPath(window.location.pathname);
-    const rootPath = normPath(sroot.pathname || "/");
-    return currentPath === rootPath;
-    // return true
-    // return false
+    return Boolean(document.querySelector("#index-no-auto-glossary"));
   }
 
   function makeGloss() {

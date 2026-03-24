@@ -2,6 +2,22 @@ site_name: MySQL Workbench User Guide
 site_url: https://claisaz.github.io/mkdocs-MySQL-user-guide/
 site_description: Beginner-friendly step-by-step guide to using MySQL Workbench on Windows.
 
+
+nav:
+  - Introduction: index.md
+  - Getting started:
+      - Install MySQL Workbench: 1-configuration.md
+      - Create a connection: 2-create-conn.md
+  - Working with a database:
+      - Create a schema: 3-createschema.md
+      - Create a table: 4-createtable.md
+      - Insert data: 5-insertdata.md
+      - Run your first query: 6-runquery.md
+      - View and edit data: 7-view-edit-data.md
+  - Help:
+      - Troubleshooting: troubleshooting.md
+      - Glossary: zglossary.md
+
 extra_css:
   - styles/theme-overrides.css
 

@@ -369,3 +369,9 @@ label[for="__toc"],
 .md-header {
   border-bottom: 0 !important;
 }
+
+.typo-conventions-only .term-tip {
+  text-decoration: underline;
+  text-underline-offset: 0.12em;
+  cursor: help;
+}

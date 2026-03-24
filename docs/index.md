@@ -3,6 +3,8 @@ title: Introduction
 description: Beginner-friendly introduction to using MySQL Workbench on Windows for basic database tasks.
 ---
 
+<div id="index-no-auto-glossary" hidden></div>
+
 # Introduction
 
 MySQL is a *relational* database management system used to store, organize, and manage data. It allows users to create databases, store information in tables, and run queries to retrieve or modify data.
@@ -32,11 +34,38 @@ Before following this guide, make sure the following software is installed on yo
 
 ## Typographical Conventions
 
-| Convention | Explanation | Examples |
-|---|---|---|
-| **Commands & actions** | Bolded words for commands or actions you need to perform. | **Click**, **Enter**, **Type**, **Return**, **Open**, **Select** |
-| `Code, SQL, and file names` | Monospace text for SQL commands, code, and file names. | `SELECT * FROM users;`, `my.ini`, `mysql.exe` |
-| *Important terms* | Italics for important terms when they are first introduced. | *schema*, *table*, *query* |
+<div class="typo-conventions-only">
+  <table>
+    <thead>
+      <tr>
+        <th>Convention</th>
+        <th>Explanation</th>
+        <th>Examples</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Commands &amp; actions</strong></td>
+        <td>Bolded words for commands or actions you need to perform.</td>
+        <td><strong>Click</strong>, <strong>Enter</strong>, <strong>Type</strong>, <strong>Return</strong>, <strong>Open</strong>, <strong>Select</strong></td>
+      </tr>
+      <tr>
+        <td><code>Code, SQL, and file names</code></td>
+        <td>Monospace text for SQL commands, code, and file names.</td>
+        <td><code>SELECT * FROM users;</code>, <code>my.ini</code>, <code>mysql.exe</code></td>
+      </tr>
+      <tr>
+        <td><em>Important terms</em></td>
+        <td>Important terms are underlined when they are first introduced. Hovering over them shows their definition.</td>
+        <td>
+          <span class="term-tip" title="A database namespace that contains tables and other database objects.">schema</span>,
+          <span class="term-tip" title="A structured set of rows and columns used to store data.">table</span>,
+          <span class="term-tip" title="A request or command sent to the database, usually written in SQL.">query</span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 ## Notes, Warnings, and Results
 
