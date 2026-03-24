@@ -387,7 +387,6 @@ label[for="__toc"],
   word-break: break-word;
 }
 
-
 .troubleshooting-conventions-only {
   max-width: 100%;
   overflow: visible;
@@ -398,8 +397,8 @@ label[for="__toc"],
   table-layout: fixed;
 }
 
-.troubleshooting-only th,
-.troubleshooting-only td {
+.troubleshooting-conventions-only th,
+.troubleshooting-conventions-only td {
   white-space: normal;
   overflow-wrap: anywhere;
   word-break: break-word;
@@ -422,4 +421,40 @@ label[for="__toc"],
   background-color: #4394ff !important;
   color: transparent !important;
   font-size: 0 !important;
+}
+
+.md-typeset img {
+  display: block;
+  /* margin: 1rem auto 1.25rem auto; */
+  max-width: min(100%, 42rem);
+  width: auto;
+  height: auto;
+  border-radius: 0.35rem;
+}
+
+.md-typeset img.img-small {
+  max-width: min(100%, 20rem);
+}
+
+.md-typeset img.img-medium {
+  max-width: min(100%, 34rem);
+}
+
+.md-typeset img.img-large {
+  max-width: min(100%, 48rem);
+}
+
+.md-typeset img.img-wide {
+  max-width: min(100%, 56rem);
+}
+
+.md-typeset img.img-query-step {
+  display: block;
+  margin: 1rem auto 1.25rem auto;
+  width: min(100%, 48rem);
+  height: auto;
+}
+
+.md-typeset img.center-it {
+  margin: 1rem auto 1.25rem auto;
 }
