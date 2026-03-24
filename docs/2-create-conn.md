@@ -13,35 +13,29 @@ This section explains how to create a new connection using the MySQL Workbench g
 
 1. Open **MySQL Workbench**.
 
-    ![Schema panel in MySQL Workbench](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Connection_1.png)
-
 2. On the home screen, click the + icon next to MySQL Connections.
 
     ![Schema panel in MySQL Workbench](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Connection_2-2.png)
 
-3. In the Connection Name field, enter a name for the connection.
+3. In the Setup New Connection window, enter these connection details:
 
-    ![Schema panel in MySQL Workbench](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Connection_3.png)
+    - Connection Name: enter a name for the connection
+    - Hostname: `localhost`
+    - Port: `3306`
+    - Username: `root`
 
-4. In the Hostname field, enter: `localhost`
+    ![Setup New Connection window with the required fields](assets/images/Creating_Connection_combined.png){ .img-medium .center-it title="Setup New Connection window" }
 
-    ![Schema panel in MySQL Workbench](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Connection_4.png)
+    You do not need to worry about Password yet.
 
-5. Make sure the PORT is set to: 3306
+4. Click **Test Connection** to verify that the connection settings are correct. If prompted, enter your MySQL password.
 
-    ![Schema panel in MySQL Workbench](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Connection_5.png)
+!!! success "Success"
+    If the connection settings are correct, Workbench will display a successful connection message:
 
-6. In the **Username** field, enter: root
+    ![Successful Test Connection message in MySQL Workbench](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Connection_7.png){ .img-medium .center-it title="Successful Test Connection message in MySQL Workbench" }
 
-    ![Schema panel in MySQL Workbench](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Connection_6.png)
-
-7. Click Test Connection to verify that the connection settings are correct. If prompted, enter your MySQL password.
-
-    ![Schema panel in MySQL Workbench](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Connection_7.png)
-
-8. Click **OK** to save the connection.
-
-    ![Schema panel in MySQL Workbench](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Connection_8.png)
+5. Click **OK** to save the connection.
 
 !!! note "Note"
     If the connection test fails, double-check your **password**, **hostname**, and **port number (3306)**. Most connection issues are caused by incorrect login details.

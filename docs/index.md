@@ -27,7 +27,7 @@ Before following this guide, users should be familiar with basic computer usage.
 
 ## Software Requirements
 
-This guide assumes that the following software is already installed on your Windows computer. It is specifically written for users running the Windows operating system.
+This guide assumes that the following software is already correctly installed on your Windows computer. This is written specifically for people running the Windows OS.
 
 - [MySQL Server](https://dev.mysql.com/downloads/installer/)
 - [MySQL Workbench](https://dev.mysql.com/downloads/workbench/)
@@ -51,11 +51,11 @@ This guide assumes that the following software is already installed on your Wind
       </tr>
       <tr>
         <td><code>Code, SQL, and file names</code></td>
-        <td>Monospace text for SQL commands, code, and file names.</td>
-        <td><code>SELECT * FROM users;</code>, <code>my.ini</code>, <code>mysql.exe</code></td>
+        <td>Monospace text for SQL commands.</td>
+        <td><code>SELECT * FROM users;</code></td>
       </tr>
       <tr>
-        <td><em>Important terms</em></td>
+        <td>Important terms</td>
         <td>Important terms are underlined when they are first introduced. Hovering over them shows their definition.</td>
         <td>
             <span class="glossary-term" tabindex="0" data-term="schema">schema</span>,
