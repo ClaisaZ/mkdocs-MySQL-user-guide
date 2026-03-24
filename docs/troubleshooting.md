@@ -51,7 +51,7 @@
       <tr>
         <td>Query returns an error message.</td>
         <td>Syntax error in SQL.</td>
-        <td>Check for missing keywrods, commas, or semicolons in your query.</td>
+        <td>Check for missing keywords, commas, or semicolons in your query.</td>
       </tr>
       <tr>
         <td>Table does not exist error.</td>

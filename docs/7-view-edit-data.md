@@ -52,7 +52,6 @@ This section explains how to view and edit data using the MySQL Workbench graphi
 
     ![Schema panel in MySQL Workbench](/docs/assets/images/view_data_6.png)
 
-
 ## Tip
 
 Always click **Apply** after making changes. If you close the tab or click **Revert**, your edits will not be saved.
