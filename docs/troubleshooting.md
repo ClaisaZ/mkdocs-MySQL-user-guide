@@ -47,7 +47,22 @@
         <td>Error about duplicate values.</td>
         <td>Primary Key must be unique.</td>
         <td>Enter a unique value or avoid changing the Primary Key.</td>
-      </tr>       
+      </tr>
+      <tr>
+        <td>Query returns an error message.</td>
+        <td>Syntax error in SQL.</td>
+        <td>Check for missing keywrods, commas, or semicolons in your query.</td>
+      </tr>
+      <tr>
+        <td>Table does not exist error.</td>
+        <td>Incorrect table name.</td>
+        <td>Make sure the table name matches exactly, including spelling.</td>
+      </tr>
+      <tr>
+        <td>Unknown database error.</td>
+        <td>Schema name is incorrect or not selected.</td>
+        <td>Verify the schema name and include the USE command before running the query.</td>
+      </tr>                   
     </tbody>
   </table>
 </div>
