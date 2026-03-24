@@ -16,50 +16,35 @@ A query is an SQL command used to retrieve or work with data. In MySQL Workbench
 
     ![Saved connection on the MySQL Workbench home screen](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Run_Query_1.png)
 
-2. When the SQL Editor opens, make sure your schema appears in the SCHEMAS panel on the left.
+2. When the SQL Editor opens, make sure your schema appears in the SCHEMAS panel on the left. Also expand it to confirm that your table is inside the Tables section.
 
     ![SQL Editor with the SCHEMAS panel visible](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Run_Query_2.png)
 
-3. Expand your schema and confirm that your table is listed in the **Tables** section.
+3. Click **File** and click **New Query Tab** to create a new query tab in the SQL Editor. You can also press **Ctrl + T** to create a tab.
 
-    ![Expanded schema showing the books table](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Run_Query_3.png)
+    ![New SQL tab button in MySQL Workbench](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Run_Query_3.png)
 
-4. Click the **Create a new SQL tab for executing queries** button.
+    The area highlighted in red is your SQL Editor. This is where you write and run queries:
+    ![SQL Editor](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/sqlEditor.png)
 
-    ![New SQL tab button in MySQL Workbench](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Run_Query_4.png)
-
-5. In the new SQL tab, type the following query:
+4. In the new tab in the SQL Editor type:
 
     ```sql
-    SELECT * FROM books;
+    USE name_of_your_schema;
+    SELECT * FROM name_of_your_table;
     ```
 
-    ![SELECT query typed in the SQL Editor](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Run_Query_5.png)
+    Replace the with the names of your schema and table.
 
-    !!! note "Note"
-        If you used a different table name in the previous tutorial, replace `books` with the name of your own table.
+    ![SELECT query typed in the SQL Editor](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Run_Query_4.png)
 
-6. Click the **Execute** button (lightning bolt icon) to run the query.
+5. Click the **Execute** button (lightning bolt icon) to run the query.
 
-    ![Execute button in MySQL Workbench](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Run_Query_6.png)
+    ![Execute button in MySQL Workbench](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Run_Query_5.png)
 
-7. Look at the **Result Grid** at the bottom of the SQL Editor.
-
-    The results will display all rows and columns from your table.
-
-    ![Result Grid showing the query results](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Run_Query_7.png)
-
-!!! success "Success"
-    If the query runs successfully, you will see the data from your table in the **Result Grid**.
+    !!! success "Success"
+    If the query runs successfully, you will see the data from your table in the **Result Grid**, as well as an **Output** showing the query that was executed:
+    ![Successful query execution](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Run_Query_6.png)
 
 !!! note "Note"
-    This part uses a `SELECT` query because it's safe for beginners.
-
-## Example
-
-A `SELECT` query is used to retrieve data from a table.
-
-For example:
-
-```sql
-SELECT * FROM books;
+    This part uses a `USE` and `SELECT` query because it's safe for beginners.
