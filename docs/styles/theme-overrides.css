@@ -1,25 +1,71 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
-/* font */
+/* dont change some of the selectors here otherwise the js code might break */
+
 :root {
   --md-text-font: "Roboto";
+  --brand-radius: 0.35rem;
 }
 
-/* ligth mode */
 [data-md-color-scheme="default"] {
   --brand-header-bg: #4f7cff;
   --brand-header-text: #ffffff;
-  --brand-heading-color: #0030b3;
+  --brand-heading-color: #163baf;
+
+  --brand-tooltip-bg: #ffffff;
+  --brand-tooltip-text: #111827;
+  --brand-tooltip-border: rgba(0, 0, 0, 0.16);
+
+  --brand-note-bg: #eef4ff;
+  --brand-note-border: #4f7cff;
+  --brand-note-title: rgba(79, 124, 255, 0.12);
+
+  --brand-tip-bg: #ecfdf3;
+  --brand-tip-border: #16a34a;
+  --brand-tip-title: rgba(22, 163, 74, 0.12);
+
+  --brand-warning-bg: #fff7ed;
+  --brand-warning-border: #f97316;
+  --brand-warning-title: rgba(249, 115, 22, 0.12);
+
+  --brand-danger-bg: #fef2f2;
+  --brand-danger-border: #ef4444;
+  --brand-danger-title: rgba(239, 68, 68, 0.12);
 }
 
-/* dark mdoe/ */
 [data-md-color-scheme="slate"] {
-  --brand-header-bg: #356bff;
+  --brand-header-bg: #4394ff;
   --brand-header-text: #f9f9f9;
-  --brand-heading-color: #ededed;
+  --brand-heading-color: #f5f7ff;
+
+  --brand-tooltip-bg: #f8fafc;
+  --brand-tooltip-text: #0f172a;
+  --brand-tooltip-border: rgba(255, 255, 255, 0.14);
+
+  --brand-note-bg: rgba(79, 124, 255, 0.12);
+  --brand-note-border: #7aa2ff;
+  --brand-note-title: rgba(79, 124, 255, 0.18);
+
+  --brand-tip-bg: rgba(34, 197, 94, 0.12);
+  --brand-tip-border: #4ade80;
+  --brand-tip-title: rgba(34, 197, 94, 0.18);
+
+  --brand-warning-bg: rgba(249, 115, 22, 0.12);
+  --brand-warning-border: #fb923c;
+  --brand-warning-title: rgba(249, 115, 22, 0.18);
+
+  --brand-danger-bg: rgba(239, 68, 68, 0.12);
+  --brand-danger-border: #f87171;
+  --brand-danger-title: rgba(239, 68, 68, 0.18);
+
+  /* sites background colro for when its dark mode */
+  --md-default-bg-color: #16181b;
+  --md-default-bg-color--light: #1f2937;
+  --md-default-bg-color--lighter: rgba(255, 255, 255, 0.06);
 }
 
-body,.md-header__button.md-logo
+body,
+.md-header__button.md-logo,
 input,
 button,
 select,
@@ -27,22 +73,11 @@ textarea {
   font-family: "Roboto", sans-serif;
 }
 
-/* hide the logo cause ugly */
-.md-header__button.md-logo {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-  width: 0;
-  margin: 0;
-  padding: 0;
-}
-
 .md-header__button.md-logo,
 .md-nav__button.md-logo {
   display: none !important;
 }
 
-/* header colors */
 .md-header,
 .md-tabs {
   background-color: var(--brand-header-bg);
@@ -57,7 +92,6 @@ textarea {
   color: var(--brand-header-text);
 }
 
-/* heading stuff */
 .md-typeset h1,
 .md-typeset h2,
 .md-typeset h3,
@@ -68,58 +102,270 @@ textarea {
   font-family: "Roboto", sans-serif;
 }
 
-/* hide toc on desktop */
-.md-sidebar--secondary {
-  display: none !important;
-}
-
-/* hide the toggle for toc */
+.md-sidebar--secondary,
 label[for="__toc"],
 .md-nav--secondary {
   display: none !important;
 }
 
-/* make the rest of the content use the free space form not having a toc */
-/* @media screen and (min-width: 76.25em) {
-  .md-content {
-    margin-right: 0 !important;
-  }
-} */
-
-/* hide the sidebar title*/
 .md-sidebar--primary .md-nav--primary > .md-nav__title,
 .md-sidebar--primary .md-nav__title,
 .md-nav--primary > .md-nav__title {
   display: none !important;
 }
 
-/* keep the bottom footer bar compact */
 .md-footer-meta {
-  padding: 0.35rem 0 !important;
+  padding: 1rem 0 !important;
 }
 
-/* copyright on left + github icon on rigth/ */
 .md-footer-meta__inner {
   display: flex !important;
   align-items: center !important;
   justify-content: space-between !important;
 }
 
-.md-copyright {
-  margin: 0 !important;
-}
-
 .md-copyright__highlight {
   margin: 0 !important;
 }
-
-.md-social,
-.md-social__list,
-.md-social__item {
-  margin: 0 !important;
-  padding: 0 !important;
+.md_copyright {
+  margin-left: 15px !important;
 }
 
-.md-social__link {
-  font-size: 1.1rem;
+.md-header__source {
+  margin-left: auto;
+}
+
+.md-source {
+  background: rgba(255, 255, 255, 0);
+  transition: background-color 0.2s ease;
+}
+
+.md-source:hover {
+  background: rgba(255, 255, 255, 0.14);
+}
+
+.md-source__repository,
+.md-source__facts {
+  color: var(--brand-header-text);
+}
+
+.md-typeset .admonition,
+.md-typeset details {
+  border: 1px solid transparent;
+  border-radius: 0.35rem;
+  overflow: hidden;
+  box-shadow: none;
+}
+
+.md-typeset .admonition-title,
+.md-typeset summary {
+  font-weight: 700;
+  border-radius: 0;
+}
+
+.md-typeset .admonition.note,
+.md-typeset details.note {
+  background: var(--brand-note-bg);
+  border-color: var(--brand-note-border);
+}
+
+.md-typeset .admonition.note > .admonition-title,
+.md-typeset details.note > summary {
+  background: var(--brand-note-title);
+}
+
+.md-typeset .admonition.tip,
+.md-typeset details.tip {
+  background: var(--brand-tip-bg);
+  border-color: var(--brand-tip-border);
+}
+
+.md-typeset .admonition.tip > .admonition-title,
+.md-typeset details.tip > summary {
+  background: var(--brand-tip-title);
+}
+
+.md-typeset .admonition.warning,
+.md-typeset details.warning {
+  background: var(--brand-warning-bg);
+  border-color: var(--brand-warning-border);
+}
+
+.md-typeset .admonition.warning > .admonition-title,
+.md-typeset details.warning > summary {
+  background: var(--brand-warning-title);
+}
+
+.md-typeset .admonition.danger,
+.md-typeset details.danger {
+  background: var(--brand-danger-bg);
+  border-color: var(--brand-danger-border);
+}
+
+.md-typeset .admonition.danger > .admonition-title,
+.md-typeset details.danger > summary {
+  background: var(--brand-danger-title);
+}
+
+.glossary-term {
+  position: relative;
+  display: inline;
+  border-bottom: 1px dotted currentColor;
+  cursor: help;
+}
+
+.glossary-term::after {
+  content: attr(data-definition);
+  position: absolute;
+  left: 0;
+  bottom: calc(100% + 0.45rem);
+  transform: none;
+  width: min(26rem, 80vw);
+  padding: 0.55rem 0.7rem;
+  border: 1px solid var(--brand-tooltip-border);
+  border-radius: 0.25rem;
+  background: var(--brand-tooltip-bg);
+  color: var(--brand-tooltip-text);
+  font-size: 0.78rem;
+  line-height: 1.5;
+  box-shadow: none;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.15s ease;
+  z-index: 20;
+  text-align: left;
+}
+
+.glossary-term::before {
+  display: none;
+}
+
+.glossary-term:hover::after,
+.glossary-term:focus-visible::after {
+  opacity: 1;
+}
+
+.glossary-term:focus-visible {
+  outline: 1px solid currentColor;
+  outline-offset: 2px;
+}
+
+.glossary-generated-table {
+  margin-top: 1rem;
+}
+
+.glossary-loading {
+  opacity: 0.8;
+}
+
+.md-typeset table.glossary-table {
+  width: 100%;
+  margin: 0;
+  border-collapse: collapse;
+  background: transparent;
+}
+
+.md-typeset table.glossary-table th,
+.md-typeset table.glossary-table td {
+  padding: 0.85rem 0.75rem;
+  border: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  vertical-align: top;
+  background: transparent;
+}
+
+.md-typeset table.glossary-table thead th {
+  text-align: left;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-weight: 700;
+  background: transparent;
+}
+
+.glossary-table-term {
+  width: 26%;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.glossary-table-definition {
+  line-height: 1.6;
+}
+
+.glossary-search {
+  margin: 0 0 1rem 0;
+}
+
+.glossary-search-input {
+  width: 100%;
+  max-width: 28rem;
+  padding: 0.65rem 0.8rem;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 0.25rem;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+}
+
+.glossary-search-input:focus {
+  outline: none;
+  border-color: currentColor;
+}
+
+.glossary-search-count {
+  margin: 0.45rem 0 0 0;
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+
+.glossary-empty {
+  margin-top: 0.85rem;
+  opacity: 0.8;
+}
+
+.md-typeset__table {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+}
+
+.md-typeset table:not([class]) {
+  width: 100%;
+  max-width: 100%;
+  display: table;
+}
+
+.md-typeset table:not([class]) th,
+.md-typeset table:not([class]) td {
+  padding: 0.85rem 1rem;
+  vertical-align: top;
+}
+
+@media screen and (max-width: 76.2344em) {
+  .md-source {
+    background: transparent;
+  }
+
+  .glossary-table-term {
+    width: 34%;
+    white-space: normal;
+  }
+
+  .glossary-term::after {
+    width: min(22rem, 88vw);
+  }
+}
+
+.md-header,
+.md-tabs {
+  box-shadow: none !important;
+}
+
+.md-main__inner {
+  margin-top: 3rem !important;
+}
+
+.md-header {
+  border-bottom: 0 !important;
 }

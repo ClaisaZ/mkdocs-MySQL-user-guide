@@ -1,6 +1,7 @@
 {
   "name": "mkdocs-mysql-user-guide",
   "private": true,
+  "type": "module",
   "scripts": {
     "start": "python -m mkdocs serve",
     "build": "python -m mkdocs build",

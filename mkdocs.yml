@@ -1,14 +1,25 @@
 site_name: MySQL Workbench User Guide
+site_url: https://claisaz.github.io/mkdocs-MySQL-user-guide/
+site_description: Beginner-friendly step-by-step guide to using MySQL Workbench on Windows.
 
 extra_css:
   - styles/theme-overrides.css
 
 extra_javascript:
-  - styles/theme-default.js
+  - js/theme-default.js
+
+repo_url: https://github.com/ClaisaZ/mkdocs-MySQL-user-guide
+repo_name: ClaisaZ/mkdocs-MySQL-user-guide
+edit_uri: edit/main/docs/
 
 theme:
   name: material
   logo: assets/icons/logo.svg
+  icon:
+    repo: fontawesome/brands/github
+    edit: material/pencil
+    view: material/eye
+
   palette:
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
@@ -35,6 +46,8 @@ theme:
     - content.tabs.link
     - content.code.copy
     - navigation.footer
+    - content.action.edit
+    - content.action.view
 
 markdown_extensions:
   - attr_list
@@ -50,6 +63,14 @@ markdown_extensions:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
+plugins:
+  - search
+  - social:
+      enabled: !ENV [CI, false]
+  - git-revision-date-localized:
+      type: date
+  - glightbox
+
 docs_dir: docs
 
 copyright: >
@@ -57,7 +78,3 @@ copyright: >
 
 extra:
   generator: false
-  social:
-    - icon: fontawesome/brands/github
-      link: https://github.com/ClaisaZ/mkdocs-MySQL-user-guide
-      name: GitHub
