@@ -16,7 +16,7 @@
         <td>Change datatype to INT and enable PK, then select AI.</td>
       </tr>
       <tr>
-        <td>Error when insterting text into a column.</td>
+        <td>Error when inserting text into a column.</td>
         <td>Incorrect datatype (e.g. using INT instead of VARCHAR).</td>
         <td>Change the column datatype to VARCHAR for text values and INT for numeric values.</td>
       </tr>

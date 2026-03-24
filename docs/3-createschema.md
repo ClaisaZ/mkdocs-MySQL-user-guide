@@ -5,7 +5,10 @@ description: Learn how to create a new schema in MySQL Workbench on Windows for 
 
 # Create a Schema
 
-A schema in MySQL Workbench represents a database that stores tables and data in those tables. Before users can create tables or store data, they must first create a schema to organize their database structure.
+A schema in MySQL Workbench represents a database that stores tables and data in those tables. 
+
+!!! warning "Before you begin"
+Before users can create tables or store data, they must first create a schema to organize their database structure.
 
 This section explains how to create a new schema using the MySQL Workbench graphical interface.
 
