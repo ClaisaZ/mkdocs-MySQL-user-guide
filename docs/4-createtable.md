@@ -40,11 +40,11 @@ This section explains how to create a new table using the MySQL Workbench graphi
 
         ![Schema panel in MySQL Workbench](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Table_7.png)
 
-    - Select a data type in the *Datatype* field, such as *INT*, *VARCHAR(50)*, or *DATE*
+    - Select a data type in the Datatype field, such as INT, VARCHAR, or DATE.
 
         ![Schema panel in MySQL Workbench](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Table_8.png)
 
-    - Check any needed options, such as *PK* for primary key, *NN* for not null, or *AI* for auto increment.
+    - Check any needed options, such as PK for primary key, NN for not null, or AI for auto increment.
 
         ![Schema panel in MySQL Workbench](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Table_9.png)
 
@@ -63,8 +63,3 @@ This section explains how to create a new table using the MySQL Workbench graphi
 10. Verify that your table has been created by navigating back to your tables section in your schema.
 
     ![Schema panel in MySQL Workbench](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Table_13.png)
-
-
-
-
-
