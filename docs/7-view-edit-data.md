@@ -51,7 +51,10 @@ This section explains how to view and edit data using the MySQL Workbench graphi
 10. Verify tha your changes have been applied by clicking **Refresh**.
 
     ![Schema panel in MySQL Workbench](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/view_data_6.png)
+<<<<<<< HEAD
 
+=======
+>>>>>>> 05d215fb272aa08c45b1b9198f0f19ce37f7bd1c
 
 ## Tip
 
