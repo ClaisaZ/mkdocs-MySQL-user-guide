@@ -455,6 +455,14 @@ label[for="__toc"],
   height: auto;
 }
 
+.md-typeset img.img-query-step-first-three {
+  display: block;
+  margin: 1rem auto 1.25rem auto;
+  width: min(100%, 20rem);
+  height: auto;
+}
+
+
 .md-typeset img.center-it {
   margin: 1rem auto 1.25rem auto;
 }
