@@ -34,17 +34,18 @@ A query is an SQL command used to retrieve or work with data. In MySQL Workbench
     SELECT * FROM name_of_your_table;
     ```
 
-    Replace the with the names of your schema and table.
+    Replace name the with the names of your schema and table.
 
     ![SELECT query typed in the SQL Editor](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Run_Query_4.png)
+
+    !!! note "Note"
+        This part uses a `USE` and `SELECT` query because it's safe for beginners.
 
 5. Click the **Execute** button (lightning bolt icon) to run the query.
 
     ![Execute button in MySQL Workbench](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Run_Query_5.png)
 
-    !!! success "Success"
-    If the query runs successfully, you will see the data from your table in the **Result Grid**, as well as an **Output** showing the query that was executed:
-    ![Successful query execution](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Run_Query_6.png)
+!!! success "Success"
+    If the query runs successfully, you will see the data from your table in the **Result Grid**, as well as an **Output** showing the query that was executed.
 
-!!! note "Note"
-    This part uses a `USE` and `SELECT` query because it's safe for beginners.
+![Successful query execution](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Run_Query_6.png)
