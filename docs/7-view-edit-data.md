@@ -7,7 +7,7 @@ description: Learn how to view, update, and edit table data in MySQL Workbench o
 
 In MySQL Workbench, users can view and modify existing data directly within a table. This allows you to update values, correct mistakes, or remove data.
 
-!!! warning "Before you begin"
+!!! warning "Warning"
     Before editing data, make sure you have already created a table and inserted data into it.
 
 This section explains how to view and edit data using the MySQL Workbench graphical interface.
@@ -47,6 +47,9 @@ This section explains how to view and edit data using the MySQL Workbench graphi
 9. Click **Apply**, then click **Finish**.
 
     ![Schema panel in MySQL Workbench](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Table_10.png)
+
+    !!! success "Success"
+        You have successfully updated your data in your table.
 
 10. Verify that your changes have been applied by clicking **Refresh**.
 
