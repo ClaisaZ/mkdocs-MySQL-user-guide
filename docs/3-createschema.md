@@ -10,7 +10,7 @@ A schema in MySQL Workbench represents a database that stores tables and data in
 This section explains how to create a new schema using the MySQL Workbench graphical interface.
 
 !!! warning "Warning"
-    Make sure you already created a connection, and you opened the connection. Refer to [Creating Connection](./2-create-conn.md).
+    Make sure you already created a connection, and you opened the connection. Refer to [Create a connection](./2-create-conn.md).
 
 ## Steps
 
