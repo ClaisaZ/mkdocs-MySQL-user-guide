@@ -14,11 +14,11 @@ An SQL table stores data in rows and columns. Columns define the kind of data ea
 
 1. In MySQL Workbench, locate the schema panel on the left side.
 
-    ![Schema panel showing available databases](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Table_1.png)
+    ![Schema panel showing available databases](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Table_1.png "Schema table")
 
 2. Expand your schema by clicking the arrow next to its name. 
 
-    ![Expanded schema with tables section visible](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Table_2.png)
+    ![Expanded schema with tables section visible](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Table_2.png "Expand schema button")
 
 3. Right-click on the Tables section inside your schema.
 

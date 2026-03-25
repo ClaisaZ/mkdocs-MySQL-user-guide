@@ -14,19 +14,19 @@ In MySQL Workbench you can view and change data in a table, allowing you to upda
 
 1. In MySQL Workbench, locate the schemas panel on the left side. 
 
-    ![Schema panel in MySQL Workbench](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Inserting_Data_1_2.png)
+    ![Schemas panel in the left side of the interface](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Inserting_Data_1_2.png "Schemas panel")
 
 2. Expand your schema and locate the table you want to view or edit.
 
-    ![Schema panel in MySQL Workbench](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Inserting_Data_2.png)
+    ![Expand table section by clicking the arrow button](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Inserting_Data_2.png "Expanding schema to locate table")
 
 3. Right-click the table you want to edit, and left-click **Select Rows**.
 
-    ![Schema panel in MySQL Workbench](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Inserting_Data_3.png)
+    ![Right-click to see Select rows option](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Inserting_Data_3.png "Select rows")
 
 4. A table view will open showing the current data.
 
-    ![Schema panel in MySQL Workbench](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/view_data_1.png)
+    ![Table view showing all current data](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/view_data_1.png "Table with current data")
 
 5. To edit a value, click directly on the cell you want to change and type the new value.
 

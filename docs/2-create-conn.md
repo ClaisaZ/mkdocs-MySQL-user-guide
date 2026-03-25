@@ -13,7 +13,7 @@ Before creating schemas, tables, or queries in MySQL Workbench, you first need t
 
 2. On the home screen, click the + icon next to MySQL Connections.
 
-    ![Schema panel in MySQL Workbench](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Connection_2-2.png)
+    ![MySQL connection button](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Connection_2-2.png "MySQL confirmation button")
 
 3. In the Setup New Connection window, enter these connection details:
 
