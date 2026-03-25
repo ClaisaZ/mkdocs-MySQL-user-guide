@@ -61,7 +61,9 @@ An SQL table stores data in rows and columns. Columns define the kind of data ea
     ![Apply and Finish buttons in confirmation window](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Table_12.png "Apply and Finish buttons")
 
 10. Verify that your table has been created by navigating back to your tables section in your schema.
-
+    
+    !!! Success "Success"
+        You have created a new table!
     ![New table visible in schema table list](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Table_13_2.png "New table in schema")
 
 !!! note "Note"
