@@ -5,24 +5,22 @@ description: Learn how to view, update, and edit table data in MySQL Workbench o
 
 # View and edit data
 
-In MySQL Workbench, users can view and modify existing data directly within a table. This allows you to update values, correct mistakes, or remove data.
+In MySQL Workbench you can view and change data in a table, allowing you to update values, correct mistakes, and more. This part shows how to view and edit table data in Workbench.
 
 !!! warning "Warning"
-    Before editing data, make sure you have already created a table and inserted data into it.
-
-This section explains how to view and edit data using the MySQL Workbench graphical interface.
+    Before following part, make sure you've already inserted data into a table, and you have your connection opened. Refer to [Inserting data into tables](./5-insertdata.md).
 
 ## Steps
 
 1. In MySQL Workbench, locate the schemas panel on the left side. 
 
-    ![Schema panel in MySQL Workbench](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Inserting_Data_1.png)
+    ![Schema panel in MySQL Workbench](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Inserting_Data_1_2.png)
 
 2. Expand your schema and locate the table you want to view or edit.
 
     ![Schema panel in MySQL Workbench](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Inserting_Data_2.png)
 
-3. Right-click the table and select **Select Rows**.
+3. Right-click the table you want to edit, and left-click **Select Rows**.
 
     ![Schema panel in MySQL Workbench](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Inserting_Data_3.png)
 

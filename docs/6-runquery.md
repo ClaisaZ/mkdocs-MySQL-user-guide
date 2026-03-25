@@ -7,27 +7,27 @@ description: Step-by-step guide to running SQL queries in MySQL Workbench on Win
 
 A query is an SQL command used to retrieve or work with data. In MySQL Workbench, queries are written and run in the SQL Editor. This part explains how to run a query using Workbench.
 
-!!! warning "Before you begin"
-    Before continuing, make sure you have already created a schema, created a table, and inserted data into that table.
+!!! warning "Warning"
+    Before following part, make sure you've already inserted data into a table, and you have your connection opened. Refer to [Inserting data into tables](./5-insertdata.md).
 
 ## Steps
 
-1. Open MySQL Workbench, and **click** to open your saved connection.
+1. In MySQL Workbench, locate the schemas panel on the left side. 
 
-    ![Saved connection on the MySQL Workbench home screen](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Run_Query_1.png){ .img-query-step-first-three .center-it }
+    ![Schema panel in MySQL Workbench](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Inserting_Data_1_2.png)
 
-2. When the SQL Editor opens, make sure your schema appears in the SCHEMAS panel on the left. Also expand it to confirm that your table is inside the Tables section.
+2. Click the button circled in red to expand the schema, and then expand "Tables" to confirm that your table exists.
 
-    ![SQL Editor with the SCHEMAS panel visible](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Run_Query_2_2.png){ .img-query-step-first-three .center-it }
+    ![SQL Editor with the SCHEMAS panel visible](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Run_Query_2_3.png){ .img-query-step-first-three .center-it }
 
-3. Click **File** and click **New Query Tab** to create a new query tab in the SQL Editor. You can also press **Ctrl + T** to create a tab.
+2. Click **File** and click **New Query Tab** to create a new query tab in the SQL Editor. You can also press **Ctrl + T** to create a tab.
 
     ![New SQL tab button in MySQL Workbench](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Run_Query_3_2.png){ .img-query-step-first-three .center-it }
 
     The area highlighted in red is your SQL Editor. This is where you write and run queries:
     ![SQL Editor](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/sqlEditor.png){ .img-medium .center-it }
 
-4. In the new tab in the SQL Editor type:
+3. In the new tab in the SQL Editor type:
 
     ```sql
     USE name_of_your_schema;
@@ -41,7 +41,7 @@ A query is an SQL command used to retrieve or work with data. In MySQL Workbench
     !!! note "Note"
         This part uses a `USE` and `SELECT` query because it's safe for beginners.
 
-5. Click the **Execute** button (lightning bolt icon) to run the query.
+4. Click the **Execute** button (lightning bolt icon) to run the query.
 
     ![Execute button in MySQL Workbench](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Run_Query_5.png){ .img-query-step }
 
