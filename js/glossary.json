@@ -10,6 +10,11 @@
     "aliases": ["database", "databases"]
   },
   {
+    "term": "Relational",
+    "definition": "Describes data that is organized into tables and connected through relationships, allowing different sets of data to be linked and queried together.",
+    "aliases": ["table-based", "relation-based"]
+  },
+  {
     "term": "Primary Key",
     "definition": "A column, or group of columns, that uniquely identifies each row in a table.",
     "aliases": ["primary key", "primary keys", "PK", "primary-key"]
