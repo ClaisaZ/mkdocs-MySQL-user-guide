@@ -9,7 +9,7 @@ Before creating schemas, tables, or queries in MySQL Workbench, you first need t
 
 ## Steps
 
-1. Open **MySQL Workbench**.
+1. **Open** MySQL Workbench.
 
 2. On the home screen, click the + icon next to MySQL Connections.
 
@@ -24,14 +24,14 @@ Before creating schemas, tables, or queries in MySQL Workbench, you first need t
 
     ![Setup New Connection window with the required fields](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Connection_combined.png){ .img-medium .center-it title="Setup New Connection window" }
 
-4. Click **Test Connection** to verify that the connection settings are correct. If prompted, enter your MySQL password.
+4. **Click** Test Connection to verify that the connection settings are correct. If prompted, enter your MySQL password.
 
 !!! success "Success"
     If the connection settings are correct, Workbench will display a successful connection message:
 
     ![Successful Test Connection message in MySQL Workbench](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Connection_7.png){ .img-medium .center-it title="Successful Test Connection message in MySQL Workbench" }
 
-5. Click **OK** to save the connection.
+5. **Click** OK to save the connection.
 
 !!! note "Note"
     If the connection test fails, double-check your **password**, **hostname**, and **port number (3306)**. Most connection issues are caused by incorrect login details.

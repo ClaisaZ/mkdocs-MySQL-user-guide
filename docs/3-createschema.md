@@ -18,7 +18,7 @@ This section explains how to create a new schema using the MySQL Workbench graph
 
     ![Schema panel showing all available schemas](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Schema_part_1.png "Schema panel")
 
-2. Click the **Create** Schema button.
+2. **Click** the Create Schema button.
 
     ![Create schema button in the schema navigation bar](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@gh-pages/assets/images/Creating_Schema_part_2.png "Create schema button")
 
@@ -26,14 +26,14 @@ This section explains how to create a new schema using the MySQL Workbench graph
 
     ![Schema name field](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@gh-pages/assets/images/Creating_Schema_part_3.png "Enter schema name field")
 
-4. Click **Apply** to begin create the schema.
+4. **Click** Apply to begin create the schema.
 
 5. Review the confirmation window showing the SQL command that was executed.
 
 
     ![Confirmation window showing that the command was executed](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@gh-pages/assets/images/Creating_Schema_part_4.png "Confirmation window")
 
-6. Click **Finish** in the confirmation window.
+6. **Click** Finish in the confirmation window.
 
     ![Confirmation window with the finish button](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@gh-pages/assets/images/Creating_Schema_part_5.png "Finish button")
 

@@ -20,11 +20,11 @@ An SQL table stores data in rows and columns. Columns define the kind of data ea
 
     ![Expanded schema with tables section visible](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Table_2_2.png "Expand schema section")
 
-3. Right-click on the Tables section inside your schema.
+3. **Right-click** on the Tables section inside your schema.
 
     ![Right-click menu on Tables section](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Table_3.png "Table section")
 
-4. Click **Create Table**.
+4. **Click** Create Table.
 
     ![Create Table option in context menu](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Table_4.png "Create table menu")
 
@@ -48,7 +48,7 @@ An SQL table stores data in rows and columns. Columns define the kind of data ea
 
         ![Column options like PK, NN, AI](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Table_9.png "Specific table options like PK, NN, AI")
 
-7. Click **Apply**.
+7. **Click** Apply.
 
     ![Apply button at the bottom right](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Table_10.png "Click Apply button to confirm")
 
@@ -56,7 +56,7 @@ An SQL table stores data in rows and columns. Columns define the kind of data ea
 
     ![Confirmation window will pop up](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Table_11.png "Confirmation window")
 
-9. Click **Apply** again, then click **Finish**
+9. **Click** Apply again, then **click** Finish
 
     ![Apply and Finish buttons in confirmation window](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Table_12.png "Apply and Finish buttons")
 
