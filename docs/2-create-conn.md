@@ -24,9 +24,7 @@ This section explains how to create a new connection using the MySQL Workbench g
     - Port: `3306`
     - Username: `root`
 
-    ![Setup New Connection window with the required fields](assets/images/Creating_Connection_combined.png){ .img-medium .center-it title="Setup New Connection window" }
-
-    You do not need to worry about Password yet.
+    ![Setup New Connection window with the required fields](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Connection_combined.png){ .img-medium .center-it title="Setup New Connection window" }
 
 4. Click **Test Connection** to verify that the connection settings are correct. If prompted, enter your MySQL password.
 
