@@ -21,27 +21,27 @@ This section explains how to create a new table using the MySQL Workbench graphi
 
 3. Right-click on the Tables section inside your schema.
 
-    ![Right-click menu on Tables section](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Table_3.png)
+    ![Right-click menu on Tables section](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Table_3.png "Table section")
 
 4. Click **Create Table**.
 
-    ![Create Table option in context menu](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Table_4.png)
+    ![Create Table option in context menu](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Table_4.png "Create table menu")
 
 5. In the Table Name field, enter a name for your table. 
 
-    ![Table editor with Table field](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Table_5.png)
+    ![Table editor with Table field](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Table_5.png "Enter a table name")
 
 6. In the Columns section, define your table structure by adding columns one at a time.
 
-    ![Columns section in table editor](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Table_6.png)
+    ![Columns section in table editor](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Table_6.png "Table structure editor")
 
     - Enter a column name.
 
-        ![Column name input field](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Table_7.png)
+        ![Column name input field](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Table_7.png "Enter a column name")
 
     - Select a data type in the Datatype field, such as INT, VARCHAR, or DATE.
 
-        ![Datatype selection field](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Table_8.png)
+        ![Datatype selection field](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Table_8.png "Datatype selection field")
 
     - Check any needed options, such as PK for primary key, NN for not null, or AI for auto increment.
 
