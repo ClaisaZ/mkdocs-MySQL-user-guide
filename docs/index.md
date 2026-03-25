@@ -9,7 +9,7 @@ description: Beginner-friendly introduction to using MySQL Workbench on Windows 
 
 MySQL is a relational database management system used to store, organize, and manage data. It allows users to create databases, store information in tables, and run queries to retrieve or modify data.
 
-This documentation explains how to use *MySQL Workbench* on *Windows* to do basic database work with its GUI (graphical interface). It will walk you through creating a connection, creating a schema (database), creating tables, running queries, and viewing or editing data in Workbench.
+This documentation explains how to use MySQL Workbench on Windows to do basic database work with its GUI (graphical interface). It will walk you through creating a connection, creating a schema (database), creating tables, running queries, and viewing or editing data in Workbench.
 
 This is a beginner's guide to Workbench’s GUI, not a detailed guide to database theory or advanced MySQL.
 
