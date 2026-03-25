@@ -14,7 +14,7 @@ This section explains how to create a new schema using the MySQL Workbench graph
 
 ## Steps
 
-1. In MySQL Workbench, locate the schema panel on the left side of the menu interface.
+1. Locate the schema panel on the left side of the menu interface.
 
     ![Schema panel showing all available schemas](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Schema_part_1.png "Schema panel")
 
@@ -22,21 +22,25 @@ This section explains how to create a new schema using the MySQL Workbench graph
 
     ![Create schema button in the schema navigation bar](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@gh-pages/assets/images/Creating_Schema_part_2.png "Create schema button")
 
-3. In the Schema Name field, enter the name of your new schema.
+3. Enter the name of your new schema in the schema name field.
 
     ![Schema name field](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@gh-pages/assets/images/Creating_Schema_part_3.png "Enter schema name field")
 
-4. Click **Apply** to begin creating the schema.
+4. Click **Apply** to begin create the schema.
 
-5. A confirmation window will appear showing the SQL command was executed.
+5. Review the confirmation window showing the SQL command that was executed.
+
 
     ![Confirmation window showing that the command was executed](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@gh-pages/assets/images/Creating_Schema_part_4.png "Confirmation window")
 
-6. Click **Finish**.
+6. Click **Finish** in the confirmation window.
 
     ![Confirmation window with the finish button](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@gh-pages/assets/images/Creating_Schema_part_5.png "Finish button")
 
 7. Verify that the schema appears in the SCHEMAS section.
+
+!!! success "Success"
+    You have successfull created your new schema.
 
     ![Schema panel with the new schema added](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Schema_part_6.png "New schema added in the schema panel")
 

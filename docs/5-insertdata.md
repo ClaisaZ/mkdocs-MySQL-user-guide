@@ -12,7 +12,7 @@ In MySQL Workbench, data is stored inside tables as rows. To add new information
 
 ## Steps
 
-1. In MySQL Workbench, locate the schemas panel on the left side. 
+1. Locate the schema panel on the left side of the menu interface. 
 
     ![Schema panel showing all available schemas](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Inserting_Data_1.png "Schemas panel")
 
@@ -20,17 +20,15 @@ In MySQL Workbench, data is stored inside tables as rows. To add new information
 
     ![Table section in schema panel](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Inserting_Data_2.png "Table section")
 
-3. Right-click the table and click **Select Rows**.
+3. Right-click the table and click **Select Rows** and a table view will open showing the current rows.
 
     ![Select rows option](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Inserting_Data_3.png "Select rows option")
 
-4. A table view will open showing the current rows.
+4. Click on an empty row (usually marked with NULL ) at the bottom of the table.
 
-5. Click on an empty row (usually marked with NULL ) at the bottom of the table.
+    ![Empty cell to enter data](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Inserting_Data_4_2.png "Empty cell for entering data")
 
-    ![Empty cell to enter data](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Inserting_Data_4.png "Empty cell for entering data")
-
-6. Enter values into each column.
+5. Enter values into each column.
     
     - Type directly into each cell.
 
@@ -41,7 +39,7 @@ In MySQL Workbench, data is stored inside tables as rows. To add new information
     - If a column is set to Auto Increment, you can leave it blank and it will be filled automatically.
 
 
-7. Click **Apply** in the bottom right corner.
+6. Click **Apply** in the bottom right corner.
 
     ![Apply button](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Inserting_Data_6.png "Apply button")
 
@@ -49,17 +47,17 @@ In MySQL Workbench, data is stored inside tables as rows. To add new information
 
         ![Revert button for errors](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Inserting_Data_7.png "Revert button")
 
-8. A confirmation window will appear showing the SQL statement used to insert the data.
+7. Review the confirmation window to ensure that the table has been created with the correct data.
 
     ![Confirmation window showing SQL statement](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Inserting_Data_8.png "Confirmation window")
 
-9. Click **Apply**, then click **Finish**.
+8. Click **Apply**, then click **Finish**.
 
     ![Confirmation window with apply and finish](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Inserting_Data_9.png "Confirmation window") 
 
-10. Verify that your row appears in the table, by clicking **Refresh**.
+9. Verify that your row appears in the table, by clicking **Refresh**.
 
-    ![Refresh button if data has not updated](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Inserting_Data_10.png "Refresh button")
+    ![Refresh button if data has not updated](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/view_data_6.png "Refresh button")
 
 !!! note "Note"
     Make sure required columns ( marked with NN for Not Null ) are filled in before clicking **Apply**, or the insert may fail.

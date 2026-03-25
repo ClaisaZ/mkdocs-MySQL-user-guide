@@ -20,36 +20,34 @@ In MySQL Workbench you can view and change data in a table, allowing you to upda
 
     ![Expand table section by clicking the arrow button](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Inserting_Data_2.png "Expanding schema to locate table")
 
-3. Right-click the table you want to edit, and left-click **Select Rows**.
+3. Right-click the table you want to edit, and left-click **Select Rows** A table view will open to the right showing the current data.
 
     ![Right-click to see Select rows option](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Inserting_Data_3.png "Select rows")
 
-4. A table view will open showing the current data.
-
     ![Table view showing all current data](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/view_data_1.png "Table with current data")
 
-5. To edit a value, click directly on the cell you want to change and type the new value.
+4. To edit a value, click directly on the cell you want to change and type the new value.
 
     ![Schema panel in MySQL Workbench](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/view_data_2.png)
 
-6.  To delete a row, right-click the row on the left, then select **Delete Row**
+5.  To delete a row, right-click the row on the left, then select **Delete Row**
 
     ![Schema panel in MySQL Workbench](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/view_data_3.png)
 
-7. Click **Apply** in the bottom right corner to save your changes
+6. Click **Apply** in the bottom right corner to save your changes
 
-8. A confirmation window will appear showing the SQL statement used to update or delete the data.
+7. A confirmation window will appear showing the SQL statement used to update or delete the data.
 
     ![Schema panel in MySQL Workbench](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/view_data_4.png)
 
-9. Click **Apply**, then click **Finish**.
+8. Click **Apply**, then click **Finish**.
 
     ![Schema panel in MySQL Workbench](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Table_10.png)
 
     !!! success "Success"
         You have successfully updated your data in your table.
 
-10. Verify that your changes have been applied by clicking **Refresh**.
+9. Verify that your changes have been applied by clicking **Refresh**.
 
     ![Schema panel in MySQL Workbench](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/view_data_6.png)
 
