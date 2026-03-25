@@ -1,21 +1,21 @@
-function regEscape(v) {
-  console.log("TEST PRINT ITS WORKING");
-  return v.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+function rescape(a) {
+  // console.log("test see if working");
+  return a.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 }
 
-function normKey(v) {
-  return v.trim().toLowerCase();
+function nk(a) {
+  return a.trim().toLowerCase();
 }
 
-function normPath(p) {
-  return p.replace(/index\.html$/, "").replace(/\/+$/, "/");
-}
+// function np(a) {
+//   return a.replace(/index\.html$/, "").replace(/\/+$/, "/");
+// }
 
 //
 //
 //
 
-function ensureGlossaryTooltip() {
+function ensureGTip() {
   let tooltip = document.getElementById("glossary-floating-tooltip");
 
   if (!tooltip) {
@@ -25,26 +25,26 @@ function ensureGlossaryTooltip() {
     document.body.appendChild(tooltip);
   }
 
-  if (!glossaryTooltipCleanupBound) {
+  if (!cleanupB) {
     window.addEventListener(
       "scroll",
       () => {
-        hideGlossaryTooltip();
+        hide();
       },
       { passive: true },
     );
 
     window.addEventListener("resize", () => {
-      hideGlossaryTooltip();
+      hide();
     });
 
-    glossaryTooltipCleanupBound = true;
+    cleanupB = true;
   }
 
   return tooltip;
 }
 
-function hideGlossaryTooltip() {
+function hide() {
   const tooltip = document.getElementById("glossary-floating-tooltip");
 
   if (!tooltip) {
@@ -55,15 +55,15 @@ function hideGlossaryTooltip() {
   tooltip.textContent = "";
 }
 
-function showGlossaryTooltip(term) {
+function show(term) {
   const definition = (term.getAttribute("data-definition") || "").trim();
 
   if (!definition) {
-    hideGlossaryTooltip();
+    hide();
     return;
   }
 
-  const tooltip = ensureGlossaryTooltip();
+  const tooltip = ensureGTip();
   tooltip.textContent = definition;
   tooltip.classList.remove("is-visible");
 
@@ -93,8 +93,8 @@ function showGlossaryTooltip(term) {
   tooltip.classList.add("is-visible");
 }
 
-function bindGlossaryTooltips(root) {
-  ensureGlossaryTooltip();
+function bind(root) {
+  ensureGTip();
 
   root.querySelectorAll(".glossary-term").forEach((term) => {
     if (term.dataset.tooltipBound === "true") {
@@ -104,24 +104,24 @@ function bindGlossaryTooltips(root) {
     term.dataset.tooltipBound = "true";
 
     term.addEventListener("mouseenter", () => {
-      showGlossaryTooltip(term);
+      show(term);
     });
 
     term.addEventListener("mouseleave", () => {
-      hideGlossaryTooltip();
+      hide();
     });
 
     term.addEventListener("focus", () => {
-      showGlossaryTooltip(term);
+      show(term);
     });
 
     term.addEventListener("blur", () => {
-      hideGlossaryTooltip();
+      hide();
     });
 
     term.addEventListener("keydown", (event) => {
       if (event.key === "Escape") {
-        hideGlossaryTooltip();
+        hide();
       }
     });
   });
@@ -199,7 +199,7 @@ function bindGlossaryTooltips(root) {
     return gp;
   }
 
-  function buildGIndex(e) {
+  function build(e) {
     const mapAlias = new Map();
 
     e.forEach((entry) => {
@@ -210,7 +210,7 @@ function bindGlossaryTooltips(root) {
       }
 
       aliases.forEach((alias) => {
-        mapAlias.set(normKey(alias), entry);
+        mapAlias.set(nk(alias), entry);
       });
     });
 
@@ -224,18 +224,18 @@ function bindGlossaryTooltips(root) {
     };
   }
 
-  function hydrateManualGlossaryTerms(root, entries) {
+  function hydrate(root, entries) {
     const scope = root.querySelector(".typo-conventions-only");
 
     if (!scope) {
       return;
     }
 
-    const { mapAlias } = buildGIndex(entries);
+    const { mapAlias } = build(entries);
 
     scope.querySelectorAll(".glossary-term").forEach((term) => {
       const raw = term.getAttribute("data-term") || term.textContent || "";
-      const entry = mapAlias.get(normKey(raw));
+      const entry = mapAlias.get(nk(raw));
 
       if (!entry) {
         term.removeAttribute("data-definition");
@@ -265,7 +265,7 @@ function bindGlossaryTooltips(root) {
 
   function enhanceGterm(root, entries) {
     const content = root.querySelector(".md-content__inner") || root;
-    const { mapAlias, sortAlias } = buildGIndex(entries);
+    const { mapAlias, sortAlias } = build(entries);
 
     const usedTerms = new Set();
 
@@ -274,7 +274,7 @@ function bindGlossaryTooltips(root) {
     }
 
     const pattern = new RegExp(
-      `\\b(${sortAlias.map(regEscape).join("|")})\\b`,
+      `\\b(${sortAlias.map(rescape).join("|")})\\b`,
       "gi",
     );
 
@@ -311,7 +311,7 @@ function bindGlossaryTooltips(root) {
 
       while ((match = pattern.exec(node.nodeValue)) !== null) {
         const matchedText = match[0];
-        const entry = mapAlias.get(normKey(matchedText));
+        const entry = mapAlias.get(nk(matchedText));
 
         fragment.appendChild(
           document.createTextNode(node.nodeValue.slice(lastIndex, match.index)),
@@ -341,7 +341,7 @@ function bindGlossaryTooltips(root) {
     });
   }
 
-  function renderGTablessaryTable(root, entries) {
+  function render(root, entries) {
     const mount = root.querySelector("#glossary-table-root");
 
     if (!mount) {
@@ -463,9 +463,9 @@ function bindGlossaryTooltips(root) {
     updateF();
   }
 
-  let glossaryTooltipCleanupBound = false;
+  let cleanupB = false;
 
-  function ensureGlossaryTooltip() {
+  function ensureGTip() {
     let tooltip = document.getElementById("glossary-floating-tooltip");
 
     if (!tooltip) {
@@ -475,26 +475,26 @@ function bindGlossaryTooltips(root) {
       document.body.appendChild(tooltip);
     }
 
-    if (!glossaryTooltipCleanupBound) {
+    if (!cleanupB) {
       window.addEventListener(
         "scroll",
         () => {
-          hideGlossaryTooltip();
+          hide();
         },
         { passive: true },
       );
 
       window.addEventListener("resize", () => {
-        hideGlossaryTooltip();
+        hide();
       });
 
-      glossaryTooltipCleanupBound = true;
+      cleanupB = true;
     }
 
     return tooltip;
   }
 
-  function hideGlossaryTooltip() {
+  function hide() {
     const tooltip = document.getElementById("glossary-floating-tooltip");
 
     if (!tooltip) {
@@ -505,15 +505,15 @@ function bindGlossaryTooltips(root) {
     tooltip.textContent = "";
   }
 
-  function showGlossaryTooltip(term) {
+  function show(term) {
     const definition = (term.getAttribute("data-definition") || "").trim();
 
     if (!definition) {
-      hideGlossaryTooltip();
+      hide();
       return;
     }
 
-    const tooltip = ensureGlossaryTooltip();
+    const tooltip = ensureGTip();
     tooltip.textContent = definition;
 
     // make it measurable before positioning
@@ -548,8 +548,8 @@ function bindGlossaryTooltips(root) {
     tooltip.classList.add("is-visible");
   }
 
-  function bindGlossaryTooltips(root) {
-    ensureGlossaryTooltip();
+  function bind(root) {
+    ensureGTip();
 
     root.querySelectorAll(".glossary-term").forEach((term) => {
       if (term.dataset.tooltipBound === "true") {
@@ -559,24 +559,24 @@ function bindGlossaryTooltips(root) {
       term.dataset.tooltipBound = "true";
 
       term.addEventListener("mouseenter", () => {
-        showGlossaryTooltip(term);
+        show(term);
       });
 
       term.addEventListener("mouseleave", () => {
-        hideGlossaryTooltip();
+        hide();
       });
 
       term.addEventListener("focus", () => {
-        showGlossaryTooltip(term);
+        show(term);
       });
 
       term.addEventListener("blur", () => {
-        hideGlossaryTooltip();
+        hide();
       });
 
       term.addEventListener("keydown", (event) => {
         if (event.key === "Escape") {
-          hideGlossaryTooltip();
+          hide();
         }
       });
     });
@@ -587,14 +587,14 @@ function bindGlossaryTooltips(root) {
 
     try {
       const entries = await makeGloss();
-      renderGTablessaryTable(document, entries);
-      hydrateManualGlossaryTerms(document, entries);
+      render(document, entries);
+      hydrate(document, entries);
 
       if (!isIndex()) {
         enhanceGterm(document, entries);
       }
 
-      bindGlossaryTooltips(document);
+      bind(document);
     } catch (error) {
       const mount = document.querySelector("#glossary-table-root");
 
