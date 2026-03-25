@@ -27,7 +27,6 @@ This section explains how to create a new table using the MySQL Workbench graphi
 
     ![Schema panel in MySQL Workbench](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Table_4.png)
 
-
 5. In the Table Name field, enter a name for your table. 
 
     ![Schema panel in MySQL Workbench](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Table_5.png)
