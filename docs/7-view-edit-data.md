@@ -3,12 +3,12 @@ title: View and edit data
 description: Learn how to view, update, and edit table data in MySQL Workbench on Windows.
 ---
 
-# View and edit data
+# 7. View and edit data
 
 In MySQL Workbench you can view and change data in a table, allowing you to update values, correct mistakes, and more. This part shows how to view and edit table data in Workbench.
 
 !!! warning "Warning"
-    Before following part, make sure you've already inserted data into a table, and you have your connection opened. Refer to [Inserting data into tables](./5-insertdata.md).
+    Before following part, make sure you've already inserted data into a table, and you have your connection opened. Refer to [Inserting data into tables](./5-insertdata.md). You should be familiar with the contents of the previous sections.
 
 ## Steps
 

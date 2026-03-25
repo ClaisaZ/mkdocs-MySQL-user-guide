@@ -5,13 +5,13 @@ site_description: Beginner-friendly step-by-step guide to using MySQL Workbench 
 
 nav:
   - Introduction: index.md
-  - Create a connection: 2-create-conn.md
+  - 1. Create a connection: 2-create-conn.md
   - Working with a database:
-      - Create a schema: 3-createschema.md
-      - Create a table: 4-createtable.md
-      - Insert data: 5-insertdata.md
-      - Run your first query: 6-runquery.md
-      - View and edit data: 7-view-edit-data.md
+      - 2. Create a schema: 3-createschema.md
+      - 3. Create a table: 4-createtable.md
+      - 4. Insert data: 5-insertdata.md
+      - 5. Run your first query: 6-runquery.md
+      - 6. View and edit data: 7-view-edit-data.md
   - Help:
       - Troubleshooting: troubleshooting.md
       - Glossary: zglossary.md

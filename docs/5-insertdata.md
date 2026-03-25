@@ -3,12 +3,12 @@ title: Insert data
 description: Learn how to insert data into a MySQL table in MySQL Workbench on Windows.
 ---
 
-# Insert data
+# 5. Insert data
 
 In MySQL Workbench, data is stored inside tables as rows. To add new information, users insert data into the columns of a table. This section explains how to insert data using the MySQL Workbench graphical interface.
 
 !!! warning "Warning"
-    Before inserting data, make sure you have already created a table. Refer to [Create a table](./4-createtable.md).
+    Before inserting data, make sure you have already created a table. Refer to [Create a table](./4-createtable.md).You should be familiar with the contents of the previous sections.
 
 ## Steps
 
@@ -51,7 +51,10 @@ In MySQL Workbench, data is stored inside tables as rows. To add new information
 
     ![Confirmation window showing SQL statement](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Inserting_Data_8.png "Confirmation window")
 
-8. **Click** Apply, then **click** Finish.
+8. **Click** Apply.
+
+    !!! success "Success"
+        If the query runs successfully, you will see this pop up. Now you can click **Finish**.
 
     ![Confirmation window with apply and finish](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Inserting_Data_9.png "Confirmation window") 
 
