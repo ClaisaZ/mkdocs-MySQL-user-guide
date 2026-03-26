@@ -5,26 +5,29 @@ description: Step-by-step guide for creating a MySQL Workbench connection on Win
 
 # 1. Create a connection
 
-Before creating schemas, tables, or queries in MySQL Workbench, you first need to connect to an SQL Server. This part shows how to create a new connection in Workbench.
+Before creating schemas, tables, or queries in Workbench, you need to connect to an SQL Server with a connection. This part shows how to create a new connection in Workbench.
 
 ## Steps
 
 1. **Open** MySQL Workbench.
 
-2. On the home screen, click the + icon next to MySQL Connections.
+2. **Left-click** the + icon next to MySQL Connections on the home screen.
 
-    ![MySQL connection button](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Connection_2-2.png "MySQL confirmation button")
+    ![Workbench add new connection button](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Connection_2-2.png "Workbench add new connection button"){ .img-medium }
 
-3. In the Setup New Connection window, enter these connection details:
+3. **Type** the following details into the Setup New Connection window:
 
-    - Connection Name: enter a name for the connection
-    - Hostname: `localhost`
-    - Port: `3306`
-    - Username: `root`
+    - A name (of your choosing) in Connection Name
+    - `localhost` in Hostname
+    - `3306` in Port
+    - `root` in Username
 
-    ![Setup New Connection window with the required fields](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Connection_combined.png){ .img-medium .center-it title="Setup New Connection window" }
+    ![A window displaying the fields needed to set up a new database connection. ](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Connection_combined2.png){ .img-medium title="A window displaying the fields needed to set up a new database connection." }
 
-4. **Click** Test Connection to verify that the connection settings are correct. If prompted, enter your MySQL password.
+    !!! note "Note"
+        If `root` does not work for username, check the username you created when you installed MySQL Server. This is usually `root` unless you set a different username during setup.
+
+4. **Left-click** the Test Connection button to verify the connection is working. If prompted, enter your MySQL password.
 
     !!! success "Success"
         If the connection settings are correct, Workbench will display a successful connection message:
@@ -38,7 +41,7 @@ Before creating schemas, tables, or queries in MySQL Workbench, you first need t
 
 !!! warning "Warning"
     Before continuing to the next part, you should **open your connection**. Do this by left-clicking your connection (the box highlighted in red).
-    
+
     ![Connection on homescreen](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/open-connection.png)
 
 ## Conclusion

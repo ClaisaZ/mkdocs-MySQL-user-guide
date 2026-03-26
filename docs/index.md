@@ -9,7 +9,7 @@ description: Beginner-friendly introduction to using MySQL Workbench on Windows 
 
 MySQL is a relational database management system used to store, organize, and manage data. It allows users to create databases, store information in tables, and run queries to retrieve or modify data.
 
-This documentation explains how to use MySQL Workbench on Windows to do basic database work with its GUI (graphical interface). It will walk you through creating a connection, creating a schema (database), creating tables, running queries, and viewing or editing data in Workbench.
+This documentation will walk you through how to use MySQL Workbench on Windows to do basic database work with its GUI (graphical interface). You'll learn to create a connection, create a schema (database), create a table, run queries, and view or edit data.
 
 This is a beginner's guide to Workbench’s GUI, not a detailed guide to database theory or advanced MySQL.
 
@@ -17,7 +17,7 @@ This is a beginner's guide to Workbench’s GUI, not a detailed guide to databas
 
 This documentation is designed for users who want to learn how to use MySQL Workbench for basic database tasks.
 
-- Beginner developers who want to learn how to install and use MySQL.
+- Beginner developers who want to learn to use MySQL Workbench.
 - Students learning database management and core MySQL functionalities.
 - First-time users who have never worked with a database GUI before.
 
@@ -29,7 +29,7 @@ Before following this guide, users should be familiar with basic computer usage.
 
 This guide assumes that the following software is already correctly installed on your Windows computer. This is written specifically for people running the Windows OS.
 
-- [MySQL Server](https://dev.mysql.com/downloads/installer/)
+- [MySQL Server](https://dev.mysql.com/downloads/installer/) installed and running locally, with a configured MySQL user account (for example, `root`) and password
 - [MySQL Workbench](https://dev.mysql.com/downloads/workbench/)
 
 ## Typographical Conventions
@@ -50,9 +50,9 @@ This guide assumes that the following software is already correctly installed on
         <td><strong>Click</strong>, <strong>Enter</strong>, <strong>Type</strong>, <strong>Return</strong>, <strong>Open</strong>, <strong>Select</strong></td>
       </tr>
       <tr>
-        <td><code>Code, SQL, and file names</code></td>
-        <td>Monospace text for SQL commands.</td>
-        <td><code>SELECT * FROM users;</code></td>
+        <td><code>Code, SQL, and input values</code></td>
+        <td>Monospace text for SQL commands, and input values.</td>
+        <td><code>SELECT * FROM users;</code>, username=<code>root</code></td>
       </tr>
       <tr>
         <td>Important terms</td>
