@@ -8,62 +8,65 @@ description: Learn how to insert data into a MySQL table in MySQL Workbench on W
 In MySQL Workbench, data is stored inside tables as rows. To add new information, users insert data into the columns of a table. This section explains how to insert data using the MySQL Workbench graphical interface.
 
 !!! warning "Warning"
-    Before inserting data, make sure you have already created a table. Refer to [Create a table](./4-createtable.md).You should be familiar with the contents of the previous sections.
+    Before inserting data, make sure you have already created a table. Refer to [Create a table](./4-createtable.md).
+    
+    You should be familiar with the contents of the previous sections!
 
 ## Steps
 
-1. Locate the schema panel on the left side of the menu interface. 
-
-    ![Schema panel showing all available schemas](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Inserting_Data_1.png "Schemas panel")
+1. **Locate** the schema panel on the left side of the Workbench menu.
 
 2. Expand your schema and locate the table you want to insert data into.
 
-    ![Table section in schema panel](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Inserting_Data_2.png "Table section")
+    ![Table section in schema panel](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/new_table.png "Table section"){ .img-medium }
 
-3. **Right-click** the table and **click** Select Rows and a table view will open showing the current rows.
+3. **Right-click** the table, and **left-click** the Select Rows option.
 
-    ![Select rows option](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Inserting_Data_3.png "Select rows option")
+    ![Select rows option](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/right-click-select-table.png "Select rows option"){ .img-medium }
 
-4. **Click** on an empty row (usually marked with NULL ) at the bottom of the table.
+    !!! success "Success"
+        You should see the Result Grid appear after clicking Select Rows.
+
+        ![Result grid appearing](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@gh-pages/assets/images/result-grid.png "Result Grid"){ .img-medium }
+
+4. **Left-click** on an empty column to be able to type in it.
 
     ![Empty cell to enter data](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Inserting_Data_4_2.png "Empty cell for entering data")
 
-5. Enter values into each column.
-    
-    - Type directly into each cell.
+5. **Type** values into each column.
 
-        ![Data entry example](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Inserting_Data_5.png "Showing multiple data entrys")
+    - You can type directly into each cell.
+
+        ![Data entry example](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Inserting_Data_5.png "Showing multiple data entrys"){ .img-medium }
 
     - Follow the datatype requirements (e.g. numbers for INT, text for VARCHAR).
 
-    - If a column is set to Auto Increment, you can leave it blank and it will be filled automatically.
 
+6. **Left-click** the Apply button in the bottom right corner.
 
-6. **Click** Apply in the bottom right corner.
+    - If you accidentally entered incorrect data, you can click the Revert button beside Apply to erase what you just put.
 
-    ![Apply button](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Inserting_Data_6.png "Apply button")
+        ![Revert button for errors](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/revert-button.png "Revert button"){ .img-medium }
 
-    - If you accidentally entered incorrect data, you can click **Revert** beside **Apply** to erase what you just entered.
+7. **Read** the confirmation window showing the SQL command that will be executed.
 
-        ![Revert button for errors](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Inserting_Data_7.png "Revert button")
+    ![Confirmation window showing SQL statement](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/review-insert-data.png "SQL script confirmation to insert data")
 
-7. Review the confirmation window to ensure that the table has been created with the correct data.
-
-    ![Confirmation window showing SQL statement](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Inserting_Data_8.png "Confirmation window")
-
-8. **Click** Apply.
+8. **Left-click** the Apply button.
 
     !!! success "Success"
-        If the query runs successfully, you will see this pop up. Now you can click **Finish**.
+        If the SQL command runs correctly, you'll see this:
 
-    ![Confirmation window with apply and finish](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Inserting_Data_9.png "Confirmation window") 
+        ![Successfully inserted data](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@gh-pages/assets/images/table-script-success.png "Successfully inserted data"){ .img-medium }
 
-9. Verify that your row appears in the table, by **clicking** Refresh.
+    !!! danger "Common issue and fix"
+        - Make sure your required columns ( marked with NN for Not Null ) are filled in before clicking the Apply button, or the insert will fail.
+
+        - If you used the wrong datatype in a column, it will fail. For example, typing text like `hello" into an `INT` column that requires and integer like `1`, `2`, `3`.
+
+9. **Left-clicking** the Refresh button if you do not see changes in the Result Grid.
 
     ![Refresh button if data has not updated](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/view_data_6.png "Refresh button")
-
-!!! note "Note"
-    Make sure required columns ( marked with NN for Not Null ) are filled in before clicking **Apply**, or the insert may fail.
 
 ## Conclusion
 

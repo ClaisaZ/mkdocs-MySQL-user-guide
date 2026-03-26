@@ -48,4 +48,4 @@ A schema in Workbench represents a database that stores tables and data in those
 
 ## Conclusion
 
-You've created a schema in MySQL Workbench, you'll use this schema to create a table in the next part.
+You've created a schema in MySQL Workbench. You'll use this schema to create a table in the next part.
