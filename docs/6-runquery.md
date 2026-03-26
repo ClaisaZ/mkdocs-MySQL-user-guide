@@ -3,7 +3,7 @@ title: Running queries
 description: Step-by-step guide to running SQL queries in MySQL Workbench on Windows.
 ---
 
-# 6. Running queries
+# 5. Running queries
 
 A query is an SQL command used to retrieve or work with data. In MySQL Workbench, queries are written and run in the SQL Editor. This part explains how to run a query using Workbench.
 

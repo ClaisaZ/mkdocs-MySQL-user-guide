@@ -1,102 +1,102 @@
 [
   {
     "term": "Connection",
-    "definition": "A saved way the program knows how to reach and open your database.",
+    "definition": "A saved setup that lets MySQL Workbench connect to your database.",
     "aliases": ["connection", "connections"]
   },
   {
     "term": "Database",
-    "definition": "An organized collection of data managed by MySQL.",
+    "definition": "A place where related data is stored.",
     "aliases": ["database", "databases"]
   },
   {
     "term": "Relational",
-    "definition": "Describes data that is organized into tables and connected through relationships, allowing different sets of data to be linked and queried together.",
+    "definition": "A way of organizing data into tables that can be linked together.",
     "aliases": ["table-based", "relation-based"]
   },
   {
     "term": "Primary Key",
-    "definition": "A column, or group of columns, that uniquely identifies each row in a table.",
+    "definition": "A column that gives each row its own unique ID.",
     "aliases": ["primary key", "primary keys", "PK", "primary-key"]
   },
   {
     "term": "Query",
-    "definition": "A SQL command used to read, insert, update, or delete data.",
+    "definition": "A SQL command used to read or change data.",
     "aliases": ["query", "queries"]
   },
   {
     "term": "Schema",
-    "definition": "A named database container in MySQL that stores tables, views, and other database objects.",
+    "definition": "In this guide, a schema is your database: the place that holds your tables.",
     "aliases": ["schema", "schemas"]
   },
   {
     "term": "Table",
-    "definition": "A structure made of rows and columns that stores data inside a database.",
+    "definition": "A set of data arranged in rows and columns.",
     "aliases": ["table", "tables", "data table", "data tables"]
   },
   {
     "term": "Port",
-    "definition": "A number a program uses to connect to a service on a computer. In MySQL, port 3306 is the usual number used to connect to the MySQL server.",
+    "definition": "A number a program uses to connect to a service. MySQL usually uses 3306.",
     "aliases": ["port", "ports", "port number", "mysql port"]
   },
   {
     "term": "SQL Editor",
-    "definition": "The area in MySQL Workbench where users write and run SQL queries.",
+    "definition": "The area in MySQL Workbench where you write and run SQL commands.",
     "aliases": ["sql editor", "SQL editor", "editor"]
   },
   {
     "term": "Result Grid",
-    "definition": "The table at the bottom of MySQL Workbench that displays the results of a query.",
+    "definition": "The table at the bottom of Workbench that shows query results.",
     "aliases": ["result grid", "results grid", "query results"]
   },
   {
     "term": "Row",
-    "definition": "A single value in a table.",
+    "definition": "One full line of data in a table.",
     "aliases": ["row", "rows", "record", "records"]
   },
   {
     "term": "Column",
-    "definition": "A vertical field in a table that stores one type of information.",
+    "definition": "A vertical section in a table that stores one kind of data.",
     "aliases": ["column", "columns", "field", "fields"]
   },
   {
     "term": "INT",
-    "definition": "A numeric datatype used to store whole numbers (integers) without decimal values.",
+    "definition": "A data type for whole numbers, such as 1, 25, or 300.",
     "aliases": ["int", "integer", "whole number"]
   },
   {
     "term": "VARCHAR",
-    "definition": "A datatype used to store text of variable length, up to a specified number of characters, such as VARCHAR(45).",
+    "definition": "A data type for text.",
     "aliases": ["varchar", "string"]
   },
   {
     "term": "DATE",
-    "definition": "A datatype used to store calendar dates in the format YYYY-MM-DD.",
+    "definition": "A data type for dates in the format YYYY-MM-DD.",
     "aliases": ["date", "calendar date"]
   },
   {
     "term": "Not Null",
-    "definition": "A column constraint that requires a value to be entered and prevents the column from storing null (empty) values.",
+    "definition": "A setting that means a column cannot be left empty.",
     "aliases": ["not null", "NN", "not-null"]
   },
   {
     "term": "Auto Increment",
-    "definition": "A column setting that automatically generates a unique number for each new row, increasing by 1 each time, and is typically used with a Primary Key.",
+    "definition": "A setting that automatically gives each new row the next number.",
     "aliases": ["auto increment", "AI", "auto-increment"]
   },
   {
     "term": "Cell",
-    "definition": "A single box in a table where a row and column intersect, used to store one value for a specific column in a row.",
+    "definition": "One box in a table where a row and column meet.",
     "aliases": ["cell", "cells", "table cell"]
   },
   {
     "term": "Hostname",
-    "definition": "The name or address of the computer or server that MySQL Workbench connects to. In this guide, `localhost` means your own computer.",
+    "definition": "The name or address of the computer MySQL Workbench connects to.",
     "aliases": ["hostname", "host", "server address"]
   },
   {
     "term": "Localhost",
-    "definition": "A hostname that refers to your own computer. In this guide, it means MySQL Workbench is connecting to a MySQL server running on the same computer.",
+    "definition": "Your own computer.",
     "aliases": ["localhost"]
   }
 ]

@@ -3,7 +3,7 @@ title: Insert data
 description: Learn how to insert data into a MySQL table in MySQL Workbench on Windows.
 ---
 
-# 5. Insert data
+# 4. Insert data
 
 In MySQL Workbench, data is stored inside tables as rows. To add new information, users insert data into the columns of a table. This section explains how to insert data using the MySQL Workbench graphical interface.
 
