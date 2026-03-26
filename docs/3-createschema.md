@@ -26,14 +26,16 @@ A schema in Workbench represents a database that stores tables and data in those
 
 4. **Left-click** the Apply button.
 
-5. **Read** the confirmation window showing the SQL command that will executed.
+5. **Read** the confirmation window showing the SQL command that will be executed.
 
     ![Confirmation window showing that the command was executed](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@gh-pages/assets/images/confirmation_window.png "Confirmation window"){ .img-medium }
 
-6. **Left-click** the Apply button, if the SQL command runs correctly, you will see this:
+6. **Left-click** the Apply button.
 
-    ![Confirmation window with the finish button](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@gh-pages/assets/images/confirmation_window_finish_2.png "Finish button"){ .img-medium }
+    !!! success "Success"
+        If the SQL command runs correctly, you will see this:
 
+        ![Confirmation window with the finish button](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@gh-pages/assets/images/confirmation_window_finish_2_2.png "Finish button"){ .img-medium }
 
 7. **Left-click** the Finish button.
 
