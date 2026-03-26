@@ -51,7 +51,7 @@ A query is an SQL command used to retrieve or work with data. In MySQL Workbench
     !!! success "Success"
         If the query runs successfully, you'll see the data from your table in the Result Grid, as well as an Output showing the query that was executed.
 
-        ![Successful query execution](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Run_Query_6.png){ .img-medium }
+        ![Successful query execution](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Run_Query_6.png "Result Grid and Output panels"){ .img-medium }
 
 ## Conclusion
 
