@@ -15,19 +15,17 @@ This is a beginner's guide to Workbench’s GUI, not a detailed guide to databas
 
 ## Intended Users
 
-This documentation is designed for users who want to learn how to use MySQL Workbench for basic database tasks.
+This documentation is designed for people who want to learn how to use Workbench, and is specifically written for people running the Windows OS. Intended readers are:
 
-- Beginner developers who want to learn to use MySQL Workbench.
+- Beginner developers who want to learn MySQL Workbench.
 - Students learning database management and core MySQL functionalities.
 - First-time users who have never worked with a database GUI before.
 
 ## Prerequisite Knowledge
 
-Before following this guide, users should be familiar with basic computer usage. This includes opening and navigating applications, downloading and installing software, and using a mouse and keyboard to interact with system interfaces. Users should also be comfortable navigating files and folders within the Windows operating system.
+You should be familiar with basic computer usage before following this guide. This includes opening and navigating applications, and using a mouse and keyboard to interact with softwares. You should also be comfortable navigating files and folders.
 
 ## Software Requirements
-
-This guide assumes that the following software is already correctly installed on your Windows computer. This is written specifically for people running the Windows OS.
 
 - [MySQL Server](https://dev.mysql.com/downloads/installer/) installed and running locally, with a configured MySQL user account (for example, `root`) and password
 - [MySQL Workbench](https://dev.mysql.com/downloads/workbench/)
