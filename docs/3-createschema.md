@@ -14,36 +14,39 @@ A schema in Workbench represents a database that stores tables and data in those
 
 1. **Locate** the schema panel on the left side of the Workbench menu.
 
-    ![Schema panel showing all available schemas](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Schema_part_1_2.png "Schema panel highlighted in red box")
+    ![Schema panel showing all available schemas](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Schema_part_1_2.png "Schema panel highlighted in red box"){ .img-medium }
 
 2. **Left-click** the Create Schema button highlighted in red.
 
-    ![Create schema button in the schema navigation bar](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@gh-pages/assets/images/Creating_Schema_part_2_2.png "Create schema button")
+    ![Create schema button in the schema navigation bar](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@gh-pages/assets/images/Creating_Schema_part_2_2.png "Create schema button"){ .img-medium }
 
-3. Enter the name of your new schema in the schema name field.
+3. **Type** a name for your schema in the Name box.
 
-    ![Schema name field](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@gh-pages/assets/images/Creating_Schema_part_3.png "Enter schema name field")
+    ![Enter schema name field](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@gh-pages/assets/images/Creating_Schema_part_3_2.png "Enter schema name field"){ .img-medium }
 
-4. **Click** Apply to begin create the schema.
+    !!! note "Note"
+        We named our schema "new_schema" but you can choose whatever you want.
 
-5. Review the confirmation window showing the SQL command that was executed.
+4. **Left-click** the Apply button.
 
+5. **Read** the confirmation window showing the SQL command that was executed.
 
-    ![Confirmation window showing that the command was executed](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@gh-pages/assets/images/Creating_Schema_part_4.png "Confirmation window")
+    ![Confirmation window showing that the command was executed](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@gh-pages/assets/images/confirmation_window.png "Confirmation window")
 
-6. **Click** Finish in the confirmation window.
+6. **Left-click** the Apply button.
 
-    ![Confirmation window with the finish button](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@gh-pages/assets/images/Creating_Schema_part_5.png "Finish button")
+7. **Left-click** the Finish button.
 
-7. Verify that the schema appears in the SCHEMAS section.
+    ![Confirmation window with the finish button](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@gh-pages/assets/images/confirmation_window_finish.png "Finish button")
+
+8. **Check** that the schema appears in the schema panel on the left. If it doesn't show up, **left-click** the refresh button circled in red.
+
+    ![Refresh button circled in red](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@gh-pages/assets/images/refresh_button.png "Refresh button circled in red")
 
 !!! success "Success"
-    You have successfull created your new schema.
+    You have successful created your new schema.
 
-    ![Schema panel with the new schema added](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Schema_part_6.png "New schema added in the schema panel")
-
-!!! note "Note"
-    Use clear and simple names for your schema (e.g., `school_db` or `inventory`). Avoid spaces or special characters, as they may cause issues when writing SQL queries.
+    ![Schema panel with the new schema added](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Schema_part_6_2.png "New schema added in the schema panel")
 
 ## Conclusion
 
