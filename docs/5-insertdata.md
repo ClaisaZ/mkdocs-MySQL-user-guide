@@ -9,18 +9,20 @@ In MySQL Workbench, data is stored inside tables as rows. To add new information
 
 !!! warning "Warning"
     Before inserting data, make sure you have already created a table. Refer to [Create a table](./4-createtable.md).
-    
+
     You should be familiar with the contents of the previous sections so you can follow this part easily!
 
 ## Steps
 
 1. **Locate** the schema panel on the left side of the Workbench menu.
 
-2. Expand your schema and locate the table you want to insert data into.
+2. **Expand** your schema to locate the table you want to insert data into.
 
     ![Table section in schema panel](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/new_table.png "Table section"){ .img-medium }
 
-3. **Right-click** the table, and **left-click** the Select Rows option.
+3. **Right-click** that table.
+
+4. **Left-click** the Select Rows option.
 
     ![Select rows option](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/right-click-select-table.png "Select rows option"){ .img-medium }
 
@@ -29,11 +31,11 @@ In MySQL Workbench, data is stored inside tables as rows. To add new information
 
         ![Result grid appearing](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@gh-pages/assets/images/result-grid.png "Result Grid"){ .img-medium }
 
-4. **Left-click** on an empty column to be able to type in it.
+5. **Left-click** on an empty column to be able to type in it.
 
     ![Empty cell to enter data](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Inserting_Data_4_2.png "Empty cell for entering data")
 
-5. **Type** values into each column.
+6. **Type** values into each column.
 
     - You can type directly into each cell.
 
@@ -41,18 +43,17 @@ In MySQL Workbench, data is stored inside tables as rows. To add new information
 
     - Follow the datatype requirements (e.g. numbers for INT, text for VARCHAR).
 
-
-6. **Left-click** the Apply button in the bottom right corner.
+7. **Left-click** the Apply button in the bottom right corner.
 
     - If you accidentally entered incorrect data, you can click the Revert button beside Apply to erase what you just put.
 
         ![Revert button for errors](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/revert-button.png "Revert button"){ .img-medium }
 
-7. **Read** the confirmation window showing the SQL command that will be executed.
+8. **Read** the confirmation window showing the SQL command that will be executed.
 
     ![Confirmation window showing SQL statement](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/review-insert-data.png "SQL script confirmation to insert data"){ .img-medium }
 
-8. **Left-click** the Apply button.
+9. **Left-click** the Apply button.
 
     !!! success "Success"
         If the SQL command runs correctly, you'll see this:
@@ -64,7 +65,7 @@ In MySQL Workbench, data is stored inside tables as rows. To add new information
 
         - If you used the wrong datatype in a column, it will fail. For example, typing text like `hello` into an `INT` column that requires and integer like `1`, `2`, `3` will fail.
 
-9. **Left-click** the Refresh button if you do not see changes in the Result Grid.
+10. **Left-click** the Refresh button if you do not see changes in the Result Grid.
 
     ![Refresh button if data has not updated](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/view_data_6.png "Refresh button")
 

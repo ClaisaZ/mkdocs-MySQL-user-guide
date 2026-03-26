@@ -8,8 +8,8 @@ description: Step-by-step guide to creating a table in MySQL Workbench on Window
 This section walks you through how to create a table using Workbench.
 
 !!! warning "Warning"
-    Before making a table, make sure you've already created a schema. Refer to [Create a schema](3-createschema.md). 
-    
+    Before making a table, make sure you've already created a schema. Refer to [Create a schema](3-createschema.md).
+
     You should be familiar with the contents of the previous sections so you can follow this part easily!
 
 ## Steps
@@ -65,12 +65,16 @@ This section walks you through how to create a table using Workbench.
 
 10. **Left-click** the Finish button.
 
-11. **Left-click** the button highlighted in red to expand the Tables section to confirm your table exists. If the table does not show up, **left-click** the Refresh button.
+11. **Left-click** the button highlighted in red to expand the Tables section and confirm your table exists.
+
     ![Expand the Tables section](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/new_table_here.png "Expand button"){ .img-medium }
 
     !!! Success "Success"
         You successfully created a new table in your schema.
         ![New table visible in schema table list](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/new_table.png "New table in schema"){ .img-medium }
+
+    !!! danger "Common issue and fix"
+        If the table does not show up, **left-click** the Refresh button.
 
     !!! note "Note"
         It's recommended to create a Primary Key (PK) for your table, using an `INT` column with Auto Increment (AI). This ensures each row has a unique identifier.

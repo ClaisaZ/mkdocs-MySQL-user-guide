@@ -30,6 +30,9 @@ You should be familiar with basic computer usage before following this guide. Th
 - [MySQL Server](https://dev.mysql.com/downloads/installer/) installed and running locally, with a configured MySQL user account (for example, `root`) and password
 - [MySQL Workbench](https://dev.mysql.com/downloads/workbench/)
 
+!!! note "Note"
+    This documentation was written and tested for MySQL Workbench 8.0. If you're using a different version, some menus, options, or screens might look different.
+
 ## Typographical Conventions
 
 <div class="typo-conventions-only">

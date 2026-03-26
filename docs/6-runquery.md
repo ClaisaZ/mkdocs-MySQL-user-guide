@@ -16,21 +16,25 @@ A query is an SQL command used to retrieve or work with data. In MySQL Workbench
 
 1. **Locate** the schema panel on the left side of the Workbench menu.
 
-2. **Expand** your schema, then **expand** the Tables section to confirm the table you created exists.
+2. **Expand** your schema, and then the Tables section too so you can confirm the table you created exists.
 
     ![SQL Editor with the SCHEMAS panel visible](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/run_query_2_4.png "Expanded menu showing table"){ .img-query-step-first-three .center-it }
 
-3. **Left-click** File at the top left, then **left-click** New Query Tab to create a new query tab in the SQL Editor.
+3. **Left-click** the File button on the top left of Workbench.
+
+    ![File button in MySQL Workbench](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/file-button.png "File button in MySQL Workbench"){ .img-query-step-first-three }
+
+4. **Left-click** New Query Tab to create a new query tab in the SQL Editor.
 
     ![New SQL tab button in MySQL Workbench](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Run_Query_3_2.png "New Query Tab option"){ .img-query-step-first-three .center-it }
-
-    !!! note "Note"
-        You can also **press** Ctrl + T at the same time on your keyboard to create a tab.
 
     The area highlighted in red is your SQL Editor. This is where you write and run queries:
     ![SQL Editor](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/sqlEditor.png "SQL Editor highlighted in red"){ .img-medium .center-it }
 
-4. **Type** this into the SQL Editor:
+    !!! note "Note"
+        You can also **press** Ctrl + T at the same time on your keyboard to create a tab.
+
+5. **Type** this into the SQL Editor:
 
     ```sql
     USE name_of_your_schema;
@@ -44,7 +48,7 @@ A query is an SQL command used to retrieve or work with data. In MySQL Workbench
     !!! note "Note"
         This part uses a `USE` and `SELECT` query because it's safe for beginners.
 
-5. **Left-click** the Execute button (lightning bolt icon) to run the query.
+6. **Left-click** the Execute button (lightning bolt icon) to run the query.
 
     ![Execute button in MySQL Workbench](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Run_Query_5.png "Run query button"){ .img-query-step }
 
