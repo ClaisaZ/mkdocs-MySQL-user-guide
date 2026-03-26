@@ -16,9 +16,9 @@ A schema in Workbench represents a database that stores tables and data in those
 
     ![Schema panel showing all available schemas](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Schema_part_1_2.png "Schema panel highlighted in red box")
 
-2. **Click** the Create Schema button.
+2. **Left-click** the Create Schema button highlighted in red.
 
-    ![Create schema button in the schema navigation bar](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@gh-pages/assets/images/Creating_Schema_part_2.png "Create schema button")
+    ![Create schema button in the schema navigation bar](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@gh-pages/assets/images/Creating_Schema_part_2_2.png "Create schema button")
 
 3. Enter the name of your new schema in the schema name field.
 
