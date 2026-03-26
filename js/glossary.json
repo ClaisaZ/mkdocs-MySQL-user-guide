@@ -1,7 +1,7 @@
 [
   {
     "term": "Connection",
-    "definition": "The saved settings MySQL Workbench uses to connect to a MySQL server.",
+    "definition": "A saved way the program knows how to reach and open your database.",
     "aliases": ["connection", "connections"]
   },
   {

@@ -402,55 +402,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3">
-        
-          
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Working with a database
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    Working with a database
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix="">
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../3-createschema/" class="md-nav__link">
         
@@ -471,10 +422,9 @@
     </li>
   
 
-              
-            
-              
-                
+    
+      
+      
   
   
   
@@ -499,10 +449,9 @@
     </li>
   
 
-              
-            
-              
-                
+    
+      
+      
   
   
   
@@ -527,10 +476,9 @@
     </li>
   
 
-              
-            
-              
-                
+    
+      
+      
   
   
   
@@ -555,10 +503,9 @@
     </li>
   
 
-              
-            
-              
-                
+    
+      
+      
   
   
   
@@ -583,14 +530,6 @@
     </li>
   
 
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
     
       
       
@@ -609,10 +548,10 @@
         
           
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4">
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8">
         
           
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
             
   
   
@@ -630,8 +569,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -786,28 +725,32 @@
 
 
 <h1 id="1-create-a-connection">1. Create a connection</h1>
-<p>Before creating schemas, tables, or queries in MySQL Workbench, you first need to connect to an SQL Server. This part shows how to create a new connection in Workbench.</p>
+<p>Before creating schemas, tables, or queries in Workbench, you need to connect to an SQL Server with a connection. This part shows how to create a new connection in Workbench.</p>
 <h2 id="steps">Steps</h2>
 <ol>
 <li>
 <p><strong>Open</strong> MySQL Workbench.</p>
 </li>
 <li>
-<p>On the home screen, click the + icon next to MySQL Connections.</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Connection_2-2.png" data-desc-position="bottom"><img alt="MySQL connection button" src="https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Connection_2-2.png" title="MySQL confirmation button"></a></p>
+<p><strong>Left-click</strong> the + icon next to MySQL Connections on the home screen.</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Connection_2-2.png" data-desc-position="bottom"><img alt="Workbench add new connection button" class="img-medium" src="https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Connection_2-2.png" title="Workbench add new connection button"></a></p>
 </li>
 <li>
-<p>In the Setup New Connection window, enter these connection details:</p>
+<p><strong>Type</strong> the following details into the Setup New Connection window:</p>
 <ul>
-<li>Connection Name: enter a name for the connection</li>
-<li>Hostname: <code>localhost</code></li>
-<li>Port: <code>3306</code></li>
-<li>Username: <code>root</code></li>
+<li>A name (of your choosing) in Connection Name</li>
+<li><code>localhost</code> in Hostname</li>
+<li><code>3306</code> in Port</li>
+<li><code>root</code> in Username</li>
 </ul>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Connection_combined.png" data-desc-position="bottom"><img alt="Setup New Connection window with the required fields" class="img-medium center-it" src="https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Connection_combined.png" title="Setup New Connection window"></a></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Connection_combined2.png" data-desc-position="bottom"><img alt="A window displaying the fields needed to set up a new database connection. " class="img-medium" src="https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Connection_combined2.png" title="A window displaying the fields needed to set up a new database connection."></a></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If <code>root</code> does not work for username, check the username you created when you installed MySQL Server. This is usually <code>root</code> unless you set a different username during setup.</p>
+</div>
 </li>
 <li>
-<p><strong>Click</strong> Test Connection to verify that the connection settings are correct. If prompted, enter your MySQL password.</p>
+<p><strong>Left-click</strong> the Test Connection button to verify the connection is working. If prompted, enter your MySQL password.</p>
 <div class="admonition success">
 <p class="admonition-title">Success</p>
 <p>If the connection settings are correct, Workbench will display a successful connection message:</p>
@@ -849,7 +792,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="March 25, 2026 20:15:05 UTC">March 25, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="March 26, 2026 17:20:31 UTC">March 26, 2026</span>
   </span>
 
     

@@ -433,55 +433,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3">
-        
-          
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Working with a database
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    Working with a database
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix="">
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="3-createschema/" class="md-nav__link">
         
@@ -502,10 +453,9 @@
     </li>
   
 
-              
-            
-              
-                
+    
+      
+      
   
   
   
@@ -530,10 +480,9 @@
     </li>
   
 
-              
-            
-              
-                
+    
+      
+      
   
   
   
@@ -558,10 +507,9 @@
     </li>
   
 
-              
-            
-              
-                
+    
+      
+      
   
   
   
@@ -586,10 +534,9 @@
     </li>
   
 
-              
-            
-              
-                
+    
+      
+      
   
   
   
@@ -614,14 +561,6 @@
     </li>
   
 
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
     
       
       
@@ -640,10 +579,10 @@
         
           
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4">
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8">
         
           
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
             
   
   
@@ -661,8 +600,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -853,12 +792,12 @@
 
 <h1 id="introduction">Introduction</h1>
 <p>MySQL is a relational database management system used to store, organize, and manage data. It allows users to create databases, store information in tables, and run queries to retrieve or modify data.</p>
-<p>This documentation explains how to use MySQL Workbench on Windows to do basic database work with its GUI (graphical interface). It will walk you through creating a connection, creating a schema (database), creating tables, running queries, and viewing or editing data in Workbench.</p>
+<p>This documentation will walk you through how to use MySQL Workbench on Windows to do basic database work with its GUI (graphical interface). You'll learn to create a connection, create a schema (database), create a table, run queries, and view or edit data.</p>
 <p>This is a beginner's guide to Workbench’s GUI, not a detailed guide to database theory or advanced MySQL.</p>
 <h2 id="intended-users">Intended Users</h2>
 <p>This documentation is designed for users who want to learn how to use MySQL Workbench for basic database tasks.</p>
 <ul>
-<li>Beginner developers who want to learn how to install and use MySQL.</li>
+<li>Beginner developers who want to learn to use MySQL Workbench.</li>
 <li>Students learning database management and core MySQL functionalities.</li>
 <li>First-time users who have never worked with a database GUI before.</li>
 </ul>
@@ -867,7 +806,7 @@
 <h2 id="software-requirements">Software Requirements</h2>
 <p>This guide assumes that the following software is already correctly installed on your Windows computer. This is written specifically for people running the Windows OS.</p>
 <ul>
-<li><a href="https://dev.mysql.com/downloads/installer/">MySQL Server</a></li>
+<li><a href="https://dev.mysql.com/downloads/installer/">MySQL Server</a> installed and running locally, with a configured MySQL user account (for example, <code>root</code>) and password</li>
 <li><a href="https://dev.mysql.com/downloads/workbench/">MySQL Workbench</a></li>
 </ul>
 <h2 id="typographical-conventions">Typographical Conventions</h2>
@@ -887,9 +826,9 @@
         <td><strong>Click</strong>, <strong>Enter</strong>, <strong>Type</strong>, <strong>Return</strong>, <strong>Open</strong>, <strong>Select</strong></td>
       </tr>
       <tr>
-        <td><code>Code, SQL, and file names</code></td>
-        <td>Monospace text for SQL commands.</td>
-        <td><code>SELECT * FROM users;</code></td>
+        <td><code>Code, SQL, and input values</code></td>
+        <td>Monospace text for SQL commands, and input values.</td>
+        <td><code>SELECT * FROM users;</code>, username=<code>root</code></td>
       </tr>
       <tr>
         <td>Important terms</td>
@@ -941,7 +880,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="March 25, 2026 17:54:26 UTC">March 25, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="March 26, 2026 17:20:31 UTC">March 26, 2026</span>
   </span>
 
     
