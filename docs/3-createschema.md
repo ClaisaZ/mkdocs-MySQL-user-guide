@@ -24,30 +24,28 @@ A schema in Workbench represents a database that stores tables and data in those
 
     ![Enter schema name field](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@gh-pages/assets/images/Creating_Schema_part_3_2.png "Enter schema name field"){ .img-medium }
 
-    !!! note "Note"
-        We named our schema "new_schema" but you can choose whatever you want.
-
 4. **Left-click** the Apply button.
 
-5. **Read** the confirmation window showing the SQL command that was executed.
+5. **Read** the confirmation window showing the SQL command that will executed.
 
-    ![Confirmation window showing that the command was executed](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@gh-pages/assets/images/confirmation_window.png "Confirmation window")
+    ![Confirmation window showing that the command was executed](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@gh-pages/assets/images/confirmation_window.png "Confirmation window"){ .img-medium }
 
-6. **Left-click** the Apply button.
+6. **Left-click** the Apply button, if the SQL command runs correctly, you will see this:
+
+    ![Confirmation window with the finish button](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@gh-pages/assets/images/confirmation_window_finish_2.png "Finish button"){ .img-medium }
+
 
 7. **Left-click** the Finish button.
 
-    ![Confirmation window with the finish button](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@gh-pages/assets/images/confirmation_window_finish.png "Finish button")
+8. **Left-click** the refresh button circled in red if you don't see your new schema in the schema panel.
 
-8. **Check** that the schema appears in the schema panel on the left. If it doesn't show up, **left-click** the refresh button circled in red.
+    ![Refresh button circled in red](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@gh-pages/assets/images/refresh_button.png "Refresh button circled in red"){ .img-medium }
 
-    ![Refresh button circled in red](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@gh-pages/assets/images/refresh_button.png "Refresh button circled in red")
+    !!! success "Success"
+        Your newly created schema should show up in the schemas panel on the left side.
 
-!!! success "Success"
-    You have successful created your new schema.
-
-    ![Schema panel with the new schema added](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Schema_part_6_2.png "New schema added in the schema panel")
+        ![Schema panel with the new schema added](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Schema_part_6_2.png "Schema panel with the new schema added"){ .img-medium }
 
 ## Conclusion
 
-You've created a schema in MySQL Workbench. Your schema is ready to store tables and data now.
+You've created a schema in MySQL Workbench, you'll use this schema to create a table in the next part.
