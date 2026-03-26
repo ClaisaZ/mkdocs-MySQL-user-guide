@@ -8,45 +8,42 @@ description: Step-by-step guide to creating a table in MySQL Workbench on Window
 This section walks you through how to create a table using Workbench.
 
 !!! warning "Warning"
-    Before making a table, make sure you have already created a schema. Refer to [Create a schema](3-createschema.md).
+    Before making a table, make sure you've already created a schema. Refer to [Create a schema](3-createschema.md). You should be familiar with the contents of the previous sections.
 
 ## Steps
 
-1. Locate the schema panel on the left side of the menu interface.
+1. **Locate** the schema panel on the left side of the Workbench menu.
 
-    ![Schema panel showing available databases](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Table_1.png "Schema table")
+2. **Left-click** the button highlighted in red to expand your schema.
 
-2. Expand your schema by clicking the arrow next to its name. 
+    ![Expanded schema with tables section visible](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Table_2_2_2.png "Expand schema button"){ .img-medium }
 
-    ![Expanded schema with tables section visible](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Table_2_2.png "Expand schema section")
+3. **Right-click** the Tables section under your schema.
 
-3. **Right-click** on the Tables section inside your schema.
+    ![Right-click menu on Tables section](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Table_3_2.png "Table section"){ .img-medium }
 
-    ![Right-click menu on Tables section](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Table_3.png "Table section")
+4. **Left-click** the Create Table option.
 
-4. **Click** Create Table.
+    ![Create Table option in context menu](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Table_4_2.png "Create table menu"){ .img-medium }
 
-    ![Create Table option in context menu](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Table_4.png "Create table menu")
+5. **Type** a name for your table in the name box.
 
-5. Enter your table name in the table name field. 
+    ![Table editor with Table field](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Table_5_2.png "Enter a table name")
 
-    ![Table editor with Table field](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Table_5.png "Enter a table name")
+6. **Enter** each column’s details in the top row of the **Columns** section, one column at a time.
 
-6. Define your table structure by adding columns one at a time.
+    Example:
+    ![Top row of the Columns section in the table editor, showing where to enter a column name, choose a datatype, and select column options such as PK, NN, and AI.](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Table_6_2.png "Columns section in the table editor")
 
-    ![Columns section in table editor](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Table_6.png "Table structure editor")
+    For each column:
 
-    - Enter a column name.
+    - **Type** the column name in **Column Name**.
+    - **Select** a value in **Datatype**.
+    - **Left-click** to check any options you want to apply, like **PK** for primary key, **NN** for not null, or **AI** for auto increment.
 
-        ![Column name input field](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Table_7.png "Enter a column name")
-
-    - Select a data type in the Datatype field, such as INT, VARCHAR, or DATE.
-
-        ![Datatype selection field](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Table_8.png "Datatype selection field")
-
-    - Check any needed options, such as PK for primary key, NN for not null, or AI for auto increment.
-
-        ![Column options like PK, NN, AI](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Table_9.png "Specific table options like PK, NN, AI")
+    !!! danger "Issue"
+    If you can't find the Column editing section, click the button highlighted in red:
+    ![Button to open column editor in create table windoww](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/open-column-button.png "Button to open column editor")
 
 7. **Click** Apply.
 
@@ -61,7 +58,7 @@ This section walks you through how to create a table using Workbench.
     ![Apply and Finish buttons in confirmation window](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Table_12.png "Apply and Finish buttons")
 
 10. Verify that your table has been created by navigating back to your tables section in your schema.
-    
+
     !!! Success "Success"
         You have created a new table!
     ![New table visible in schema table list](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Table_13_2.png "New table in schema")

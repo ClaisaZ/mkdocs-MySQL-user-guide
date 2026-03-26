@@ -33,20 +33,18 @@ A schema in Workbench represents a database that stores tables and data in those
 6. **Left-click** the Apply button.
 
     !!! success "Success"
-        If the SQL command runs correctly, you will see this:
+        If the SQL command runs correctly, you'll see this:
 
         ![Confirmation window with the finish button](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@gh-pages/assets/images/confirmation_window_finish_2_2.png "Finish button"){ .img-medium }
 
 7. **Left-click** the Finish button.
 
-8. **Left-click** the refresh button circled in red if you don't see your new schema in the schema panel.
+8. **Left-click** the Refresh button circled in red if you don't see your new schema in the schema panel.
 
     ![Refresh button circled in red](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@gh-pages/assets/images/refresh_button.png "Refresh button circled in red"){ .img-medium }
 
     !!! success "Success"
         Your newly created schema should show up in the schemas panel on the left side.
-
-        ![Schema panel with the new schema added](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Schema_part_6_2.png "Schema panel with the new schema added"){ .img-medium }
 
 ## Conclusion
 
