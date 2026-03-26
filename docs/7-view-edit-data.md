@@ -14,7 +14,7 @@ In Workbench you can view and change data in a table, allowing you to update val
 
 ## Steps
 
-### Edit data
+### Editing data
 
 1. **Locate** the schema panel on the left side of the Workbench menu.
 
@@ -28,7 +28,7 @@ In Workbench you can view and change data in a table, allowing you to update val
 
     ![Table view showing all current data](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/view_data_1.png "Table with current data")
 
-4. **Left-click** on the cell you want to edit and **type** the new value
+4. **Left-click** on the cell you want to edit and **type** the new value.
 
     ![Schema panel in MySQL Workbench](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/view_data_2.png "Data inside a cell in a table")
 
@@ -36,7 +36,7 @@ In Workbench you can view and change data in a table, allowing you to update val
 
 6. **Refresh** the Result Grid, your table should be edited now.
 
-### Delete data
+### Deleting data
 
 1. **Left-click** on the button highlighted in red beside the row you want to delete, and then **right-click** on the same button to open the options menu for that row.
 
@@ -46,6 +46,9 @@ In Workbench you can view and change data in a table, allowing you to update val
 
     ![Schema panel in MySQL Workbench](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/delete-rows-option.png "Delete Row(s) option")
 
+    !!! warning "Warning"
+        Be careful when editing values in a Primary Key column. Primary Keys must remain unique, so changing them may cause errors or affect how rows are identified.
+
 3. **Apply** the changes the same way you did in the previous parts.
 
 4. **Refresh** the Result Grid, your row should be deleted now.
@@ -54,10 +57,6 @@ In Workbench you can view and change data in a table, allowing you to update val
         The row you deleted should be empty now.
 
         ![Empty row in a table after being deleted](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/empty-row.png "Empty row after deleted")
-
-
-!!! warning "Warning"
-    Be careful when editing values in a Primary Key column. Primary Keys must remain unique, so changing them may cause errors or affect how rows are identified.
 
 ## Conclusion
 
