@@ -1,0 +1,121 @@
+[
+  {
+    "category": "Tables and columns",
+    "issue": "I can't click the Auto Increment (AI) box",
+    "cause": "The column is not set to a number type, or it is not a Primary Key.",
+    "solution": "Change the column type to INT, turn on Primary Key (PK), and then turn on Auto Increment (AI).",
+    "keywords": ["ai", "auto increment", "int", "pk", "primary key", "column"]
+  },
+  {
+    "category": "Tables and columns",
+    "issue": "The text I enter is being cut off",
+    "cause": "The VARCHAR size is too small.",
+    "solution": "Increase the VARCHAR size, for example change VARCHAR(5) to VARCHAR(50).",
+    "keywords": ["varchar", "text", "cut off", "truncated", "column"]
+  },
+  {
+    "category": "Tables and columns",
+    "issue": "My table does not appear after I create it",
+    "cause": "The schema list was not refreshed.",
+    "solution": "Refresh the schema list and check again.",
+    "keywords": ["table", "schema", "refresh", "not appear"]
+  },
+  {
+    "category": "Data entry",
+    "issue": "I can't type in a cell when inserting data",
+    "cause": "You are not editing a new row yet.",
+    "solution": "Click the empty row at the bottom of the Result Grid, then start typing.",
+    "keywords": ["cell", "insert", "type", "row", "result grid"]
+  },
+  {
+    "category": "Data entry",
+    "issue": "I cant find the table when inserting data",
+    "cause": "You are looking in the wrong schema.",
+    "solution": "Make sure you opened the correct schema and selected the correct table.",
+    "keywords": ["table", "schema", "insert", "wrong schema"]
+  },
+  {
+    "category": "Data entry",
+    "issue": "I'm getting an error when inserting text into a column",
+    "cause": "The value does not match the column type.",
+    "solution": "Use VARCHAR for text and INT for whole numbers.",
+    "keywords": ["text", "column", "varchar", "int", "datatype", "insert"]
+  },
+  {
+    "category": "Data entry",
+    "issue": "I cant delete a row",
+    "cause": "The wrong row was selected, or the change was not applied.",
+    "solution": "Select the correct row, delete it, and click Apply.",
+    "keywords": ["delete", "row", "apply", "data"]
+  },
+  {
+    "category": "Data entry",
+    "issue": "Error about duplicate values",
+    "cause": "A Primary Key value must be unique.",
+    "solution": "Enter a value that is not already used, or do not change the Primary Key value.",
+    "keywords": ["duplicate", "primary key", "unique", "row", "value"]
+  },
+  {
+    "category": "Data entry",
+    "issue": "My changes disappear after I edit data",
+    "cause": "The changes were not saved.",
+    "solution": "After editing the row, click Apply and finish the confirmation step.",
+    "keywords": ["changes", "edit", "apply", "save", "data"]
+  },
+  {
+    "category": "Queries",
+    "issue": "My query returns an error message",
+    "cause": "There is a mistake in the SQL query.",
+    "solution": "Check for spelling mistakes, missing commas, missing semicolons, or missing keywords.",
+    "keywords": ["query", "sql", "error", "syntax", "semicolon", "comma"]
+  },
+  {
+    "category": "Queries",
+    "issue": "My table doesn't exist error",
+    "cause": "The table name is wrong.",
+    "solution": "Make sure the table name matches your real table name exactly.",
+    "keywords": ["table does not exist", "table name", "query", "error"]
+  },
+  {
+    "category": "Queries",
+    "issue": "Unknown database error",
+    "cause": "The schema name is wrong, or no schema is selected.",
+    "solution": "Check the schema name and run USE your_schema_name; before the query.",
+    "keywords": ["unknown database", "schema", "use", "query", "database"]
+  },
+  {
+    "category": "Queries",
+    "issue": "No database selected",
+    "cause": "No default schema is selected in MySQL Workbench.",
+    "solution": "Double-click your schema in the SCHEMAS panel, then run the query again.",
+    "keywords": ["no database selected", "schema", "default schema", "query"]
+  },
+  {
+    "category": "Queries",
+    "issue": "No rows appear in result grid after my query runs",
+    "cause": "The table is empty, or the query did not match any rows.",
+    "solution": "Make sure the table has data, then run the query again.",
+    "keywords": ["query", "rows", "result grid", "empty", "table"]
+  },
+  {
+    "category": "Connection",
+    "issue": "I can't connect to sql server",
+    "cause": "The server is not running, or the connection details are wrong.",
+    "solution": "Make sure MySQL Server is running. Then check the hostname, port, username, and password.",
+    "keywords": [
+      "connect",
+      "server",
+      "hostname",
+      "port",
+      "username",
+      "password"
+    ]
+  },
+  {
+    "category": "Connection",
+    "issue": "Access denied for user 'root'",
+    "cause": "The password is wrong, or this account cannot connect.",
+    "solution": "Enter the correct password and make sure you are using the correct MySQL account.",
+    "keywords": ["access denied", "root", "password", "user", "account"]
+  }
+]

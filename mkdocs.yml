@@ -20,6 +20,7 @@ extra_css:
 
 extra_javascript:
   - js/theme-default.js
+  - js/troubleshooting.js
 
 repo_url: https://github.com/ClaisaZ/mkdocs-MySQL-user-guide
 repo_name: ClaisaZ/mkdocs-MySQL-user-guide

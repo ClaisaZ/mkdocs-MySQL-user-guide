@@ -462,7 +462,63 @@ label[for="__toc"],
   height: auto;
 }
 
-
 .md-typeset img.center-it {
   /* margin: 1rem auto 1.25rem auto; */
+}
+
+.troubleshooting-search-wrap {
+  margin: 0 0 1rem 0;
+}
+
+.troubleshooting-search-label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.troubleshooting-search-input {
+  width: 100%;
+  max-width: 28rem;
+  padding: 0.65rem 0.8rem;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 0.25rem;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+}
+
+.troubleshooting-search-input:focus {
+  outline: none;
+  border-color: currentColor;
+}
+
+.troubleshooting-search-count {
+  margin-top: 0.5rem;
+  color: var(--md-default-fg-color--light);
+  font-size: 0.9rem;
+}
+
+.troubleshooting-section {
+  margin: 2rem 0;
+}
+
+.troubleshooting-section-heading {
+  margin-bottom: 1rem;
+}
+
+.troubleshooting-item {
+  padding: 1rem 1rem 0.6rem;
+  margin-bottom: 1rem;
+  background: var(--md-default-bg-color);
+  border-bottom: rgb(42, 42, 42) solid 1px;
+}
+
+.troubleshooting-item-heading {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+}
+
+.troubleshooting-empty,
+.troubleshooting-loading {
+  color: var(--md-default-fg-color--light);
 }
