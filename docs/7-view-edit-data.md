@@ -61,7 +61,7 @@ In Workbench you can view and change data in a table, allowing you to update val
 
 4. **Apply** the changes the same way you did in the previous parts.
 
-5. **Refresh** the Result Grid, your row should be deleted now.
+5. **Refresh** the Result Grid.
 
     !!! success "Success"
         The row you deleted should be empty now.
