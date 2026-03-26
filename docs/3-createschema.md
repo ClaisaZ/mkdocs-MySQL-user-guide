@@ -5,18 +5,16 @@ description: Learn how to create a new schema in MySQL Workbench on Windows for 
 
 # 2. Create a Schema
 
-A schema in MySQL Workbench represents a database that stores tables and data in those tables. 
-
-This section explains how to create a new schema using the MySQL Workbench graphical interface.
+A schema in Workbench represents a database that stores tables and data in those tables. This section walks you through how to create a new schema.
 
 !!! warning "Warning"
-    Make sure you already created a connection, and you opened the connection. Refer to [Create a connection](./2-create-conn.md).
+    Make sure you already created a connection and it's opened right now. Refer to [Create a connection](./2-create-conn.md).
 
 ## Steps
 
-1. Locate the schema panel on the left side of the menu interface.
+1. **Locate** the schema panel on the left side of the Workbench menu.
 
-    ![Schema panel showing all available schemas](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Schema_part_1.png "Schema panel")
+    ![Schema panel showing all available schemas](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Schema_part_1_2.png "Schema panel highlighted in red box")
 
 2. **Click** the Create Schema button.
 

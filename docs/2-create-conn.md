@@ -27,7 +27,7 @@ Before creating schemas, tables, or queries in Workbench, you need to connect to
     !!! note "Note"
         If `root` does not work for username, check the username you created when you installed MySQL Server. This is usually `root` unless you set a different username during setup.
 
-4. **Left-click** the Test Connection button to verify the connection is working. If prompted, enter your MySQL password.
+4. **Left-click** the Test Connection button to verify the connection is working. If prompted, **enter** your MySQL password.
 
     !!! success "Success"
         If the connection settings are correct, Workbench will display a successful connection message:
@@ -35,14 +35,15 @@ Before creating schemas, tables, or queries in Workbench, you need to connect to
         ![Successful Test Connection message in MySQL Workbench](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Connection_7.png){ .img-medium .center-it title="Successful Test Connection message in MySQL Workbench" }
 
     !!! note "Note"
-        If the connection test fails, double-check your **password**, **hostname**, and **port number (3306)**. Most connection issues are caused by incorrect login details.
+        If the connection test fails, double-check your password, hostname, and port number (3306). Most connection issues are caused by incorrect login details.
 
-5. **Click** OK to save the connection.
+5. **Left-click** OK to save the connection.
 
-!!! warning "Warning"
-    Before continuing to the next part, you should **open your connection**. Do this by left-clicking your connection (the box highlighted in red).
 
-    ![Connection on homescreen](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/open-connection.png)
+    !!! warning "Warning"
+        Before continuing to the next part, you should **left-click** on your connection (the box highlighted in red) to open it.
+
+        ![Connection on homescreen](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/open-connection.png)
 
 ## Conclusion
 

@@ -5,7 +5,7 @@ description: Step-by-step guide to creating a table in MySQL Workbench on Window
 
 # 3. Create a table
 
-An SQL table stores data in rows and columns. Columns define the kind of data each entry can hold, and rows contain the actual data. This section shows how to create a table using Workbench.
+This section walks you through how to create a table using Workbench.
 
 !!! warning "Warning"
     Before making a table, make sure you have already created a schema. Refer to [Create a schema](3-createschema.md).
