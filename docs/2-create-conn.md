@@ -43,7 +43,7 @@ Before creating schemas, tables, or queries in Workbench, you need to connect to
     !!! warning "Warning"
         Before continuing to the next part, you should **left-click** on your connection (the box highlighted in red) to open it.
 
-        ![Connection on homescreen](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/open-connection.png)
+        ![Connection on homescreen](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/open-connection.png "Connection highlighted in red on the home page")
 
 ## Conclusion
 
