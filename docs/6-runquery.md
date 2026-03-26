@@ -16,7 +16,7 @@ A query is an SQL command used to retrieve or work with data. In MySQL Workbench
 
 1. **Locate** the schema panel on the left side of the Workbench menu.
 
-2. **Expand** your schema, and then the Tables section too so you can confirm the table you created exists.
+2. **Expand** your schema and Tables section so you can confirm the table you created exists.
 
     ![SQL Editor with the SCHEMAS panel visible](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/run_query_2_4.png "Expanded menu showing table"){ .img-query-step-first-three .center-it }
 
