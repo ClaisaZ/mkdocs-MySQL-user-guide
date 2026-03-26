@@ -52,7 +52,14 @@
   }
 
   function norm(text) {
-    return String(text).trim().toLowerCase();
+    return String(text)
+      .toLowerCase()
+      .normalize("NFKD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .replace(/['’`]/g, "")
+      .replace(/[^a-z0-9\s]/g, " ")
+      .replace(/\s+/g, " ")
+      .trim();
   }
 
   function mquery(item, query) {
@@ -65,18 +72,23 @@
       keywords = item.keywords;
     }
 
-    const searchText = [
-      item.category,
-      item.issue,
-      item.cause,
-      item.solution,
-      ...keywords,
-    ]
-      .join(" ")
-      .toLowerCase();
+    const searchText = norm(
+      [item.category, item.issue, item.cause, item.solution, ...keywords].join(
+        " ",
+      ),
+    );
 
-    // 0 or higher match W
-    return searchText.indexOf(query) !== -1;
+    const queryWords = norm(query).split(" ").filter(Boolean);
+
+    for (let i = 0; i < queryWords.length; i++) {
+      const word = queryWords[i];
+
+      if (searchText.indexOf(word) === -1) {
+        return false;
+      }
+    }
+
+    return true;
   }
 
   function grorupByCat(items) {
