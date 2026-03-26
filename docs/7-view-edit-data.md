@@ -24,9 +24,11 @@ In Workbench you can view and change data in a table, allowing you to update val
 
 3. **Right-click** that table.
 
-4. **Left-click** the Select Rows option. The Result Grid from the last part will show up again.
+4. **Left-click** the Select Rows option.
 
     ![Right-click to see Select rows option](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Inserting_Data_3.png "Select rows")
+
+    The Result Grid from the last part should show up again.
 
     ![Table view showing all current data](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/view_data_1.png "Table with current data")
 
