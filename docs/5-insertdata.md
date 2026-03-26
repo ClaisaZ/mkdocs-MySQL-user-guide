@@ -50,7 +50,7 @@ In MySQL Workbench, data is stored inside tables as rows. To add new information
 
 7. **Read** the confirmation window showing the SQL command that will be executed.
 
-    ![Confirmation window showing SQL statement](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/review-insert-data.png "SQL script confirmation to insert data")
+    ![Confirmation window showing SQL statement](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/review-insert-data.png "SQL script confirmation to insert data"){ .img-medium }
 
 8. **Left-click** the Apply button.
 
@@ -62,11 +62,16 @@ In MySQL Workbench, data is stored inside tables as rows. To add new information
     !!! danger "Common issue and fix"
         - Make sure your required columns ( marked with NN for Not Null ) are filled in before clicking the Apply button, or the insert will fail.
 
-        - If you used the wrong datatype in a column, it will fail. For example, typing text like `hello" into an `INT` column that requires and integer like `1`, `2`, `3`.
+        - If you used the wrong datatype in a column, it will fail. For example, typing text like `hello` into an `INT` column that requires and integer like `1`, `2`, `3` will fail.
 
-9. **Left-clicking** the Refresh button if you do not see changes in the Result Grid.
+9. **Left-click** the Refresh button if you do not see changes in the Result Grid.
 
     ![Refresh button if data has not updated](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/view_data_6.png "Refresh button")
+
+    !!! success "Success"
+        You successfully inserted data into a table, you'll the data here:
+
+        ![Successfully inserted data](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@gh-pages/assets/images/new-data.png "Newly inserted data"){ .img-medium }
 
 ## Conclusion
 

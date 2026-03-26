@@ -72,6 +72,9 @@ This section walks you through how to create a table using Workbench.
         You successfully created a new table in your schema.
         ![New table visible in schema table list](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/new_table.png "New table in schema"){ .img-medium }
 
+    !!! note "Note"
+        It's recommended to create a Primary Key (PK) for your table, using an `INT` column with Auto Increment (AI). This ensures each row has a unique identifier.
+
 ## Conclusion
 
 You've created a table in Workbench. You'll use this table to insert data in the next part.
