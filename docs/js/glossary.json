@@ -51,7 +51,7 @@
   },
   {
     "term": "Row",
-    "definition": "A single record in a table.",
+    "definition": "A single value in a table.",
     "aliases": ["row", "rows", "record", "records"]
   },
   {

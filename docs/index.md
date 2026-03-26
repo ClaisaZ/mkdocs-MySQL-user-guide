@@ -71,7 +71,7 @@ This guide assumes that the following software is already correctly installed on
 
 You'll see branded callouts throughout the guide to highlight important information.
 
-!!! danger "Issue"
+!!! danger "Common issue and fix"
     Steps marked **Issue** tell you a common issue, and how to fix it.
 
 !!! warning "Warning"
