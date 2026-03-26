@@ -10,7 +10,7 @@ In MySQL Workbench, data is stored inside tables as rows. To add new information
 !!! warning "Warning"
     Before inserting data, make sure you have already created a table. Refer to [Create a table](./4-createtable.md).
     
-    You should be familiar with the contents of the previous sections!
+    You should be familiar with the contents of the previous sections so you can follow this part easily!
 
 ## Steps
 

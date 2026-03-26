@@ -10,7 +10,7 @@ This section walks you through how to create a table using Workbench.
 !!! warning "Warning"
     Before making a table, make sure you've already created a schema. Refer to [Create a schema](3-createschema.md). 
     
-    You should be familiar with the contents of the previous sections!
+    You should be familiar with the contents of the previous sections so you can follow this part easily!
 
 ## Steps
 

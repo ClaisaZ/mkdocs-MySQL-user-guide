@@ -10,7 +10,7 @@ In Workbench you can view and change data in a table, allowing you to update val
 !!! warning "Warning"
     Before following this part, make sure you've already inserted data into a table, and you have your connection opened. Refer to [Inserting data into tables](./5-insertdata.md).
 
-    You should be familiar with the contents of the previous sections!
+    You should be familiar with the contents of the previous sections so you can follow this part easily!
 
 ## Steps
 
