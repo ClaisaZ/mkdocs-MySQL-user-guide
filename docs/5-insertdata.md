@@ -16,7 +16,7 @@ In MySQL Workbench, data is stored inside tables as rows. To add new information
 
 1. **Locate** the schema panel on the left side of the Workbench menu.
 
-2. **Expand** your schema to locate the table you want to insert data into.
+2. **Expand** your schema and Tables section to locate the table you want to insert data into.
 
     ![Table section in schema panel](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/new_table.png "Table section"){ .img-medium }
 
