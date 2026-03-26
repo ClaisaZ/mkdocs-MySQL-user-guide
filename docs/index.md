@@ -72,13 +72,13 @@ This guide assumes that the following software is already correctly installed on
 You'll see branded callouts throughout the guide to highlight important information.
 
 !!! danger "Common issue and fix"
-    Steps marked **Issue** tell you a common issue, and how to fix it.
+    Steps marked Issue tell you a common issue, and how to fix it.
 
 !!! warning "Warning"
-    Steps marked **Warning** explain prerequisites or important conditions that may prevent you from completing the tutorial successfully.
+    Steps marked Warning explain prerequisites or important conditions that may prevent you from completing the tutorial successfully.
 
 !!! note "Note"
-    **Note** boxes provide extra explanation about what MySQL or Workbench is doing and why a step matters.
+    Note boxes provide extra explanation about what MySQL or Workbench is doing and why a step matters.
 
 !!! success "Success"
-    **Success** shows the expected result so you can confirm you’re on the right track.
+    Success shows the expected result so you can confirm you’re on the right track.
