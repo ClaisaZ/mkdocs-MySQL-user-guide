@@ -10,7 +10,7 @@ nav:
   - 3. Create a Table: 4-createtable.md
   - 4. Insert Data: 5-insertdata.md
   - 5. Run Queries: 6-runquery.md
-  - 6. View and Edit Data: 7-view-edit-data.md
+  - 6. Edit Data: 7-view-edit-data.md
   - Help:
       - Troubleshooting: troubleshooting.md
       - Glossary: zglossary.md

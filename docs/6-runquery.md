@@ -20,7 +20,7 @@ Queries are statements that ask your database for information. Example of a quer
 
 This query, or sometimes called an SQL request, gets all the customers from Toronto. A query is one SQL request, but an SQL script is a large group of SQL that can contain one or more queries (SQL requests).
 
-## Steps
+## Steps to run queries
 
 1. **Locate** the Schemas panel on the left side of the Workbench.
 
@@ -67,4 +67,4 @@ This query, or sometimes called an SQL request, gets all the customers from Toro
 
 ## Next Steps
 
-The next step is to use Workbench to view and edit the data in your table.
+The next step is to use Workbench to edit the data in your table.

@@ -7,7 +7,7 @@ This doc walks users through using [MySQL Workbench](https://www.mysql.com/produ
 - how to create a table
 - how to insert data
 - how to run a query
-- how to view and edit data
+- how to edit data
 
 **Important**: This is not a guide on how to write MySQL to manage databases. It is a guide on how to use MySQL Workbench’s GUI to complete basic database tasks and does not go in depth.
 
