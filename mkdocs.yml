@@ -1,4 +1,4 @@
-site_name: Beginner's MySQL Workbench User Guide
+site_name: Beginner's MySQL Workbench Guide
 site_url: https://claisaz.github.io/mkdocs-MySQL-user-guide/
 site_description: Beginner-friendly step-by-step guide to using MySQL Workbench on Windows.
 
@@ -21,6 +21,7 @@ extra_css:
 extra_javascript:
   - js/theme-default.js
   - js/troubleshooting.js
+  - js/no-image-drag.js
 
 repo_url: https://github.com/ClaisaZ/mkdocs-MySQL-user-guide
 repo_name: ClaisaZ/mkdocs-MySQL-user-guide

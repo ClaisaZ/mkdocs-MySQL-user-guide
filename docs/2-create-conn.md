@@ -13,7 +13,7 @@ Before creating schemas, tables, or queries in Workbench, you need to connect to
 
 2. **Left-click** the + icon next to MySQL Connections on the home screen.
 
-    ![Workbench add new connection button](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Connection_2-2.png "Workbench add new connection button"){ .img-medium }
+    ![Add Connection (+) button beside MySQL Connections on the MySQL Workbench home screen](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Connection_2-2.png "Add Connection button on the Workbench home screen"){ .img-medium }
 
 3. **Type** the following details into the Setup New Connection window:
 
@@ -22,7 +22,7 @@ Before creating schemas, tables, or queries in Workbench, you need to connect to
     - `3306` in Port
     - `root` in Username
 
-    ![A window displaying the fields needed to set up a new database connection. ](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Connection_combined2.png){ .img-medium title="A window displaying the fields needed to set up a new database connection." }
+    ![Setup New Connection window showing the Connection Name, Hostname, Port, and Username fields](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Connection_combined2.png){ .img-medium title="Setup New Connection window with the fields used to create a local connection." }
 
     !!! danger "Common issue and fix"
         If `root` does not work for username, check the username you created when you installed MySQL Server and use that instead of `root`. The username is usually `root` by default unless you set a different username during setup.
@@ -32,7 +32,7 @@ Before creating schemas, tables, or queries in Workbench, you need to connect to
     !!! success "Success"
         If the connection settings are correct, you'll see a successful connection message:
 
-        ![Successful Test Connection message in MySQL Workbench](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Connection_7.png){ .img-medium .center-it title="Successful Test Connection message in MySQL Workbench" }
+        ![Successful connection message shown after testing the MySQL Workbench connection](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Connection_7.png){ .img-medium .center-it title="Successful Test Connection message in MySQL Workbench" }
 
     !!! danger "Common issue and fix"
         If the connection test fails, double-check your password, hostname, and port number (`3306`) to make sure you have no typos. Most connection issues are caused by incorrect login details.
@@ -42,7 +42,7 @@ Before creating schemas, tables, or queries in Workbench, you need to connect to
     !!! warning "Warning"
         Before continuing to the next part, you should **left-click** on your connection (the box highlighted in red) to open it.
 
-        ![Connection on homescreen](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/open-connection.png "Connection highlighted in red on the home page")
+        ![Saved connection tile on the MySQL Workbench home screen highlighted in red](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/open-connection.png "Saved connection tile highlighted on the Workbench home screen")
 
 ## Conclusion
 
