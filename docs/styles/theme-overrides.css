@@ -522,3 +522,15 @@ label[for="__toc"],
 .troubleshooting-loading {
   color: var(--md-default-fg-color--light);
 }
+
+img {
+  -webkit-user-drag: none;
+  -moz-user-drag: none;
+  -ms-user-drag: none;
+  user-drag: none;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}

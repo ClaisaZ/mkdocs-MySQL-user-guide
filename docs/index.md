@@ -13,9 +13,9 @@ This documentation will walk you through how to use MySQL Workbench on Windows t
 
 This is a beginner's guide to Workbench’s GUI, not a detailed guide to database theory or advanced MySQL.
 
-## Intended Users
+## Is This Guide for You?
 
-This documentation is designed for people who want to learn how to use Workbench, and is specifically written for people running the Windows OS. Intended readers are:
+This documentation is for people who want to learn how to use Workbench, and is specifically written for people running the Windows OS. Intended readers are:
 
 - Beginner developers who want to learn MySQL Workbench.
 - Students learning database management and core MySQL functionalities.
@@ -23,11 +23,11 @@ This documentation is designed for people who want to learn how to use Workbench
 
 ## Prerequisite Knowledge
 
-You should be familiar with basic computer usage before following this guide. This includes opening and navigating applications, and using a mouse and keyboard to interact with softwares. You should also be comfortable navigating files and folders.
+You should be familiar with basic computer tasks such as opening applications, switching between windows, using a mouse and keyboard, and navigating files and folders. You should also be comfortable typing text, copying and pasting, and following step-by-step instructions in a desktop application. You aren't required to have prior experience with MySQL.
 
 ## Software Requirements
 
-- [MySQL Server](https://dev.mysql.com/downloads/installer/) installed and running locally, with a configured MySQL user account (for example, `root`) and password
+- [MySQL Server](https://dev.mysql.com/downloads/installer/) installed and running locally, with a configured MySQL user account (for example, `root`) and password.
 - [MySQL Workbench](https://dev.mysql.com/downloads/workbench/)
 
 !!! note "Note"
@@ -56,8 +56,8 @@ You should be familiar with basic computer usage before following this guide. Th
         <td><code>SELECT * FROM users;</code>, username=<code>root</code></td>
       </tr>
       <tr>
-        <td>Important terms</td>
-        <td>Important terms are underlined when they are first introduced. Hovering over them shows their definition.</td>
+        <td>Technical terms</td>
+        <td>Technical terms are underlined when they are first introduced. You can hover over them, or tap the word on mobile to show their definition.</td>
         <td>
             <span class="glossary-term" tabindex="0" data-term="schema">schema</span>,
             <span class="glossary-term" tabindex="0" data-term="table">table</span>,
@@ -82,4 +82,4 @@ You'll see branded callouts throughout the guide to highlight important informat
     Note boxes provide extra explanation about what MySQL or Workbench is doing and why a step matters.
 
 !!! success "Success"
-    Success shows the expected result so you can confirm you’re on the right track.
+    Success boxes shows the expected result so you can confirm you’re on the right track.

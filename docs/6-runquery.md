@@ -1,9 +1,9 @@
 ---
-title: Running queries
+title: Run queries
 description: Step-by-step guide to running SQL queries in MySQL Workbench on Windows.
 ---
 
-# 5. Running queries
+# 5. Run queries
 
 A query is an SQL command used to retrieve or work with data. In MySQL Workbench, queries are written and run in the SQL Editor. This part explains how to run a query using Workbench.
 
@@ -14,13 +14,13 @@ A query is an SQL command used to retrieve or work with data. In MySQL Workbench
 
 ## Steps
 
-1. **Locate** the schema panel on the left side of the Workbench menu.
+1. **Locate** the Schemas panel on the left side of the Workbench.
 
-2. **Expand** your schema and Tables section so you can confirm the table you created exists.
+2. **Expand** your Schema and Tables section so you can confirm the table you created exists.
 
     ![SQL Editor with the SCHEMAS panel visible](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/run_query_2_4.png "Expanded menu showing table"){ .img-query-step-first-three .center-it }
 
-3. **Left-click** the File button on the top left of Workbench.
+3. **Left-click** the File button on the top-left corner of Workbench.
 
     ![File button in MySQL Workbench](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/file-button.png "File button in MySQL Workbench"){ .img-query-step-first-three }
 
@@ -46,7 +46,7 @@ A query is an SQL command used to retrieve or work with data. In MySQL Workbench
     ![SELECT query typed in the SQL Editor](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Run_Query_4.png "SQL Script typed into the SQL Editor"){ .img-query-step }
 
     !!! note "Note"
-        This part uses a `USE` and `SELECT` query because it's safe for beginners.
+        This part uses `USE` and `SELECT` queries because they are simple for beginners.
 
 6. **Left-click** the Execute button (lightning bolt icon) to run the query.
 

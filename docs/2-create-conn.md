@@ -1,9 +1,9 @@
 ---
-title: Create a connection
+title: Create a Connection
 description: Step-by-step guide for creating a MySQL Workbench connection on Windows for first-time users.
 ---
 
-# 1. Create a connection
+# 1. Create a Connection
 
 Before creating schemas, tables, or queries in Workbench, you need to connect to an SQL Server with a connection. This part shows how to create a new connection in Workbench.
 
@@ -30,15 +30,14 @@ Before creating schemas, tables, or queries in Workbench, you need to connect to
 4. **Left-click** the Test Connection button to verify the connection is working. If prompted, **enter** your MySQL password.
 
     !!! success "Success"
-        If the connection settings are correct, Workbench will display a successful connection message:
+        If the connection settings are correct, you'll see a successful connection message:
 
         ![Successful Test Connection message in MySQL Workbench](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Connection_7.png){ .img-medium .center-it title="Successful Test Connection message in MySQL Workbench" }
 
     !!! danger "Common issue and fix"
-        If the connection test fails, double-check your password, hostname, and port number (3306) to make sure you have no typos. Most connection issues are caused by incorrect login details.
+        If the connection test fails, double-check your password, hostname, and port number (`3306`) to make sure you have no typos. Most connection issues are caused by incorrect login details.
 
 5. **Left-click** OK to save the connection.
-
 
     !!! warning "Warning"
         Before continuing to the next part, you should **left-click** on your connection (the box highlighted in red) to open it.

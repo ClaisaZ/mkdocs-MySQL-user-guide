@@ -9,12 +9,12 @@
     autocomplete="off"
   />
   <p id="troubleshooting-search-count" class="troubleshooting-search-count">
-    Loading...
+    ...
   </p>
 </div>
 
 ## Common issues
 
 <div id="troubleshooting-list-root" class="troubleshooting-list-root">
-  <p class="troubleshooting-loading">Loading...</p>
+  <p class="troubleshooting-loading">...</p>
 </div>

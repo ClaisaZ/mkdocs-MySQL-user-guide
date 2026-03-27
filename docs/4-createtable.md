@@ -1,9 +1,9 @@
 ---
-title: Create a table
+title: Create a Table
 description: Step-by-step guide to creating a table in MySQL Workbench on Windows using the graphical interface.
 ---
 
-# 3. Create a table
+# 3. Create a Table
 
 This section walks you through how to create a table using Workbench.
 
@@ -14,7 +14,7 @@ This section walks you through how to create a table using Workbench.
 
 ## Steps
 
-1. **Locate** the schema panel on the left side of the Workbench menu.
+1. **Locate** the Schemas panel on the left side of the Workbench.
 
 2. **Left-click** the button highlighted in red to expand your schema.
 
@@ -45,13 +45,16 @@ This section walks you through how to create a table using Workbench.
 
     !!! danger "Common issue and fix"
         If you can't find the Column editing section, **left-click** the button highlighted in red to open it:
-        ![Button to open column editor in create table windoww](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/open-column-button.png "Button to open column editor"){ .img-medium }
+        ![Button to open column editor in create table window](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/open-column-button.png "Button to open column editor"){ .img-medium }
 
-7. **Left-click** the Apply button only when you are finished naming the table, and putting in column details.
+7. **Left-click** the Apply button only when you are finished naming the table, and entering the column details.
 
 8. **Read** the confirmation window showing the SQL command that will be executed.
 
     ![Confirmation of SQL script that will be run to create your table](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/confirm_apply_table_creation.png "Confirmation of SQL script that will be run to create your table"){ .img-medium }
+
+    !!! note "Note"
+        The code/script that you see in the confirmation window may be different depending on what data you put, that's okay.
 
 9. **Left-click** the Apply button.
 
@@ -69,7 +72,7 @@ This section walks you through how to create a table using Workbench.
 
     ![Expand the Tables section](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/new_table_here.png "Expand button"){ .img-medium }
 
-    !!! Success "Success"
+    !!! success "Success"
         You successfully created a new table in your schema.
         ![New table visible in schema table list](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/new_table.png "New table in schema"){ .img-medium }
 

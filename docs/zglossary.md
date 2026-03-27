@@ -4,5 +4,5 @@
 <!-- go to GLOSSARY.JSON INSIDED /JS TO PUT STUFF HERE -->
 
 <div id="glossary-table-root" class="glossary-generated-table">
-  <p class="glossary-loading">Loading glossary…</p>
+  <p class="glossary-loading">...</p>
 </div>

@@ -1,9 +1,9 @@
 ---
-title: View and edit data
+title: View and Edit Data
 description: Learn how to view, update, and edit table data in MySQL Workbench on Windows.
 ---
 
-# 6. View and edit data
+# 6. View and Edit Data
 
 In Workbench you can view and change data in a table, allowing you to update values, correct mistakes, and more. This part walks you through how to view and edit table data in Workbench.
 
@@ -16,7 +16,7 @@ In Workbench you can view and change data in a table, allowing you to update val
 
 ### Editing data
 
-1. **Locate** the schema panel on the left side of the Workbench menu.
+1. **Locate** the Schemas panel on the left side of the Workbench.
 
 2. **Expand** your schema and Tables section to locate the table you want to view or edit.
 
@@ -61,10 +61,10 @@ In Workbench you can view and change data in a table, allowing you to update val
 
 4. **Apply** the changes the same way you did in the previous parts.
 
-5. **Refresh** the Result Grid.
+5. **Left-click** the Refresh button to refresh the Result Grid.
 
     !!! success "Success"
-        The row you deleted should be empty now.
+        The row you deleted should be gone now.
 
         ![Empty row in a table after being deleted](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/empty-row.png "Empty row after deleted")
 

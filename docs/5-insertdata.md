@@ -1,9 +1,9 @@
 ---
-title: Insert data
+title: Insert Data
 description: Learn how to insert data into a MySQL table in MySQL Workbench on Windows.
 ---
 
-# 4. Insert data
+# 4. Insert Data
 
 In MySQL Workbench, data is stored inside tables as rows. To add new information, users insert data into the columns of a table. This section explains how to insert data using the MySQL Workbench graphical interface.
 
@@ -14,7 +14,7 @@ In MySQL Workbench, data is stored inside tables as rows. To add new information
 
 ## Steps
 
-1. **Locate** the schema panel on the left side of the Workbench menu.
+1. **Locate** the Schemas panel on the left side of the Workbench.
 
 2. **Expand** your schema and Tables section to locate the table you want to insert data into.
 
@@ -31,7 +31,7 @@ In MySQL Workbench, data is stored inside tables as rows. To add new information
 
         ![Result grid appearing](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@gh-pages/assets/images/result-grid.png "Result Grid"){ .img-medium }
 
-5. **Left-click** on an empty column to be able to type in it.
+5. **Left-click** on an empty cell to be able to type in it.
 
     ![Empty cell to enter data](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Inserting_Data_4_2.png "Empty cell for entering data")
 
@@ -39,13 +39,14 @@ In MySQL Workbench, data is stored inside tables as rows. To add new information
 
     - You can type directly into each cell.
 
-        ![Data entry example](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Inserting_Data_5.png "Showing multiple data entrys"){ .img-medium }
+        ![Data entry example](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Inserting_Data_5.png "Showing multiple data entries"){ .img-medium }
 
     - Follow the datatype requirements (e.g. numbers for INT, text for VARCHAR).
 
 7. **Left-click** the Apply button in the bottom right corner.
 
-    - If you accidentally entered incorrect data, you can click the Revert button beside Apply to erase what you just put.
+    !!! note "Note"
+        If you accidentally entered incorrect data, you can **left-click** the Revert button beside Apply to erase what you just put.
 
         ![Revert button for errors](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/revert-button.png "Revert button"){ .img-medium }
 
@@ -61,16 +62,16 @@ In MySQL Workbench, data is stored inside tables as rows. To add new information
         ![Successfully inserted data](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@gh-pages/assets/images/table-script-success.png "Successfully inserted data"){ .img-medium }
 
     !!! danger "Common issue and fix"
-        - Make sure your required columns ( marked with NN for Not Null ) are filled in before clicking the Apply button, or the insert will fail.
+        - Make sure your required columns (marked with NN for Not Null) are filled in before clicking the Apply button, or the insert will fail.
 
-        - If you used the wrong datatype in a column, it will fail. For example, typing text like `hello` into an `INT` column that requires and integer like `1`, `2`, `3` will fail.
+        - If you used the wrong datatype in a column, it will fail. For example, typing text like `hello` into an `INT` column that requires an integer like `1`, `2`, `3` will fail.
 
 10. **Left-click** the Refresh button if you do not see changes in the Result Grid.
 
     ![Refresh button if data has not updated](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/view_data_6.png "Refresh button")
 
     !!! success "Success"
-        You successfully inserted data into a table, you'll the data here:
+        You successfully inserted data into your table, you'll see the data here:
 
         ![Successfully inserted data](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@gh-pages/assets/images/new-data.png "Newly inserted data"){ .img-medium }
 
