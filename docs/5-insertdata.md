@@ -7,8 +7,8 @@ description: Learn how to insert data into a MySQL table in MySQL Workbench on W
 
 In MySQL Workbench, data is stored inside tables as rows. To add new information, users insert data into the columns of a table. This section explains how to insert data using the MySQL Workbench graphical interface.
 
-!!! warning "Warning"
-    Before inserting data, make sure you have already created a table. Refer to [Create a table](./4-createtable.md).
+!!! warning "Before you continue"
+    Make sure you've already created a table, and your connection is opened. Refer to [Create a table](./4-createtable.md).
 
     You should be familiar with the contents of the previous sections so you can follow this part easily!
 
@@ -57,11 +57,11 @@ In MySQL Workbench, data is stored inside tables as rows. To add new information
 9. **Left-click** the Apply button.
 
     !!! success "Success"
-        If the SQL command runs correctly, you'll see this:
+        If the SQL script runs without issue, you'll see this:
 
         ![Successfully inserted data](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@gh-pages/assets/images/table-script-success.png "Successfully inserted data"){ .img-medium }
 
-    !!! danger "Common issue and fix"
+    !!! danger "SQL script is giving an error?"
         - Make sure your required columns (marked with NN for Not Null) are filled in before clicking the Apply button, or the insert will fail.
 
         - If you used the wrong datatype in a column, it will fail. For example, typing text like `hello` into an `INT` column that requires an integer like `1`, `2`, `3` will fail.
@@ -71,10 +71,10 @@ In MySQL Workbench, data is stored inside tables as rows. To add new information
     ![Refresh button if data has not updated](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/view_data_6.png "Refresh button")
 
     !!! success "Success"
-        You successfully inserted data into your table, you'll see the data here:
+        You successfully inserted data into your table. Good work 👍
 
         ![Successfully inserted data](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@gh-pages/assets/images/new-data.png "Newly inserted data"){ .img-medium }
 
-## Conclusion
+## Next Steps
 
-Now your table contains saved rows, and you can now view, edit, or query that data. We'll query that data in the next part.
+Now your table contains saved data so in the next part, we'll walk through how to run queries.

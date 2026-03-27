@@ -5,12 +5,20 @@ description: Step-by-step guide to running SQL queries in MySQL Workbench on Win
 
 # 5. Run queries
 
-A query is an SQL command used to retrieve or work with data. In MySQL Workbench, queries are written and run in the SQL Editor. This part explains how to run a query using Workbench.
+In Workbench, queries are written and run in the SQL Editor to retrieve or modify data. This part will explain the difference between queries and SQL scripts, and then walk you through how to write and run a query in Workbench.
 
-!!! warning "Warning"
-    Before following this part, make sure you've already inserted data into a table, and you have your connection opened. Refer to [Inserting data into tables](./5-insertdata.md).
+!!! warning "Before you continue"
+    Make sure you've already inserted data into your table, and your connection is opened. Refer to [Inserting data into tables](./5-insertdata.md).
 
     You should be familiar with the contents of the previous sections so you can follow this part easily!
+
+## Queries vs SQL Scripts
+
+Queries are statements that ask your database for information. Example of a query:
+
+`SELECT * FROM customers WHERE city = 'Toronto';`
+
+This query, or sometimes called an SQL request, gets all the customers from Toronto. A query is one SQL request, but an SQL script is a large group of SQL that can contain one or more queries (SQL requests).
 
 ## Steps
 
@@ -48,15 +56,15 @@ A query is an SQL command used to retrieve or work with data. In MySQL Workbench
     !!! note "Note"
         This part uses `USE` and `SELECT` queries because they are simple for beginners.
 
-6. **Left-click** the Execute button (lightning bolt icon) to run the query.
+6. **Left-click** the Execute button (lightning bolt icon) to run the SQL script.
 
     ![Execute button in MySQL Workbench](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Run_Query_5.png "Run query button"){ .img-query-step }
 
     !!! success "Success"
-        If the query runs successfully, you'll see the data from your table in the Result Grid, as well as an Output showing the query that was executed.
+        If the SQL script runs successfully, you'll see the data from your table in the Result Grid, as well as an Output showing the query that was executed.
 
         ![Successful query execution](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Run_Query_6.png "Result Grid and Output panels"){ .img-medium }
 
-## Conclusion
+## Next Steps
 
-You just ran a query in Workbench. You can use the SQL Editor to write and run your SQL scripts.
+The next step is to use Workbench to view and edit the data in your table.

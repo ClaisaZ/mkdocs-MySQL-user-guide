@@ -8,7 +8,7 @@ description: Step-by-step guide to creating a table in MySQL Workbench on Window
 This section walks you through how to create a table using Workbench. Tables are essential for organizing and structuring data so it can be stored, queried, and analyzed. This section walks you through how to create a table using Workbench.
 
 !!! warning "Before you continue"
-    Make sure you've already created a schema. Refer to [Create a schema](3-createschema.md).
+    Make sure you've already created a schema, and your connection is opened. Refer to [Create a schema](3-createschema.md).
 
     You should be familiar with the contents of the previous sections so you can follow this part easily!
 
