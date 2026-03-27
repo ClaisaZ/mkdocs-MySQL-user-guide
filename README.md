@@ -42,7 +42,7 @@ We split the work to different pages and used Github to manage updates to the pr
 
 ## Process
 
-This guide was planned around the needs of beginner users. We first identified the most useful entry level tasks and then organized them into separate instruction pages that can be followed in order.
+Since this guide is for beginners, we first thought about the most useful entry level tasks they would do, and then organized them into separate instruction pages that can be followed in order.
 
 To improve usability, we structured each page with:
 
@@ -72,4 +72,4 @@ We had to think a lot about how beginners learn a new software tool, and what ki
 **Live site:** https://claisaz.github.io/mkdocs-MySQL-user-guide/  
 **Repository:** https://github.com/ClaisaZ/mkdocs-MySQL-user-guide
 
-Thank you for reading our documentation 🙏
+Thank you for reading 🙏👍
