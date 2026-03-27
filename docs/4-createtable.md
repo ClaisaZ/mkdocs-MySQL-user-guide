@@ -5,10 +5,10 @@ description: Step-by-step guide to creating a table in MySQL Workbench on Window
 
 # 3. Create a Table
 
-This section walks you through how to create a table using Workbench.
+This section walks you through how to create a table using Workbench. Tables are essential for organizing and structuring data so it can be stored, queried, and analyzed. This section walks you through how to create a table using Workbench.
 
-!!! warning "Warning"
-    Before making a table, make sure you've already created a schema. Refer to [Create a schema](3-createschema.md).
+!!! warning "Before you continue"
+    Make sure you've already created a schema. Refer to [Create a schema](3-createschema.md).
 
     You should be familiar with the contents of the previous sections so you can follow this part easily!
 
@@ -32,7 +32,7 @@ This section walks you through how to create a table using Workbench.
 
     ![Table editor with Table field](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Table_5_2.png "Enter a table name"){ .img-medium }
 
-6. **Enter** each column’s details in the row of the Columns section.
+6. **Enter** each column’s details in the row of the Columns editing section.
 
     Example:
     ![Top row of the Columns section in the table editor, showing where to enter a column name, choose a datatype, and select column options such as PK, NN, and AI.](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/Creating_Table_6_2.png "Columns section in the table editor"){ .img-medium }
@@ -43,8 +43,8 @@ This section walks you through how to create a table using Workbench.
     - **Select** a value in Datatype. For this tutorial, please **select** the `INT` datatype, but you can choose other datatypes later.
     - **Left-click** to check any options you want to apply, like PK for primary key, NN for not null, or AI for auto increment.
 
-    !!! danger "Common issue and fix"
-        If you can't find the Column editing section, **left-click** the button highlighted in red to open it:
+    !!! danger "Can't find the Columns editing section?"
+        For some people, you need to press a button to toggle the Columns editing section. **Left-click** the button highlighted in red to open it:
         ![Button to open column editor in create table window](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/open-column-button.png "Button to open column editor"){ .img-medium }
 
 7. **Left-click** the Apply button only when you are finished naming the table, and entering the column details.
@@ -59,12 +59,12 @@ This section walks you through how to create a table using Workbench.
 9. **Left-click** the Apply button.
 
     !!! success "Success"
-        If the SQL command runs correctly, you'll see this:
+        If the SQL script runs correctly, you'll see this:
 
         ![Successfully created table](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@gh-pages/assets/images/table-script-success.png "Successfully created table"){ .img-medium }
 
-    !!! danger "Common issue and fix"
-        If the SQL script doesn't run correctly and you have an error, double-check the details you entered on the table creation window to make sure you have no typos.
+    !!! danger "The SQL script got an error?"
+        Double-check the details you entered on the table creation window to make sure you have no typos.
 
 10. **Left-click** the Finish button.
 
@@ -76,12 +76,12 @@ This section walks you through how to create a table using Workbench.
         You successfully created a new table in your schema.
         ![New table visible in schema table list](https://cdn.jsdelivr.net/gh/ClaisaZ/mkdocs-MySQL-user-guide@main/docs/assets/images/new_table.png "New table in schema"){ .img-medium }
 
-    !!! danger "Common issue and fix"
-        If the table does not show up, **left-click** the Refresh button.
+    !!! danger "Table doesn't appear in the Schemas panel?"
+        You have to refresh the panel, **left-click** the Refresh button.
 
     !!! note "Note"
         It's recommended to create a Primary Key (PK) for your table, using an `INT` column with Auto Increment (AI). This ensures each row has a unique identifier.
 
-## Conclusion
+## Next Steps
 
-You've created a table in Workbench. You'll use this table to insert data in the next part.
+You've created a table in Workbench. Next, we're gonna insert data into the table.

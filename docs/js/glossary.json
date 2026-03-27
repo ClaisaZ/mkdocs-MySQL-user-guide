@@ -98,5 +98,10 @@
     "term": "Localhost",
     "definition": "Your own computer.",
     "aliases": ["localhost"]
+  },
+  {
+    "term": "SQL Script",
+    "definition": "A saved set of SQL code written together in one file or editor tab, usually run as a group.",
+    "aliases": ["sql script", "SQL script", "sql scripts", "script file"]
   }
 ]
